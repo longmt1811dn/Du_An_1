@@ -1,0 +1,6 @@
+/* font-size 62.5% => 10px. Nếu dùng 1rem = 10px. Ví dụ: muốn dùng chữ có size 16px thì dùng 1.6rem */
+
+html {
+  font-size: 62.5%;
+  font-family: "Times New Roman", Times, serif;
+}

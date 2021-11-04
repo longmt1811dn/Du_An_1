@@ -1,0 +1,9 @@
+/*
++ Nên tạo biến với font chữ, màu sắc, các kích thước hay dùng lại... 
++ Những gì hay dùng lại và có thể thay đổi trong tương lai đều nên tạo biến. 
++ Đặt tên biến dễ hiểu.
+*/
+
+:root {
+  --color-red: red;
+}
