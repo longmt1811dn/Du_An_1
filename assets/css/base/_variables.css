@@ -5,5 +5,14 @@
 */
 
 :root {
-  --color-red: red;
+  --color-white: #ffffff;
+  --color-lightblue: #444e73;
+  --color-yellow: #cca471;
+  --color-black: #000;
+  --color-red: #d02e29;
+
+  --bg-blue: #0e1d55;
+  --bg-black: #000000;
+  --bg-gray: #34353a;
+  --bg-darkblue: #030d1d;
 }
