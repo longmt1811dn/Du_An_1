@@ -15,4 +15,7 @@
   --bg-black: #000000;
   --bg-gray: #34353a;
   --bg-darkblue: #030d1d;
+  
+  --font-sanspro:font-family: 'Source Sans Pro', sans-serif;
+  --font-playfair:font-family: 'Playfair Display', serif;
 }
