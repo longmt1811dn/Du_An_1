@@ -31,4 +31,7 @@
   --font-weight600: 600;
   --font-weight700: 700;
   --font-weight900: 900;
+  
+  --font-fira:font-family: 'Fira Sans Condensed', sans-serif;
+  --font-playfair:font-family: 'Playfair Display', serif;
 }

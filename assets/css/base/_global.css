@@ -2,5 +2,16 @@
 
 html {
   font-size: 62.5%;
+<<<<<<< HEAD
   font-family: "Source Sans Pro";
+=======
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul,ol{
+  list-style:none;
+}
+a {
+	text-decoration: none;
+>>>>>>> bef69ebf2a0e2dbbef032dcc9c40aa791f384bcc
 }
