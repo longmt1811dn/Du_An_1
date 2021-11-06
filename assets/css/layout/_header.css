@@ -15,9 +15,9 @@ header {
   align-items: center;
 }
 
-.header__logo img {
+/* .header__logo img {
   padding-left: 4rem;
-}
+} */
 
 .header__nav {
 }
@@ -104,11 +104,15 @@ header {
   transform: translate(-50%, -50%); */
 }
 
+.submenu__small > li a {
+  border-bottom: 1px solid #000;
+}
+
 .header__user {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 4.5rem;
+  padding-right: 4rem;
 }
 
 .header__user > div {
