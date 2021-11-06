@@ -2,5 +2,13 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Source Sans Pro";
+}
+
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
