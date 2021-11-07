@@ -1,3 +1,7 @@
+body {
+  background: var(--bg-darkblue);
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 15% 1fr 15%;
@@ -33,7 +37,7 @@ header {
 /* .header--nav .main--menu > li {
 } */
 
-.header__nav .main__menu li > a {
+.header__nav .main__menu > li > a {
   font-size: var(--font-size16);
   line-height: var(--line-height27);
   font-weight: var(--font-weight600);
@@ -51,7 +55,7 @@ header {
   color: var(--color-white);
 }
 
-.header__nav .main__menu > li:not(:first-child) a:hover,
+.header__nav .main__menu > li:not(:first-child) > a:hover,
 .header__user div > i:hover,
 .header__user-account:hover::after {
   color: var(--color-yellow);
@@ -59,18 +63,12 @@ header {
 }
 
 .submenu {
-  display: flex;
-  width: 100%;
   position: absolute;
   background: var(--bg-blue);
-  left: 0;
-  top: 100%;
-  height: 45rem;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
   box-shadow: 0px -8px 11px 0px #0000004a;
-  padding: 4rem;
 }
 
 .submenu::before {
@@ -79,7 +77,8 @@ header {
   height: 35px;
   background: transparent;
   position: absolute;
-  top: -8%;
+  top: -4%;
+  left: 0;
 }
 
 .header__nav .main__menu li:hover .submenu {
@@ -87,25 +86,83 @@ header {
   visibility: visible;
 }
 
-.submenu__list {
-  width: 50%;
+.submenu__main {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  width: 100%;
+  min-height: 45rem;
+  left: 0;
+  top: 100%;
+  padding: 4rem 4rem 5rem 4rem;
+}
+
+.submenu__page {
+  width: 100%;
+  max-width: 20rem;
+  top: 100%;
+  padding: 1.5rem 3rem;
+}
+
+.submenu__page > li a {
+  font-size: var(--font-size18);
+  text-transform: none;
+  border-bottom: 0.1rem dotted var(--color-yellow);
+}
+
+.submenu__page > li:last-child a {
+  border: none;
+}
+
+.submenu__bar {
+  margin-right: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.submenu__bar-box {
+  width: 100%;
+  max-width: 22.1rem;
+  padding-bottom: 4rem;
+}
+
+.submenu__bar-box > .box-title {
+  height: 100%;
+  min-height: 5.1rem;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-bottom: 0.2rem solid var(--color-yellow);
+}
+
+.submenu__bar-box .box-title p {
+  color: var(--color-yellow);
+  text-transform: uppercase;
+  font-weight: var(--font-weight700);
+  font-size: var(--font-size18);
+  line-height: var(--line-height31);
+  cursor: default;
+}
+
+.submenu__bar-box .box-menu a,
+.submenu__page a {
+  width: 100%;
+  display: block;
+  font-size: var(--font-size14);
+  font-weight: var(--font-weight400);
+  line-height: var(--line-height24);
+  border-bottom: 0.1rem dotted var(--color-yellow);
+  color: var(--color-gray);
+  padding: 1rem 0;
+}
+
+.submenu__bar-box .box-menu a:hover,
+.submenu__page a:hover {
+  color: var(--color-yellow);
 }
 
 .submenu__img {
-  /* position: relative; */
-}
-
-.submenu__img img {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-}
-
-.submenu__small > li a {
-  border-bottom: 1px solid #000;
+  overflow: hidden;
 }
 
 .header__user {
@@ -123,24 +180,51 @@ header {
   font-weight: var(--font-weight900);
   font-size: var(--font-size18);
   color: var(--color-gray);
+}
+
+.header__user-bag {
   position: relative;
 }
 
-.header__user-account::after {
+.header__user-bag::before {
   content: "1";
   height: 1.4rem;
   width: 1.4rem;
   background: var(--bg-gray);
   position: absolute;
   border-radius: 50%;
-  top: 2.7%;
-  right: 3.1%;
+  bottom: 65%;
+  left: 65%;
   text-align: center;
   font-size: 1rem;
   color: var(--color-white);
 }
 
-.header__user-account:hover::after {
+.header__user-bag:hover::before {
   background: var(--bg-yellow);
   color: var(--color-white);
+}
+
+.header__user-bag:hover .shopping__bag {
+  opacity: 1;
+  visibility: visible;
+}
+
+.shopping__bag {
+  background: var(--bg-white);
+  width: 30rem;
+  text-align: center;
+  line-height: var(--line-height31);
+  font-size: var(--font-size18);
+  font-weight: var(--font-weight400);
+  color: var(--color-gray);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  right: -65%;
+  padding: 1.5rem 2.5rem;
+}
+
+.shopping__bag p {
+  line-height: var(--line-height31);
 }
