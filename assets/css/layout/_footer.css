@@ -1,12 +1,9 @@
- @import url(../base/_grid.scss);
- @import url(../base/_media.scss);
-
  footer .footer__contact {
-  background-image: url('../../image/footer-img_052c2e02-57e9-473b-a7a4-2668c5104fbd.jpg');
+  background-image: url('../../image/banner\ \(7\).jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: var(--color-white);
+  background-color:var(--color-white);
 }
 
 footer .footer__contact{
@@ -15,7 +12,7 @@ footer .footer__contact{
 }
 
 footer .footer__contact::before {
-    background: var(--bg-black);
+    background: #000;
 }
 
 footer .footer__contact::before {
@@ -52,7 +49,7 @@ footer .footer__contact .container li ~ li{
 
 footer .footer__contact .container a,i,p{
     font-size: 1.8rem;
-    color: var(--bg-gray);    
+    color: #AAAAAA;    
 }
 
 footer .footer__contact .container a:hover{
@@ -103,7 +100,7 @@ footer .connection__left .icons ul{
 
 footer .connection__left .icons ul li span{
     font-size:1.8rem;
-    color:var(--bg-gray);
+    color:#AAAAAA;
    
 }
 
@@ -133,9 +130,8 @@ footer .footer__connection .connection__right .download_app ul li+li{
 } 
 
 /* Start footer__copyright */
-
 footer .footer__copyright{
-     background-color: var(--bg-blue);
+     background-color: #0E1D55;
      padding: 2.5rem 0;
 }
 
@@ -166,9 +162,6 @@ footer .footer__copyright .payment_section ul li{
 footer .footer__copyright .payment_section li:hover{
    opacity:1;
 }
-
-
-/* ========================= */
 
 
  
