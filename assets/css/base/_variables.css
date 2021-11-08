@@ -10,12 +10,13 @@
   --color-yellow: #cca471;
   --color-black: #000;
   --color-red: #d02e29;
+  
 
   --bg-blue: #0e1d55;
   --bg-black: #000000;
   --bg-gray: #34353a;
   --bg-darkblue: #030d1d;
   
-  --font-fira:font-family: 'Fira Sans Condensed', sans-serif;
-  --font-playfair:font-family: 'Playfair Display', serif;
+  --font-fira:'Fira Sans Condensed', sans-serif;
+  --font-playfair:'Playfair Display', serif;
 }
