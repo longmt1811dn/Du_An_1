@@ -1,8 +1,8 @@
 .admin-main {
-  min-height: 68.7vh;
+  min-height: 100vh;
   margin-left: 26.5rem;
 
-  background-color: turquoise;
+  background-color: #f9f9f9;
 
   font-size: 2rem;
 }

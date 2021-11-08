@@ -45,8 +45,9 @@
 
   --admin-color-border: #dddddd;
   --admin-color-border-scroll: #f8dbdd;
-  --admin-color-nav-text: #fffff2;
+  --admin-color-nav-text: #ffffff;
   --admin-color-nav-text-hover: #acb6c4;
+  --admin-color-nav-icon: #8a98b8;
 
   --admin-font-family: "Roboto", sans-serif;
 }
