@@ -34,4 +34,16 @@
 
   --font-fira: "Fira Sans Condensed", sans-serif;
   --font-playfair: "Playfair Display", serif;
+
+  /* ADMIN */
+  --admin-bg-logo: #182444;
+  --admin-bg-nav: #0f1a34;
+  --admin-bg-nav-hover: #091023;
+
+  --admin-color-border: #dddddd;
+  --admin-color-border-scroll: #f8dbdd;
+  --admin-color-nav-text: #fffff2;
+  --admin-color-nav-text-hover: #acb6c4;
+
+  --admin-font-family: "Roboto", sans-serif;
 }

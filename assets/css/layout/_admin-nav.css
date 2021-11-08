@@ -1,0 +1,87 @@
+.admin-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 26.5rem;
+  height: 100vh;
+
+  background-color: var(--admin-bg-nav);
+
+  font-family: var(--admin-font-family);
+  font-size: 1.6rem;
+
+  overflow: auto;
+
+  z-index: 1;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+
+  background-color: var(--admin-color-border);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--admin-color-border-scroll);
+}
+
+.admin-nav__logo {
+  padding: 17px 24px;
+
+  background-color: var(--admin-bg-logo);
+}
+
+.admin-nav__logo img {
+  width: 80%;
+}
+
+.admin-nav__menu {
+}
+
+/* AAAAAAAAAAAAAAAAAAAAAAA */
+.admin-nav__menu-list {
+  padding: 1.3rem 2.4rem;
+  width: 100%;
+
+  border: none;
+  background-color: var(--admin-bg-nav);
+
+  text-align: left;
+  font-size: 1.6rem;
+  color: var(--admin-color-nav-text);
+  cursor: pointer;
+
+  outline: none;
+
+  transition: 0.4s;
+}
+
+.active,
+.admin-nav__menu-list:hover {
+  background-color: var(--admin-bg-nav-hover);
+
+  color: var(--admin-color-nav-text-hover);
+}
+
+.admin-nav__menu-item {
+  max-height: 0;
+
+  background-color: var(--admin-bg-nav-hover);
+
+  overflow: hidden;
+
+  transition: max-height 0.3s ease-out;
+}
+
+.admin-nav__menu-link {
+  display: block;
+
+  padding: 1.3rem 4.4rem;
+
+  color: var(--admin-color-nav-text-hover);
+}
+
+.admin-nav__menu-link:hover {
+  color: var(--admin-color-nav-text);
+}
