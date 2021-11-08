@@ -10,13 +10,32 @@
   --color-yellow: #cca471;
   --color-black: #000;
   --color-red: #d02e29;
+  --color-gray:#aaaaaa
   
 
   --bg-blue: #0e1d55;
   --bg-black: #000000;
   --bg-gray: #34353a;
   --bg-darkblue: #030d1d;
-  
-  --font-fira:'Fira Sans Condensed', sans-serif;
-  --font-playfair:'Playfair Display', serif;
+  --bg-yellow: #cca471;
+  --bg-gray: #aaaaaa;
+  --bg-lightblue: #444e73;
+  --bg-white: #fff;
+
+  --font-size14: 1.4rem;
+  --font-size16: 1.6rem;
+  --font-size18: 1.8rem;
+
+  --line-height18: 1.8rem;
+  --line-height24: 2.4rem;
+  --line-height27: 2.7rem;
+  --line-height31: 3.1rem;
+
+  --font-weight400: 400;
+  --font-weight600: 600;
+  --font-weight700: 700;
+  --font-weight900: 900;
+
+  --font-fira: "Fira Sans Condensed", sans-serif;
+  --font-playfair: "Playfair Display", serif;
 }

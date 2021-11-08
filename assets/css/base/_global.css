@@ -2,12 +2,13 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro";
 }
 
-ul,ol{
-  list-style:none;
+ul,
+li {
+  list-style: none;
 }
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
