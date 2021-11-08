@@ -4,3 +4,23 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* flex */
+
+.flex{
+    display: flex;
+}
+
+.flex-jc{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-ac{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
