@@ -18,12 +18,15 @@
   --bg-darkblue: #030d1d;
   --bg-yellow: #cca471;
   --bg-gray: #aaaaaa;
+  --bg-lightblue: #444e73;
+  --bg-white: #fff;
 
   --font-size14: 1.4rem;
   --font-size16: 1.6rem;
   --font-size18: 1.8rem;
 
   --line-height18: 1.8rem;
+  --line-height24: 2.4rem;
   --line-height27: 2.7rem;
   --line-height31: 3.1rem;
 
