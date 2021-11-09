@@ -1,1 +1,14 @@
 /* Những gì dùng chung của các button trong web code ở đây */
+
+.btn-sl{
+    background: rgba(170, 170, 170, 0.2);
+    color: #ffffff;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-sl:hover{
+    background-color: var(--color-yellow);
+}
