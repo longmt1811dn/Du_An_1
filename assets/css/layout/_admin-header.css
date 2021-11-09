@@ -6,3 +6,61 @@
 
   font-size: 2rem;
 }
+/* CSS header (AVT) */
+.admin-header .admin-header_profile {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  position: relative;
+}
+.admin-header .admin-header_profile .profile-user_avatar {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.admin-header .admin-header_profile .profile-user_avatar img {
+  height: 55px;
+}
+.admin-header .admin-header_profile .profile-user_name {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+.admin-header .admin-header_profile .profile-user_name .name_admin {
+  font-size: 1.7rem;
+}
+.admin-header .admin-header_profile .profile-user_name .role_admin {
+  font-size: 1.5rem;
+  color: #6f7a92;
+}
+.admin-header .admin-header_profile .profile-info {
+  visibility: hidden;
+  background-color: #fff;
+  width: 215px;
+  position: absolute;
+  top: 100%;
+  right: 2%;
+  box-shadow: 0 0 2px 2px rgb(62 217 124 / 10%);
+
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.admin-header .admin-header_profile .profile-info .profile-info_detail {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+}
+.admin-header .admin-header_profile .profile-info .profile-info_detail a {
+  padding: 1.3rem 1rem;
+  font-size: 1.6rem;
+  color: #333;
+}
+/* CSS hover  */
+.check-qtv:checked ~ .profile-info {
+  visibility: visible;
+  opacity: 1;
+}

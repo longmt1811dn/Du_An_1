@@ -64,7 +64,8 @@
 }
 
 .admin-nav__menu-icon {
-  margin-right: 1rem;
+  display: inline-block;
+  width: 40px;
 
   font-size: 2rem;
   color: var(--admin-color-nav-icon);

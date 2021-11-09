@@ -1,3 +1,6 @@
+html {
+  font-family: var(--admin-font-family);
+}
 .admin-main {
   min-height: 100vh;
   margin-left: 26.5rem;
@@ -5,4 +8,203 @@
   background-color: #f9f9f9;
 
   font-size: 2rem;
+}
+.admin-main .admin-main_page {
+  display: flex;
+  flex-direction: column;
+}
+.admin-main_page .page-title_box {
+  padding: 1.2rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+}
+.admin-main_page .page-title_box .page-title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.admin-main_page .page-list-total_box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin-bottom: 15px;
+}
+.admin-main_page .page-list-total_box .page-item-total {
+  display: flex;
+  align-items: center;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  width: 24.5%;
+  justify-content: space-around;
+}
+.admin-main_page .page-list-total_box .page-item-total .img_page-item {
+  width: 40%;
+  display: flex;
+  padding: 1.3rem 0;
+}
+.admin-main_page .page-list-total_box .page-item-total .img_page-item img {
+  height: 85px;
+  border: 2px dashed #98a6ad;
+  border-radius: 50%;
+}
+.admin-main_page .page-list-total_box .name_page-item {
+}
+.admin-main_page .page-list-total_box .name_page-item > p {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: rgb(206, 198, 198);
+  font-weight: 550;
+}
+.admin-main_page .page-list-total_box .name_page-item > .number-total {
+  font-size: 3.5rem;
+}
+.admin-main_page .page-top_product {
+  display: flex;
+  flex-direction: column;
+}
+.admin-main_page .page-top_product .rows-name-top {
+  padding: 0 1.5rem;
+  margin: 1rem 0;
+}
+.admin-main_page .page-top_product .rows-name-top > h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.page-top_product .table-top-product {
+  padding: 0 1.5rem;
+}
+.table-top-product .top-title {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: lightslategray;
+  font-weight: 600;
+  padding: 1rem 0;
+
+  font-size: 1.6rem;
+}
+.top-title .id-top-title,
+.item-top-title .id-item {
+  width: 5%;
+}
+.top-title .name-top-title,
+.item-top-title .name-item {
+  width: 35%;
+}
+.top-title .img-top-title,
+.item-top-title .img-item {
+  width: 15%;
+}
+.top-title .price-top-title,
+.item-top-title .price-item {
+  width: 15%;
+}
+.top-title .view-top-title,
+.item-top-title .view-item {
+  width: 5%;
+}
+.top-title .status-top-title,
+.item-top-title .Status-item {
+  width: 15%;
+}
+.top-title .action-top-title,
+.item-top-title .action-item {
+  width: 10%;
+}
+.table-top-product .item-top-title {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  font-weight: 600;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+  margin-bottom: 0.5rem;
+}
+.item-top-title .img-item img {
+  width: 60%;
+}
+.item-top-title .action-item > a {
+  margin: 0 0.5rem;
+}
+/* CSS phân trnag */
+.admin-main_page .page_phantrang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.admin-main_page .page_phantrang .page_num {
+  margin: 0.4rem 0.7rem;
+  background-color: var(--admin-bg-logo);
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+.page_phantrang .page_num.activex {
+  background-color: steelblue;
+}
+/* CSS form_add */
+.admin-main_page .form_add {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 0 1.3rem;
+}
+.form_add .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.form-group label {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.form-group input {
+  height: 40px;
+  width: 320px;
+  border: 1px solid #98a6ad;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding: 0.5rem 1.2rem;
+}
+.form_add .check-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.check-box > label {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.check-box .check {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+.check input[type="radio"] {
+  margin-right: 0.3rem;
+}
+.form_add .button-submit {
+  display: flex;
+}
+.button-submit a button {
+  padding: 1.8rem 3.2rem;
+  font-size: 1.7rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  opacity: 0.8;
+  transition: all 0.3s linear;
+  background-color: var(--admin-bg-logo);
+  color: #fff;
+  margin: 0 1rem;
+}
+.button-submit a button:hover {
+  opacity: 1;
 }
