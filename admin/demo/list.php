@@ -1,4 +1,4 @@
-<?php require_once "../dao/admin_product.php" ?>
+<?php require_once "../../dao/admin_product.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,15 +20,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
 </head>
 
 <body class="admin">
     <!-- Navigation -->
     <nav class="admin-nav">
         <div class="admin-nav__logo">
-            <a href="./index.php">
-                <img src="../assets/image/logo.png" alt="No Image" />
+            <a href="../index.php">
+                <img src="../../assets/image/logo.png" alt="No Image" />
             </a>
         </div>
 
@@ -38,7 +38,7 @@
                     <i class="fab fa-app-store"></i> </span>Loại
             </button>
             <div class="admin-nav__menu-item">
-                <a href="./list.html" class="admin-nav__menu-link">Danh sách</a>
+                <a href="./list.php" class="admin-nav__menu-link">Danh sách</a>
                 <a href="./add.html" class="admin-nav__menu-link">Thêm mới</a>
                 <a href="#" class="admin-nav__menu-link"></a>
             </div>

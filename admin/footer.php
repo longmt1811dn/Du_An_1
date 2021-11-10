@@ -1,1 +1,1 @@
-<footer class="admin-footer"></footer>
+<footer class="admin-footer">FOOTER</footer>

@@ -1,5 +1,5 @@
 <?php
-require_once "pho.php";
+require_once "pdo.php";
 
 // danh sách object
 function product_listall(){
