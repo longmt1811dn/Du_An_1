@@ -1,5 +1,5 @@
 <div class="admin-nav__logo">
-    <a href="">
+    <a href="./index.php">
         <img src="../assets/image/logo.png" alt="No Image" />
     </a>
 </div>
