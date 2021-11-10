@@ -1,14 +1,41 @@
 /* Những gì dùng chung của các button trong web code ở đây */
 
-.btn-sl{
-    background: rgba(170, 170, 170, 0.2);
+.btn-sl{  
+    background: rgba(255,255,255,.2);
+    border-bottom: 1px solid #cca471;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    color: #fff;
+    text-transform: uppercase;
+
+    font-weight:40rem;
+    font-size:1.8rem;
+    color: var(--color-white); 
+}
+
+.btn-sl2{
+    background: rgba(0, 0, 0, 0.2);
     color: #ffffff;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-transform: uppercase;
+    font-size:1.8rem;
+    font-weight:40rem;
+    padding:1.7rem 4.2rem;
+
+    border-bottom: 1px solid #cca471;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.btn-sl2:hover{
+    background: rgba(204, 164, 113, 0.3);
+    color: #ffffff;
 }
 
 .btn-sl:hover{
-    background-color: var(--color-yellow);
+    background: rgba(204, 164, 113, 0.3);
+    color: #ffffff;
 }
+
