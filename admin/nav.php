@@ -10,7 +10,7 @@
             <i class="fab fa-app-store"></i> </span>Loại
     </button>
     <div class="admin-nav__menu-item">
-        <a href="./list.php" class="admin-nav__menu-link">Danh sách</a>
+        <a href="./demo/list.php" class="admin-nav__menu-link">Danh sách</a>
         <a href="./add.html" class="admin-nav__menu-link">Thêm mới</a>
         <a href="#" class="admin-nav__menu-link"></a>
     </div>

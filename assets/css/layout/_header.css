@@ -1,7 +1,3 @@
-body {
-  background: var(--bg-darkblue);
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 15% 1fr 15%;
@@ -228,4 +224,3 @@ body {
 .shopping__bag p {
   line-height: var(--line-height31);
 }
-

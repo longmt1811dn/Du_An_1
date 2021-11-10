@@ -6,13 +6,13 @@
         </div>
     </label>
     <div class="profile-user_name">
-        <h4 class="name_admin">Lê Xuân Phát</h4>
+        <h4 class="name_admin"><?= $admin['last_name'] . " " . $admin['first_name'] ?></h4>
         <p class="role_admin">Quản trị viên</p>
     </div>
     <div class="profile-info">
         <div class="profile-info_detail">
             <a href="">Hồ sơ</a>
-            <a href="">Thoát</a>
+            <a href="./login/?act=logout">Thoát</a>
         </div>
     </div>
 </div>
