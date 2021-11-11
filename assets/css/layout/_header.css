@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 15% 1fr 15%;
+  grid-template-columns: 20% 1fr 15%;
 }
 
 header {
@@ -74,7 +74,7 @@ header {
   height: 35px;
   background: transparent;
   position: absolute;
-  top: -4%;
+  top: -3%;
   left: 0;
 }
 
@@ -113,7 +113,7 @@ header {
 .submenu__bar {
   margin-right: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -162,10 +162,15 @@ header {
   overflow: hidden;
 }
 
+.submenu__img img {
+  width: 100%;
+}
+
 .header__user {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  z-index: 1;
 }
 
 .header__user > div {
@@ -180,6 +185,7 @@ header {
 
 .header__user-bag {
   position: relative;
+  z-index: 1;
 }
 
 .header__user-bag::before {
