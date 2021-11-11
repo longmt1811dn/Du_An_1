@@ -162,7 +162,7 @@
                                 <p><?= $list['name_product'] ?></p>
                             </div>
                             <div class="img-item">
-                                <img src="../../<?= $list['image'] ?>" alt="" />
+                                <img src="../../../<?= $list['image'] ?>" alt="" />
                             </div>
                             <div class="price-item">
                                 <p><?= number_format($list['price']) ?></p>
