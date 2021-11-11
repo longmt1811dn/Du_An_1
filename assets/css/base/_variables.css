@@ -14,21 +14,29 @@
 
   --bg-blue: #0e1d55;
   --bg-black: #000000;
+  --bg-oblack: #010209;
   --bg-gray: #34353a;
   --bg-darkblue: #030d1d;
   --bg-yellow: #cca471;
   --bg-gray: #aaaaaa;
   --bg-lightblue: #444e73;
   --bg-white: #fff;
+  --bg-lightgray02: rgba(255, 255, 255, 0.2);
+  --bg-lightgray03: rgba(255, 255, 255, 0.3);
 
   --font-size14: 1.4rem;
   --font-size16: 1.6rem;
   --font-size18: 1.8rem;
+  --font-size24: 2.4rem;
+  --font-size42: 4.2rem;
 
   --line-height18: 1.8rem;
   --line-height24: 2.4rem;
   --line-height27: 2.7rem;
   --line-height31: 3.1rem;
+  --line-height-normal: normal;
+
+  --letter-spacing84: 0.084rem;
 
   --font-weight400: 400;
   --font-weight600: 600;
@@ -37,6 +45,7 @@
 
   --font-fira: "Fira Sans Condensed", sans-serif;
   --font-playfair: "Playfair Display", serif;
+<<<<<<< HEAD
 
   /* ADMIN */
   --admin-bg-logo: #182444;
@@ -53,4 +62,10 @@
   --admin_color_from_login: #fefefe;
 
   --admin-font-family: "Roboto", sans-serif;
+=======
+  --font-main: "Source Sans Pro";
+
+  --all-03-ease: all 0.3s ease;
+  --all-06-ease: all 0.6s ease;
+>>>>>>> FE
 }
