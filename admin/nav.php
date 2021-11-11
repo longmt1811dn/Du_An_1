@@ -12,7 +12,6 @@
     <div class="admin-nav__menu-item">
         <a href="../object/?listob" class="admin-nav__menu-link">Danh sách</a>
         <a href="../object/?add" class="admin-nav__menu-link">Thêm mới</a>
-        <a href="#" class="admin-nav__menu-link"></a>
     </div>
 
     <button class="admin-nav__menu-list">

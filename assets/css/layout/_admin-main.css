@@ -133,14 +133,25 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-top: 50px;
   width: 100%;
 }
 .admin-main_page .page_phantrang .page_num {
   margin: 0.4rem 0.7rem;
+  padding: 0.5rem 1.3rem;
+
   background-color: var(--admin-bg-logo);
-  padding: 0.5rem 1rem;
+
   color: #fff;
+
+  transition: 0.2s all;
 }
+
+.admin-main_page .page_phantrang .page_num:hover {
+  background-color: #ffa055;
+}
+
 .page_phantrang .page_num.activex {
   background-color: steelblue;
 }

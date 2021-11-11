@@ -51,3 +51,44 @@
 .btn:hover {
   background: var(--bg-lightgray03);
 }
+
+/* Button admin */
+.admin__btn-del {
+  padding: 5px 15px;
+  margin: 0 5px;
+
+  border: 1px solid #ff788e;
+  border-radius: 50px;
+  background-color: #ff788e;
+
+  color: white;
+
+  transition: 0.2s all;
+}
+
+.admin__btn-del:hover {
+  border: 1px solid #ff788e;
+  background-color: white;
+
+  color: #ff788e;
+}
+
+.admin__btn-update {
+  padding: 5px 15px;
+  margin: 0 5px;
+
+  border: 1px solid #77c454;
+  border-radius: 50px;
+  background-color: #77c454;
+
+  color: white;
+
+  transition: 0.3s all;
+}
+
+.admin__btn-update:hover {
+  border: 1px solid #77c454;
+  background-color: white;
+
+  color: #77c454;
+}

@@ -21,8 +21,11 @@ if (exist_param("listob")) {
 } else if (exist_param("delete")) {
     
     object_delete($_GET['id_object']);
-    $listOb = Object_listall();
+    $listOb = object_listall();
     $VIEW_NAME = "list.php";
+    
+} else if (exist_param("add")) {
+    $VIEW_NAME = "add.php";
     
 } else if (exist_param("edit")) {
     
@@ -37,12 +40,13 @@ if (exist_param("listob")) {
     $location = $_POST['location'];
     $id_object = $_POST['id_object'];
     object_update($name_object, $hide, $location, $id_object);
-    $listOb = Object_listall();
+    $listOb = object_listall();
     $VIEW_NAME = "list.php";
     
 } else {
     
-    $VIEW_NAME = "add.php";
+    $listOb = Object_listall();
+    $VIEW_NAME = "list.php";
     
 }
 require_once "../index.php";
