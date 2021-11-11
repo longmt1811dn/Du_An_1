@@ -45,7 +45,6 @@
 
   --font-fira: "Fira Sans Condensed", sans-serif;
   --font-playfair: "Playfair Display", serif;
-<<<<<<< HEAD
 
   /* ADMIN */
   --admin-bg-logo: #182444;
@@ -62,10 +61,8 @@
   --admin_color_from_login: #fefefe;
 
   --admin-font-family: "Roboto", sans-serif;
-=======
   --font-main: "Source Sans Pro";
 
   --all-03-ease: all 0.3s ease;
   --all-06-ease: all 0.6s ease;
->>>>>>> FE
 }

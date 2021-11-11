@@ -16,8 +16,10 @@ if ($act == "") {
 
         if ($kq->rowCount() == 0) {
             $_SESSION['thongbao'] = "TÊN ĐĂNG NHẬP NÀY KHÔNG TỒN TẠI";
-            header("location: ../login");
-            exit();
+            if (isset($_SESSION['thongbao']) == true) {
+                echo '<script>alert("' . $_SESSION['thongbao'] . '"); window.location="../login";</script>';
+                exit();
+            }
         }
 
         $sql = "SELECT `id_user`, `account`, `last_name`, `first_name`, `email`, `pass`, `role`, `activated` FROM `users` WHERE account = '{$u}' AND pass = '{$p}'";
@@ -25,8 +27,10 @@ if ($act == "") {
 
         if ($kq->rowCount() == 0) {
             $_SESSION['thongbao'] = "MẬT KHẨU KHÔNG ĐÚNG";
-            header("location: ../login");
-            exit();
+            if (isset($_SESSION['thongbao']) == true) {
+                echo '<script>alert("' . $_SESSION['thongbao'] . '"); window.location="../login";</script>';
+                exit();
+            }
         }
 
         $sql = "SELECT `id_user`, `account`, `last_name`, `first_name`, `email`, `pass`, `role`, `activated` FROM `users` WHERE account = '{$u}' AND pass = '{$p}' AND role = 1";
@@ -34,9 +38,13 @@ if ($act == "") {
 
         if ($kq->rowCount() == 0) {
             $_SESSION['thongbao'] = "TÀI KHOẢN NÀY KHÔNG CÓ QUYỀN ADMIN";
-            header("location: ../../index.html");
-            exit();
+            if (isset($_SESSION['thongbao']) == true) {
+                echo '<script>alert("' . $_SESSION['thongbao'] . '"); window.location="../login";</script>';
+                exit();
+            }
         }
+        
+        
 
         $row_user = $kq->fetch();
         unset($_SESSION['thongbao']);

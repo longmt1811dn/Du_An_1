@@ -4,11 +4,6 @@ require_once '../../dao/pdo.php';
 require_once '../../dao/admin_users.php';
 ?>
 <?php
-if (isset($_SESSION['thongbao']) == true) {
-    echo '<script>alert("' . $_SESSION['thongbao'] . '"); window.location="../login";</script>';
-    exit();
-}
-
 if (isset($_SESSION['login_id_admin']) == false) {
     header("location: ../login/");
     exit();
