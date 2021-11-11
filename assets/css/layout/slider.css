@@ -97,7 +97,7 @@
 
 }
 
-h2::after {
+.slider .owl-carousel .item .item__content .border-title h2::after{
     position: absolute;
     content: "";
     height: 5px;
@@ -109,6 +109,7 @@ h2::after {
     right: 0;
     z-index: -1;
 }
+
 
 .slider .owl-carousel .item__content .inner-block .slider-button {
     padding: 1.6rem 4.1rem;
@@ -197,7 +198,7 @@ h2::after {
 
 }
 
-h2::after {
+.slider .owl-carousel .item .item__content2 .border-title h2::after{
     position: absolute;
     content: "";
     height: 5px;
@@ -208,6 +209,7 @@ h2::after {
     left: 0;
     right: 0;
     z-index: -1;
+
 }
 
 /* item 3 */
@@ -268,7 +270,7 @@ h2::after {
 
 }
 
-h2::after {
+.slider .owl-carousel .item .item__content3 .border-title h2::after{
     position: absolute;
     content: "";
     height: 5px;
