@@ -209,7 +209,7 @@ html {
   opacity: 1;
 }
 /* CSS danh sách cho object */
-.page-top_product .table-top-object > {
+.page-top_product .table-top-object {
   padding: 0 1.5rem;
 }
 .table-top-object > .top-title {
