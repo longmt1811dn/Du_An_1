@@ -193,7 +193,7 @@ html {
 .form_add .button-submit {
   display: flex;
 }
-.button-submit a button {
+.button-submit > input {
   padding: 1.8rem 3.2rem;
   font-size: 1.7rem;
   border: none;
@@ -201,10 +201,61 @@ html {
   border-radius: 1rem;
   opacity: 0.8;
   transition: all 0.3s linear;
-  background-color: var(--admin-bg-logo);
-  color: #fff;
+  background: var(--admin-bg-nav);
   margin: 0 1rem;
+  color: #fff;
 }
-.button-submit a button:hover {
+.button-submit > input:hover {
   opacity: 1;
+}
+/* CSS danh sách cho object */
+.page-top_product .table-top-object > {
+  padding: 0 1.5rem;
+}
+.table-top-object > .top-title {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: lightslategray;
+  font-weight: 600;
+  padding: 1rem 0;
+
+  font-size: 1.6rem;
+}
+.top-title .id-title,
+.item-title .id-item {
+  width: 10%;
+}
+.top-title .name-title,
+.item-title .name-item {
+  width: 50%;
+}
+.top-title .location-title,
+.item-title .location-item {
+  width: 10%;
+}
+.top-title .status-title,
+.item-title .Status-item {
+  width: 10%;
+}
+.top-title .action-title,
+.item-title .action-item {
+  width: 20%;
+}
+.table-top-object > .item-title {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  font-weight: 600;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+  margin-bottom: 0.5rem;
+}
+.item-top-title .img-item img {
+  width: 60%;
+}
+.item-top-title .action-item > a {
+  margin: 0 0.5rem;
 }

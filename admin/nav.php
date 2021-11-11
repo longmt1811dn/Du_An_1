@@ -1,6 +1,6 @@
 <div class="admin-nav__logo">
-    <a href="./index.php">
-        <img src="../assets/image/logo.png" alt="No Image" />
+    <a href="../demo/">
+        <img src="../../assets/image/logo.png" alt="No Image" />
     </a>
 </div>
 
@@ -10,76 +10,69 @@
             <i class="fab fa-app-store"></i> </span>Loại
     </button>
     <div class="admin-nav__menu-item">
-        <a href="./demo/list.php" class="admin-nav__menu-link">Danh sách</a>
-        <a href="./add.html" class="admin-nav__menu-link">Thêm mới</a>
+        <a href="../object/?listob" class="admin-nav__menu-link">Danh sách</a>
+        <a href="../object/?add" class="admin-nav__menu-link">Thêm mới</a>
         <a href="#" class="admin-nav__menu-link"></a>
     </div>
 
     <button class="admin-nav__menu-list">
-        <span class="admin-nav__menu-icon"> <i class="fab fa-btc"></i> </span>Section 1
+        <span class="admin-nav__menu-icon"> <i class="fab fa-btc"></i> </span>Kiểu dáng
     </button>
     <div class="admin-nav__menu-item">
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
+        <a href="#" class="admin-nav__menu-link">Thêm mới</a>
+        <a href="#" class="admin-nav__menu-link">Danh sách</a>
+        <a href="#" class="admin-nav__menu-link"></a>
     </div>
 
     <button class="admin-nav__menu-list">
         <span class="admin-nav__menu-icon">
-            <i class="fas fa-chart-bar"></i> </span>Section 1
+            <i class="fas fa-chart-bar"></i> </span>Thương hiệu
     </button>
     <div class="admin-nav__menu-item">
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
+        <a href="#" class="admin-nav__menu-link">Thêm mới</a>
+        <a href="#" class="admin-nav__menu-link">Danh sách</a>
+        <a href="#" class="admin-nav__menu-link"></a>
     </div>
 
     <button class="admin-nav__menu-list">
         <span class="admin-nav__menu-icon">
-            <i class="fab fa-cloudversify"></i> </span>Section 1
+            <i class="fab fa-cloudversify"></i> </span>Sản phẩm
     </button>
     <div class="admin-nav__menu-item">
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
+        <a href="#" class="admin-nav__menu-link">Thêm mới</a>
+        <a href="#" class="admin-nav__menu-link">Danh sách</a>
+        <a href="#" class="admin-nav__menu-link"></a>
+    </div>
+    <button class="admin-nav__menu-list">
+        <span class="admin-nav__menu-icon">
+            <i class="fab fa-cloudversify"></i> </span>Khách hàng
+    </button>
+    <div class="admin-nav__menu-item">
+
+        <a href="#" class="admin-nav__menu-link">Danh sách</a>
+
+    </div>
+    <button class="admin-nav__menu-list">
+        <span class="admin-nav__menu-icon">
+            <i class="fab fa-app-store"></i> </span>Thống kê đánh giá
+    </button>
+    <div class="admin-nav__menu-item">
+        <a href="#" class="admin-nav__menu-link">Danh sách</a>
+    </div>
+
+    <button class="admin-nav__menu-list">
+        <span class="admin-nav__menu-icon"> <i class="fab fa-btc"></i> </span>Thống kê mặt hàng
+    </button>
+    <div class="admin-nav__menu-item">
+        <a href="#" class="admin-nav__menu-link">Danh sách</a>
     </div>
 
     <button class="admin-nav__menu-list">
         <span class="admin-nav__menu-icon">
-            <i class="fab fa-app-store"></i> </span>Section 1
+            <i class="fas fa-chart-bar"></i> </span>Thống kê đơn hàng
     </button>
     <div class="admin-nav__menu-item">
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
+        <a href="#" class="admin-nav__menu-link">Danh sách</a>
     </div>
 
-    <button class="admin-nav__menu-list">
-        <span class="admin-nav__menu-icon"> <i class="fab fa-btc"></i> </span>Section 1
-    </button>
-    <div class="admin-nav__menu-item">
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-    </div>
-
-    <button class="admin-nav__menu-list">
-        <span class="admin-nav__menu-icon">
-            <i class="fas fa-chart-bar"></i> </span>Section 1
-    </button>
-    <div class="admin-nav__menu-item">
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-    </div>
-
-    <button class="admin-nav__menu-list">
-        <span class="admin-nav__menu-icon">
-            <i class="fab fa-cloudversify"></i> </span>Section 1
-    </button>
-    <div class="admin-nav__menu-item">
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-        <a href="#" class="admin-nav__menu-link">Lorem ipsum...</a>
-    </div>
 </div>

@@ -1,25 +1,25 @@
 <?php
-    session_start();
-    require_once '../dao/pdo.php';
-    require_once '../dao/admin_users.php';
+session_start();
+require_once '../../dao/pdo.php';
+require_once '../../dao/admin_users.php';
 ?>
 <?php
-    if (isset($_SESSION['thongbao']) == true) {
-    echo '<script>alert("'.$_SESSION['thongbao'].'"); window.location="./login";</script>';
+if (isset($_SESSION['thongbao']) == true) {
+    echo '<script>alert("' . $_SESSION['thongbao'] . '"); window.location="../login";</script>';
     exit();
-    }
-    
-    if(isset($_SESSION['login_id_admin']) == false){
-        header("location: ./login/");
-        exit();
-    }
+}
+
+if (isset($_SESSION['login_id_admin']) == false) {
+    header("location: ../login/");
+    exit();
+}
 ?>
 <?php
-    if(isset($_SESSION['login_id_admin']) == true){
-        $idUser = $_SESSION['login_id_admin'];
-    }
-    
-    $admin = users_one($idUser);
+if (isset($_SESSION['login_id_admin']) == true) {
+    $idUser = $_SESSION['login_id_admin'];
+}
+
+$admin = users_one($idUser);
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
 </head>
 
 <body class="admin">
@@ -59,14 +59,16 @@
 
     <!-- Main -->
     <main class="admin-main">
-        <?php require_once './demo/home.php'; ?>
+        <?php
+        include "$VIEW_NAME";
+        ?>
     </main>
 
     <!-- Footer -->
-    <?php require_once "./footer.php" ?>
+    <?php require_once "footer.php" ?>
 
     <!-- JavaScript -->
-    <script src="../assets/js/admin_nav.js"></script>
+    <script src="../../assets/js/admin_nav.js"></script>
 </body>
 
 </html>

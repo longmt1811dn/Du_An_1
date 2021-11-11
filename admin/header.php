@@ -2,7 +2,7 @@
     <input type="checkbox" class="check-qtv" id="check-qtv" hidden />
     <label for="check-qtv" class="profile-user_avatar">
         <div class="img-user_avatar">
-            <img src="../assets/image/avt-username_admin.png" alt="" />
+            <img src="../../assets/image/avt-username_admin.png" alt="" />
         </div>
     </label>
     <div class="profile-user_name">
@@ -12,7 +12,7 @@
     <div class="profile-info">
         <div class="profile-info_detail">
             <a href="">Hồ sơ</a>
-            <a href="./login/?act=logout">Thoát</a>
+            <a href="../login/?act=logout">Thoát</a>
         </div>
     </div>
 </div>
