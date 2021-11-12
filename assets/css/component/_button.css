@@ -1,1 +1,61 @@
 /* Những gì dùng chung của các button trong web code ở đây */
+.title__borderbottom::after {
+  position: absolute;
+  content: "";
+  height: 0.5rem;
+  background: #cca471;
+  width: 100%;
+  bottom: 0.6rem;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.title__borderbottom {
+  position: relative;
+  color: var(--color-white);
+  font-size: var(--font-size42);
+  font-family: var(--font-playfair);
+  line-height: var(--line-height-normal);
+  padding: 0 4rem;
+  width: fit-content;
+  margin: 0 auto;
+  letter-spacing: var(--letter-spacing84);
+}
+
+.product__text {
+  font-family: var(--font-playfair);
+  color: var(--color-white);
+  font-size: var(--font-size24);
+  line-height: var(--line-height-normal);
+  text-align: center;
+  transition: var(--all-06-ease);
+}
+
+.product__text:hover {
+  color: var(--color-yellow);
+}
+
+.btn {
+  font-family: var(--font-main);
+  background: var(--bg-lightgray02);
+  padding: 1.4rem 3.8rem 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: var(--font-size18);
+  color: var(--color-white);
+  border-bottom: 0.2rem solid var(--color-yellow);
+  transition: var(--all-06-ease);
+}
+
+.btn:hover {
+  background: var(--bg-lightgray03);
+}
+
+.text__gray {
+  font-family: var(--font-main);
+  color: var(--color-gray);
+  font-size: var(--font-size18);
+  line-height: var(--line-height30);
+  font-weight: var(--font-weight400);
+}
