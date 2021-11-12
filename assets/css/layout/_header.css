@@ -166,6 +166,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  z-index: 1;
 }
 
 .header__user > div {
