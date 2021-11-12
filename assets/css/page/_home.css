@@ -62,10 +62,6 @@
 
 .main__introduct-info .main__info-text {
   position: absolute;
-  color: var(--color-gray);
-  font-size: var(--font-size18);
-  line-height: var(--line-height31);
-  text-align: inherit;
   width: 75%;
   left: 50%;
   transform: translateX(-50%);
@@ -176,13 +172,6 @@
 .main__post-text {
   margin-top: 9rem;
   order: 2;
-}
-
-.main__post-text span {
-  color: var(--color-gray);
-  font-size: var(--font-size18);
-  display: inline;
-  text-align: center;
 }
 
 .main__post-button {
