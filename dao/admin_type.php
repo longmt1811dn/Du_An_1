@@ -3,8 +3,16 @@ require_once "pdo.php";
 
 // lấy danh sách type
 function type_listall(){
-$sql = "SELECT * FROM type";
-return pdo_query($sql);
+    $pageSize = 9;
+    $startRow = 0;
+    $pageNum = 1;
+    
+    if(isset($_GET['pagenum']) == true) $pageNum = $_GET['pagenum']; 
+    
+    $startRow = ($pageNum - 1) * $pageSize;
+    
+    $sql = "SELECT * FROM type  LIMIT $startRow,$pageSize";
+    return pdo_query($sql);
 }
 
 // lấy tên object trong danh sách type
@@ -43,3 +51,60 @@ function type_update($name_type, $hide, $location, $id_object, $id_type){
     $sql = "UPDATE type SET name_type = ?, hide = ?, location = ?, id_object = ? WHERE id_type=?";
     pdo_execute($sql, $name_type, $hide, $location, $id_object, $id_type);
 }
+
+//Phân trang
+function type_pagination(){
+        $pageSize = 9;
+        $pageNum = 1;
+    
+        $conn = pdo_get_connection();
+        $offSet = 2;
+        
+        if(isset($_GET['pagenum']) == true) $pageNum = $_GET['pagenum']; 
+        $sql = "SELECT count(*) FROM type";
+        $kq = $conn->query($sql);
+        $r = $kq->fetch();
+        
+        $tongSoReCord = $r[0];
+        $tongSoTrang = ceil($tongSoReCord / $pageSize);
+        
+        $from = $pageNum - $offSet; if($from < 1) $from = 1;
+        $to = $pageNum + $offSet; if($to > $tongSoTrang) $to = $tongSoTrang;
+        $pagePrev = $pageNum - 1;
+        $pageNext = $pageNum + 1;
+        
+        echo '<ul class="page_phantrang">';
+                
+                    if($pageNum >1) {
+                        
+                    echo '<li class=""><a class="page_num" href="?pagenum=1"><<</a></li>';
+                    echo '<li class=""><a class="page_num" href="?pagenum='.$pagePrev.'"><</a></li>';
+                            
+                    }
+                    
+                    for($i = $from; $i <= $to; $i++) {
+                        
+                        if($tongSoTrang > 1){
+                            
+                            if($i == $pageNum) {
+                                
+                            echo '<li class=""><a class="page_num activex" href="?pagenum='.$i.'">'.$i.'</a></li>';
+                            
+                        } else {
+                            
+                            echo '<li class=""><a class="page_num" href="?pagenum='.$i.'">'.$i.'</a></li>';
+                            
+                        }
+                        }
+                    }
+                    
+                    if($pageNum < $tongSoTrang) {
+                        
+                    echo '<li class=""><a class="page_num" href="?pagenum='. $pageNext .'">></a></li>';
+                    echo '<li class=""><a class="page_num" href="?pagenum='. $tongSoTrang .'">>></a></li>';
+                    
+                    }
+                '</ul>
+            </nav>
+            </div> ';
+    }

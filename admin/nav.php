@@ -7,7 +7,7 @@
 <div class="admin-nav__menu">
     <button class="admin-nav__menu-list">
         <span class="admin-nav__menu-icon">
-            <i class="fab fa-app-store"></i> </span>Loại
+            <i class="fab fa-app-store"></i> </span>Đối tượng
     </button>
     <div class="admin-nav__menu-item">
         <a href="../object/?listob" class="admin-nav__menu-link">Danh sách</a>
@@ -18,9 +18,8 @@
         <span class="admin-nav__menu-icon"> <i class="fab fa-btc"></i> </span>Kiểu dáng
     </button>
     <div class="admin-nav__menu-item">
-        <a href="../type/?add" class="admin-nav__menu-link">Thêm mới</a>
         <a href="../type/?listtype" class="admin-nav__menu-link">Danh sách</a>
-       
+        <a href="../type/?add" class="admin-nav__menu-link">Thêm mới</a>
     </div>
 
     <button class="admin-nav__menu-list">
@@ -28,19 +27,17 @@
             <i class="fas fa-chart-bar"></i> </span>Thương hiệu
     </button>
     <div class="admin-nav__menu-item">
+    <a href="../brand/?listbrand" class="admin-nav__menu-link">Danh sách</a>
         <a href="../brand/?add" class="admin-nav__menu-link">Thêm mới</a>
-        <a href="../brand/?listbrand" class="admin-nav__menu-link">Danh sách</a>
-       
     </div>
 
     <button class="admin-nav__menu-list">
         <span class="admin-nav__menu-icon">
-            <i class="fab fa-cloudversify"></i> </span>Sản phẩm
+        <i class="fas fa-clock"></i> </span>Sản phẩm
     </button>
     <div class="admin-nav__menu-item">
-        <a href="../product/?add" class="admin-nav__menu-link">Thêm mới</a>
         <a href="../product/?listproduct" class="admin-nav__menu-link">Danh sách</a>
-       
+        <a href="../product/?add" class="admin-nav__menu-link">Thêm mới</a>
     </div>
     <button class="admin-nav__menu-list">
         <span class="admin-nav__menu-icon">

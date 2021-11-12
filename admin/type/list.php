@@ -1,7 +1,7 @@
 <?php require_once "../../dao/admin_type.php"; ?>
 <div class="admin-main_page">
     <div class="page-title_box">
-        <h4 class="page-title">Danh sách đối tượng người dùng</h4>
+        <h4 class="page-title">Danh sách</h4>
     </div>
     <div class="page-top_product">
         <div class="table-top-type">
@@ -43,5 +43,6 @@
         </div>
     </div>
 
+    <?php type_pagination(); ?>
 
 </div>

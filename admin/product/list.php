@@ -35,16 +35,13 @@
                                 <p><?= ($list['hide'] == 1) ? "Hiện" : "Ẩn"  ?></p>
                             </div>
                             <div class="action-item">
-                                <a href="">Xoá</a>
-                                <a href="./update.html">Sửa</a>
+                                <a class="admin__btn-del" onclick="return confirm('Bạn có muốn xoá không?')" href="?delete&id_product=<?=$list['id_product']?>">Xoá</a>
+                                <a class="admin__btn-update" href="?edit&id_product=<?=$list['id_product']?>">Sửa</a>
                             </div>
                         </div>
                     <?php } ?>
                 </div>
             </div>
-            <div class="page_phantrang">
-                <a class="page_num activex" href="">1</a>
-                <a class="page_num" href="">2</a>
-                <a class="page_num" href="">3</a>
-            </div>
+    
+            <?php object_pagination(); ?>
         </div>

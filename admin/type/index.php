@@ -30,9 +30,11 @@ if (exist_param("listtype")) {
     type_update($name_type, $hide, $location, $id_object, $id_type);
     $listtype = type_listall();
     $VIEW_NAME = "list.php";
-}
- else {
+} else if (exist_param('add')){
     $VIEW_NAME = "add.php";
+} else {
+    $listtype = type_listall();
+    $VIEW_NAME = "list.php";
 }
 
 require_once "../index.php";

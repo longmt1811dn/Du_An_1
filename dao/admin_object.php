@@ -4,7 +4,7 @@ require_once "pdo.php";
 // danh sách object
 function object_listall()
 {
-    $pageSize = 5;
+    $pageSize = 9;
     $startRow = 0;
     $pageNum = 1;
     
@@ -38,7 +38,7 @@ function object_update($name_object, $hide, $location , $id_object){
 }
 
 function object_pagination(){
-        $pageSize = 5;
+        $pageSize = 9;
         $pageNum = 1;
     
         $conn = pdo_get_connection();

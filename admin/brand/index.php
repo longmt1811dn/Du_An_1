@@ -28,8 +28,11 @@ if (exist_param("listbrand")) {
     brand_update($name_brand, $hide, $location, $id_brand);
     $listbrand = brand_listall();
     $VIEW_NAME = "list.php";
+} else if(exist_param("add")){
+    $VIEW_NAME = "add.php";
 }
  else {
-    $VIEW_NAME = "add.php";
+    $listbrand = brand_listall();
+    $VIEW_NAME = "list.php";
 }
 require_once "../index.php";

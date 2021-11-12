@@ -89,7 +89,7 @@ html {
 }
 .top-title .name-top-title,
 .item-top-title .name-item {
-  width: 35%;
+  width: 30%;
 }
 .top-title .img-top-title,
 .item-top-title .img-item {
@@ -109,12 +109,13 @@ html {
 }
 .top-title .action-top-title,
 .item-top-title .action-item {
-  width: 10%;
+  width: 15%;
 }
 .table-top-product .item-top-title {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  align-items: center;
   font-weight: 600;
   padding: 1rem 0;
   font-size: 1.5rem;
@@ -135,6 +136,7 @@ html {
   align-items: center;
 
   margin-top: 50px;
+  margin-bottom: 50px;
   width: 100%;
 }
 .admin-main_page .page_phantrang .page_num {

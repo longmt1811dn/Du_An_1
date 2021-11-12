@@ -38,5 +38,6 @@
         </div>
     </div>
 
+    <?php brand_pagination(); ?>
 
 </div>
