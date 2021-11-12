@@ -18,9 +18,9 @@
         <span class="admin-nav__menu-icon"> <i class="fab fa-btc"></i> </span>Kiểu dáng
     </button>
     <div class="admin-nav__menu-item">
-        <a href="#" class="admin-nav__menu-link">Thêm mới</a>
-        <a href="#" class="admin-nav__menu-link">Danh sách</a>
-        <a href="#" class="admin-nav__menu-link"></a>
+        <a href="../type/?add" class="admin-nav__menu-link">Thêm mới</a>
+        <a href="../type/?listtype" class="admin-nav__menu-link">Danh sách</a>
+       
     </div>
 
     <button class="admin-nav__menu-list">
@@ -28,9 +28,9 @@
             <i class="fas fa-chart-bar"></i> </span>Thương hiệu
     </button>
     <div class="admin-nav__menu-item">
-        <a href="#" class="admin-nav__menu-link">Thêm mới</a>
-        <a href="#" class="admin-nav__menu-link">Danh sách</a>
-        <a href="#" class="admin-nav__menu-link"></a>
+        <a href="../brand/?add" class="admin-nav__menu-link">Thêm mới</a>
+        <a href="../brand/?listbrand" class="admin-nav__menu-link">Danh sách</a>
+       
     </div>
 
     <button class="admin-nav__menu-list">
