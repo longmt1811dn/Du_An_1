@@ -52,6 +52,7 @@
   background: var(--bg-lightgray03);
 }
 
+<<<<<<< HEAD
 .btn-sl{  
     background: rgba(255,255,255,.2);
     border-bottom: 1px solid #cca471;
@@ -124,3 +125,12 @@
     color: #ffffff;
 }
 
+=======
+.text__gray {
+  font-family: var(--font-main);
+  color: var(--color-gray);
+  font-size: var(--font-size18);
+  line-height: var(--line-height30);
+  font-weight: var(--font-weight400);
+}
+>>>>>>> ff2e0aecf159392ac19f9716b364e76e6ffcd25c
