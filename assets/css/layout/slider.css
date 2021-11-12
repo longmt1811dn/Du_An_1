@@ -1,11 +1,11 @@
 .slider{
     position:relative;
+    margin-bottom: -1rem;
 }
 
 .slider .owl-carousel .item img{
     width: 100%;
-    height: 70rem;
-    overflow: hidden;
+    
 }
 
 .slider .owl-carousel .item .item__content{
