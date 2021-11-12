@@ -11,6 +11,9 @@
 @import url(./layout/_main.css);
 @import url(./layout/_section.css);
 @import url(./layout/_footer.css);
+@import url(./layout/owl.carousel.min.css);
+@import url(./layout/owl.theme.default.min.css);
+@import url(./layout/slider.css);
 
 /* page */
 @import url(./page/_home.css);

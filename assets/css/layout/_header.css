@@ -1,3 +1,7 @@
+body {
+  /* background: var(--bg-darkblue); */
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 20% 1fr 15%;
