@@ -1,20 +1,20 @@
-.slider{
+main .slider{
     position:relative;
     margin-bottom: -1rem;
 }
 
-.slider .owl-carousel .item img{
+ main .slider .owl-carousel .item img{
     width: 100%;
-    
+    height: 100%;    
 }
 
-.slider .owl-carousel .item .item__content{
+main .slider .owl-carousel .item .item__content{
     position: absolute;
     top: 20%;
     left: 15%;
 }
 
-.slider .owl-carousel .item__content {
+main .slider .owl-carousel .item__content {
     width: 59rem;
     height: 327px;
 }
