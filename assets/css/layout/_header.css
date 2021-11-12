@@ -173,6 +173,15 @@ header {
   margin-right: 2rem;
 }
 
+.header__user-account:before {
+  content: "";
+  width: 4rem;
+  height: 5rem;
+  background: transparent;
+  position: absolute;
+  right: 4%;
+}
+
 .header__user div > i {
   font-weight: var(--font-weight900);
   font-size: var(--font-size18);

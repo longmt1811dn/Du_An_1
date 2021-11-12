@@ -51,3 +51,11 @@
 .btn:hover {
   background: var(--bg-lightgray03);
 }
+
+.text__gray {
+  font-family: var(--font-main);
+  color: var(--color-gray);
+  font-size: var(--font-size18);
+  line-height: var(--line-height30);
+  font-weight: var(--font-weight400);
+}
