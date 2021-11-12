@@ -38,9 +38,9 @@
             <i class="fab fa-cloudversify"></i> </span>Sản phẩm
     </button>
     <div class="admin-nav__menu-item">
-        <a href="#" class="admin-nav__menu-link">Thêm mới</a>
-        <a href="#" class="admin-nav__menu-link">Danh sách</a>
-        <a href="#" class="admin-nav__menu-link"></a>
+        <a href="../product/?add" class="admin-nav__menu-link">Thêm mới</a>
+        <a href="../product/?listproduct" class="admin-nav__menu-link">Danh sách</a>
+       
     </div>
     <button class="admin-nav__menu-list">
         <span class="admin-nav__menu-icon">

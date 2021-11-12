@@ -40,54 +40,6 @@
                             </div>
                         </div>
                     <?php } ?>
-                    <div class="item-top-title">
-                        <div class="id-item">
-                            <p>2</p>
-                        </div>
-                        <div class="name-item">
-                            <p>Đồng hồ Ozaqua Tokudo 900</p>
-                        </div>
-                        <div class="img-item">
-                            <img src="../assets/image/dongho_aladin (2).jpeg" alt="" />
-                        </div>
-                        <div class="price-item">
-                            <p>12,000,000</p>
-                        </div>
-                        <div class="view-item">
-                            <p>322</p>
-                        </div>
-                        <div class="Status-item">
-                            <p>Hiện</p>
-                        </div>
-                        <div class="action-item">
-                            <a href="">Xoá</a>
-                            <a href="./update.html">Sửa</a>
-                        </div>
-                    </div>
-                    <div class="item-top-title">
-                        <div class="id-item">
-                            <p>3</p>
-                        </div>
-                        <div class="name-item">
-                            <p>Đồng hồ Rolex Hào Quang 1200</p>
-                        </div>
-                        <div class="img-item">
-                            <img src="../assets/image/dongho_aladin (1).jpeg" alt="" />
-                        </div>
-                        <div class="price-item">
-                            <p>100,172,000</p>
-                        </div>
-                        <div class="view-item">
-                            <p>123</p>
-                        </div>
-                        <div class="Status-item">
-                            <p>Hiện</p>
-                        </div>
-                        <div class="action-item">
-                            <a href="">Xoá</a>
-                            <a href="./update.html">Sửa</a>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="page_phantrang">
