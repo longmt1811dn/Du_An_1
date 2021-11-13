@@ -16,11 +16,15 @@
 @import url(./layout/_admin-nav.css);
 @import url(./layout/_admin-main.css);
 @import url(./layout/_admin-footer.css);
+@import url(./layout/owl.carousel.min.css);
+@import url(./layout/owl.theme.default.min.css);
+@import url(./layout/slider.css);
 
 /* page */
 @import url(./page/_home.css);
 @import url(./page/_about.css);
 @import url(./page/_admin_login.css);
+@import url(./page/_collections.css);
 
 /* component */
 @import url(./component/_button.css);

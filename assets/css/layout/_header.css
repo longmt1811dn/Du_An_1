@@ -1,9 +1,13 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: 15% 1fr 15%;
+body {
+  /* background: var(--bg-darkblue); */
 }
 
-.header {
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 1fr 15%;
+}
+
+header {
   font-size: var(--font-size16);
   height: 8.4rem;
   background: var(--bg-blue);
@@ -74,7 +78,7 @@
   height: 35px;
   background: transparent;
   position: absolute;
-  top: -4%;
+  top: -3%;
   left: 0;
 }
 
@@ -162,14 +166,28 @@
   overflow: hidden;
 }
 
+.submenu__img img {
+  width: 100%;
+}
+
 .header__user {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  z-index: 1;
 }
 
 .header__user > div {
   margin-right: 2rem;
+}
+
+.header__user-account:before {
+  content: "";
+  width: 4rem;
+  height: 5rem;
+  background: transparent;
+  position: absolute;
+  right: 4%;
 }
 
 .header__user div > i {
@@ -180,6 +198,7 @@
 
 .header__user-bag {
   position: relative;
+  z-index: 1;
 }
 
 .header__user-bag::before {
