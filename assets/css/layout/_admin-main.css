@@ -1,4 +1,4 @@
-.admin {
+html {
   font-family: var(--admin-font-family);
 }
 .admin-main {
@@ -46,8 +46,7 @@
   border: 2px dashed #98a6ad;
   border-radius: 50%;
 }
-.admin-main_page .page-list-total_box .name_page-item {
-}
+
 .admin-main_page .page-list-total_box .name_page-item > p {
   font-size: 1.3rem;
   text-transform: uppercase;
