@@ -27,13 +27,21 @@
             <i class="fas fa-chart-bar"></i> </span>Thương hiệu
     </button>
     <div class="admin-nav__menu-item">
-    <a href="../brand/?listbrand" class="admin-nav__menu-link">Danh sách</a>
+        <a href="../brand/?listbrand" class="admin-nav__menu-link">Danh sách</a>
         <a href="../brand/?add" class="admin-nav__menu-link">Thêm mới</a>
     </div>
 
     <button class="admin-nav__menu-list">
         <span class="admin-nav__menu-icon">
-        <i class="fas fa-clock"></i> </span>Sản phẩm
+            <i class="fas fa-clock"></i> </span>Sản phẩm
+    </button>
+    <div class="admin-nav__menu-item">
+        <a href="../product/?listproduct" class="admin-nav__menu-link">Danh sách</a>
+        <a href="../product/?add" class="admin-nav__menu-link">Thêm mới</a>
+    </div>
+    <button class="admin-nav__menu-list">
+        <span class="admin-nav__menu-icon">
+            <i class="fas fa-clock"></i> </span>Bài viết
     </button>
     <div class="admin-nav__menu-item">
         <a href="../product/?listproduct" class="admin-nav__menu-link">Danh sách</a>
@@ -45,7 +53,7 @@
     </button>
     <div class="admin-nav__menu-item">
 
-        <a href="#" class="admin-nav__menu-link">Danh sách</a>
+        <a href="../users/?listusers" class="admin-nav__menu-link">Danh sách</a>
 
     </div>
     <button class="admin-nav__menu-list">
