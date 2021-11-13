@@ -1,3 +1,7 @@
+<?php require_once "../../dao/admin_product.php" ?>
+<?php require_once "../../dao/admin_review.php" ?>
+<?php require_once "../../dao/admin_news.php" ?>
+<?php require_once "../../dao/admin_users.php" ?>
 <div class="admin-main_page">
     <div class="page-title_box">
         <h4 class="page-title">Trang chủ</h4>
@@ -9,7 +13,10 @@
             </div>
             <div class="name_page-item">
                 <p>Total product</p>
-                <span class="number-total">288</span>
+                <?php $total_product = product_countAll();
+                foreach ($total_product as $total) { ?>
+                    <span class="number-total"><?= $total['soLuong'] ?></span>
+                <?php } ?>
             </div>
         </div>
         <div class="page-item-total">
@@ -18,7 +25,10 @@
             </div>
             <div class="name_page-item">
                 <p>Total review</p>
-                <span class="number-total">78</span>
+                <?php $total_review = review_countAll();
+                foreach ($total_review as $total) { ?>
+                    <span class="number-total"><?= $total['soLuong'] ?></span>
+                <?php } ?>
             </div>
         </div>
         <div class="page-item-total">
@@ -27,7 +37,10 @@
             </div>
             <div class="name_page-item">
                 <p>Total posts</p>
-                <span class="number-total">156</span>
+                <?php $total_news = news_countAll();
+                foreach($total_news as $total) { ?> 
+                <span class="number-total"><?=$total['soLuong']?></span>
+                <?php } ?>
             </div>
         </div>
         <div class="page-item-total">
@@ -36,7 +49,10 @@
             </div>
             <div class="name_page-item">
                 <p>Total users</p>
-                <span class="number-total">12</span>
+                <?php $total_users = users_countAll();
+                foreach($total_users as $total) { ?> 
+                <span class="number-total"><?=$total['soLuong']?></span>
+                <?php } ?>
             </div>
         </div>
     </div>
@@ -56,26 +72,26 @@
             </div>
             <div class="item-top-title">
                 <div class="id-item">
-                    <p>1</p>
+                    1
                 </div>
                 <div class="name-item">
-                    <p>Tên sản phẩm</p>
+                    Tên sản phẩm
                 </div>
                 <div class="img-item">
                     <img src="../../assets/image/dongho_aladin (8).jpeg" alt="" />
                 </div>
                 <div class="price-item">
-                    <p>72,000</p>
+                    72,000
                 </div>
                 <div class="view-item">
-                    <p>32</p>
+                    32
                 </div>
                 <div class="Status-item">
-                    <p>Hiện</p>
+                    Hiện
                 </div>
                 <div class="action-item">
-                    <a href="">Xoá</a>
-                    <a href="./demo/update.html">Sửa</a>
+                    <a style="color: #333;" href="">Xoá</a>
+                    <a style="color: #333;" href="./demo/update.html">Sửa</a>
                 </div>
             </div>
         </div>

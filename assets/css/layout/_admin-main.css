@@ -333,3 +333,118 @@
   padding: 0 0.5rem;
   outline: none;
 }
+/* CSS danh sách user */
+.page-top_product .table-top-user {
+  padding: 0 1.5rem;
+}
+.table-top-user .user-top-title {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: lightslategray;
+  font-weight: 600;
+  padding: 1rem 0;
+
+  font-size: 1.6rem;
+}
+.table-top-user .user-item-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+  margin-bottom: 0.5rem;
+}
+.user-top-title > .id-title,
+.user-item-title > .id-item {
+  width: 5%;
+}
+.user-top-title > .account-title,
+.user-item-title > .account-item {
+  width: 10%;
+  text-transform: capitalize;
+}
+.user-item-title > .account-item {
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+.user-top-title > .pass-title,
+.user-item-title > .pass-item {
+  width: 10%;
+  text-transform: capitalize;
+}
+.user-item-title > .pass-item {
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.user-top-title > .first-title,
+.user-item-title > .first-item {
+  width: 10%;
+  text-transform: capitalize;
+}
+.user-top-title > .last-title,
+.user-item-title > .last-item {
+  width: 10%;
+  text-transform: capitalize;
+}
+.user-top-title > .email-title,
+.user-item-title > .email-item {
+  width: 15%;
+}
+.user-top-title > .email-title {
+  text-transform: capitalize;
+}
+.user-item-title > .email-item {
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.user-top-title > .role-title,
+.user-item-title > .role-item {
+  width: 15%;
+  text-transform: capitalize;
+}
+.user-top-title > .activated-title,
+.user-item-title > .activated-item {
+  width: 10%;
+  text-transform: capitalize;
+}
+.user-item-title > .activated-item-spam {
+  width: 10%;
+  text-transform: capitalize;
+}
+.user-top-title > .action-title,
+.user-item-title > .action-item {
+  width: 15%;
+  text-transform: capitalize;
+}
+/* CSS active cho danh sách tài khoản */
+.user-item-title > .activated-item {
+  background-color: lightgreen;
+  border-radius: 10px;
+  padding: 0.5rem;
+  color: rgb(255, 255, 255);
+}
+.user-item-title > .activated-item-spam {
+  background-color: rgb(255, 83, 83);
+  border-radius: 10px;
+  padding: 0.5rem;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+}
