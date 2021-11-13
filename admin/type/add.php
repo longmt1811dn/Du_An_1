@@ -15,6 +15,16 @@
             <label for="">Thứ tự</label>
             <input type="text" name="location" placeholder="Thứ tự" />
         </div>
+        <div class="form-group">
+            <label for="id_object">Chọn object:</label>
+            <?php $optionOb = type_getNameObject_option(); ?>
+            <select name="id_object" id="id_object">
+                <?php foreach ($optionOb as $option) { ?>
+                    <option value="<?= $option['id_object'] ?>"><?= $option['name_object'] ?></option>
+                <?php } ?>
+            </select>
+
+        </div>
         <div class="check-box">
             <label for="">Trạng thái:</label>
             <div class="check">
@@ -25,16 +35,6 @@
                 <input type="radio" name="hide" value="1" checked />
                 <span>Hiện</span>
             </div>
-        </div>
-        <div class="form-group">
-            <span>Chọn object:</span>
-            <?php $optionOb = type_getNameObject_option(); ?>
-            <select name="id_object" id="">
-                <?php foreach ($optionOb as $option) { ?>
-                    <option value="<?= $option['id_object'] ?>"><?= $option['name_object'] ?></option>
-                <?php } ?>
-            </select>
-
         </div>
         <div class="button-submit">
             <input type="submit" name="addType" value="Thêm mới"></input>
