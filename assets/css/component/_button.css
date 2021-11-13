@@ -52,49 +52,48 @@
   background: var(--bg-lightgray03);
 }
 
-<<<<<<< HEAD
-.btn-sl{  
-    background: rgba(255,255,255,.2);
-    border-bottom: 1px solid #cca471;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+.btn-sl {
+  background: rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid #cca471;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 
-    color: #fff;
-    text-transform: uppercase;
+  color: #fff;
+  text-transform: uppercase;
 
-    font-weight:40rem;
-    font-size:1.8rem;
-    color: var(--color-white); 
+  font-weight: 40rem;
+  font-size: 1.8rem;
+  color: var(--color-white);
 }
 
-.btn-sl2{
-    background: rgba(0, 0, 0, 0.2);
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size:1.8rem;
-    font-weight:40rem;
-    padding:1.7rem 4.2rem;
+.btn-sl2 {
+  background: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 40rem;
+  padding: 1.7rem 4.2rem;
 
-    border-bottom: 1px solid #cca471;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+  border-bottom: 1px solid #cca471;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
-.btn-sl2:hover{
-    background: rgba(204, 164, 113, 0.3);
-    color: #ffffff;
+.btn-sl2:hover {
+  background: rgba(204, 164, 113, 0.3);
+  color: #ffffff;
 }
 
-.btn-sl:hover{
-    background: rgba(204, 164, 113, 0.3);
-    color: #ffffff;
+.btn-sl:hover {
+  background: rgba(204, 164, 113, 0.3);
+  color: #ffffff;
 }
 
 .btn-cart {
   font-family: var(--font-main);
-  background: rgba(255,255,255,.2);
+  background: rgba(255, 255, 255, 0.2);
   text-transform: uppercase;
   font-size: 1.8rem;
   color: var(--color-white);
@@ -106,26 +105,25 @@
   background: rgba(255, 255, 255, 0.3);
 }
 
-.btn-sn{
-    background: rgba(204, 164, 113, 0.3);
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size:1.8rem;
-    font-weight:40rem;
-    padding:1rem 2.4rem;
+.btn-sn {
+  background: rgba(204, 164, 113, 0.3);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 40rem;
+  padding: 1rem 2.4rem;
 
-    border-bottom: 1px solid #cca471;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+  border-bottom: 1px solid #cca471;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
-.btn-sn:hover{
-    background: rgba(0, 0, 0, 0.2);
-    color: #ffffff;
+.btn-sn:hover {
+  background: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
 }
 
-=======
 .text__gray {
   font-family: var(--font-main);
   color: var(--color-gray);
@@ -133,4 +131,3 @@
   line-height: var(--line-height30);
   font-weight: var(--font-weight400);
 }
->>>>>>> ff2e0aecf159392ac19f9716b364e76e6ffcd25c
