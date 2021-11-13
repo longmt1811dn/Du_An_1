@@ -17,22 +17,22 @@
                     <?php foreach ($listprod as $list) { ?>
                         <div class="item-top-title">
                             <div class="id-item">
-                                <p><?= $list['id_product'] ?></p>
+                               <?= $list['id_product'] ?>
                             </div>
                             <div class="name-item">
-                                <p><?= $list['name_product'] ?></p>
+                               <?= $list['name_product'] ?>
                             </div>
                             <div class="img-item">
                                 <img src="../../../<?= $list['image'] ?>" alt="" />
                             </div>
                             <div class="price-item">
-                                <p><?= number_format($list['price']) ?></p>
+                               <?= number_format($list['price']) ?>
                             </div>
                             <div class="view-item">
-                                <p><?= $list['view'] ?></p>
+                               <?= $list['view'] ?>
                             </div>
                             <div class="Status-item">
-                                <p><?= ($list['hide'] == 1) ? "Hiện" : "Ẩn"  ?></p>
+                               <?= ($list['hide'] == 1) ? "Hiện" : "Ẩn"  ?>
                             </div>
                             <div class="action-item">
                                 <a class="admin__btn-del" onclick="return confirm('Bạn có muốn xoá không?')" href="?delete&id_product=<?=$list['id_product']?>">Xoá</a>

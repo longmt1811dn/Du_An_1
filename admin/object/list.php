@@ -18,16 +18,16 @@
             <?php foreach ($listOb as $list) { ?>
                 <div class="object-item-title">
                     <div class="id-item">
-                        <p><?= $list['id_object'] ?></p>
+                       <?= $list['id_object'] ?>
                     </div>
                     <div class="name-item">
-                        <p><?= $list['name_object'] ?></p>
+                      <?= $list['name_object'] ?>
                     </div>
                     <div class="location-item">
-                        <p><?= $list['location'] ?></p>
+                       <?= $list['location'] ?>
                     </div>
                     <div class="Status-item">
-                        <p><?= ($list['hide'] == 1) ? "Hiện" : "Ẩn" ?></p>
+                       <?= ($list['hide'] == 1) ? "Hiện" : "Ẩn" ?>
                     </div>
                     <div class="action-item">
                         <a class="admin__btn-del" onclick="return confirm('Bạn có muốn xoá không?')" href="?delete&id_object=<?=$list['id_object']?>">Xoá</a>

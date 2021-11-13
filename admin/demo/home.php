@@ -56,26 +56,26 @@
             </div>
             <div class="item-top-title">
                 <div class="id-item">
-                    <p>1</p>
+                    1
                 </div>
                 <div class="name-item">
-                    <p>Tên sản phẩm</p>
+                    Tên sản phẩm
                 </div>
                 <div class="img-item">
                     <img src="../../assets/image/dongho_aladin (8).jpeg" alt="" />
                 </div>
                 <div class="price-item">
-                    <p>72,000</p>
+                    72,000
                 </div>
                 <div class="view-item">
-                    <p>32</p>
+                    32
                 </div>
                 <div class="Status-item">
-                    <p>Hiện</p>
+                    Hiện
                 </div>
                 <div class="action-item">
-                    <a href="">Xoá</a>
-                    <a href="./demo/update.html">Sửa</a>
+                    <a style="color: #333;" href="">Xoá</a>
+                    <a style="color: #333;" href="./demo/update.html">Sửa</a>
                 </div>
             </div>
         </div>
