@@ -1,8 +1,26 @@
 .admin-footer {
-  height: 20vh;
+  height: 100px;
   margin-left: 26.5rem;
 
-  background-color: #ffffff;
+  background-color: #f9f9f9;
 
-  font-size: 2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 100px;
+  color: #474d62;
+  font-weight: bold;
+}
+
+.admin-footer a {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 100px;
+  color: #474d62;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.admin-footer__icon {
+  color: #474d62;
+  font-size: 1.6rem;
 }

@@ -7,7 +7,7 @@
 <div class="admin-nav__menu">
     <button class="admin-nav__menu-list">
         <span class="admin-nav__menu-icon">
-            <i class="fab fa-app-store"></i> </span>Đối tượng
+        <i class="far fa-user"></i> </span>Đối tượng
     </button>
     <div class="admin-nav__menu-item">
         <a href="../object/?listob" class="admin-nav__menu-link">Danh sách</a>
@@ -15,7 +15,7 @@
     </div>
 
     <button class="admin-nav__menu-list">
-        <span class="admin-nav__menu-icon"> <i class="fab fa-btc"></i> </span>Kiểu dáng
+        <span class="admin-nav__menu-icon"> <i class="fas fa-border-style"></i> </span>Kiểu dáng
     </button>
     <div class="admin-nav__menu-item">
         <a href="../type/?listtype" class="admin-nav__menu-link">Danh sách</a>
@@ -24,7 +24,7 @@
 
     <button class="admin-nav__menu-list">
         <span class="admin-nav__menu-icon">
-            <i class="fas fa-chart-bar"></i> </span>Thương hiệu
+        <i class="fab fa-apple"></i> </span>Thương hiệu
     </button>
     <div class="admin-nav__menu-item">
         <a href="../brand/?listbrand" class="admin-nav__menu-link">Danh sách</a>
@@ -41,7 +41,7 @@
     </div>
     <button class="admin-nav__menu-list">
         <span class="admin-nav__menu-icon">
-            <i class="fas fa-clock"></i> </span>Bài viết
+        <i class="fas fa-newspaper"></i> </span>Bài viết
     </button>
     <div class="admin-nav__menu-item">
         <a href="../product/?listproduct" class="admin-nav__menu-link">Danh sách</a>
@@ -49,7 +49,7 @@
     </div>
     <button class="admin-nav__menu-list">
         <span class="admin-nav__menu-icon">
-            <i class="fab fa-cloudversify"></i> </span>Khách hàng
+        <i class="fas fa-users"></i> </span>Tài khoản
     </button>
     <div class="admin-nav__menu-item">
 
@@ -58,14 +58,14 @@
     </div>
     <button class="admin-nav__menu-list">
         <span class="admin-nav__menu-icon">
-            <i class="fab fa-app-store"></i> </span>Thống kê đánh giá
+        <i class="fas fa-star-half-alt"></i> </span>Thống kê đánh giá
     </button>
     <div class="admin-nav__menu-item">
         <a href="#" class="admin-nav__menu-link">Danh sách</a>
     </div>
 
     <button class="admin-nav__menu-list">
-        <span class="admin-nav__menu-icon"> <i class="fab fa-btc"></i> </span>Thống kê mặt hàng
+        <span class="admin-nav__menu-icon"> <i class="fas fa-stream"></i> </span>Thống kê mặt hàng
     </button>
     <div class="admin-nav__menu-item">
         <a href="#" class="admin-nav__menu-link">Danh sách</a>

@@ -1,1 +1,1 @@
-<footer class="admin-footer">FOOTER</footer>
+<footer class="admin-footer">2021 © Influence - Designed by <i class="far fa-heart admin-footer__icon"></i> <a href="../../index.html">TimeZEE</a></footer>

@@ -58,7 +58,7 @@
     </div>
     <div class="page-top_product">
         <div class="rows-name-top">
-            <h3>top 5 sản phẩm bán chạy nhất hiện nay</h3>
+            <h3>top 5 sản phẩm xem nhiều nhất hiện nay</h3>
         </div>
         <div class="table-top-product">
             <div class="top-title">

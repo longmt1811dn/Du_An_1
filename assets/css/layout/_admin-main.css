@@ -2,7 +2,7 @@
   font-family: var(--admin-font-family);
 }
 .admin-main {
-  min-height: 100vh;
+  min-height: 75vh;
   margin-left: 26.5rem;
 
   background-color: #f9f9f9;
