@@ -148,3 +148,8 @@ function product_countAll()
     $sql = "SELECT COUNT(*) as 'soLuong' FROM product";
     return pdo_query($sql);
 }
+// lấy TOP 5 sản phẩm hiển thị ra trang chủ
+function product_top(){
+    $sql = "SELECT * FROM product WHERE view > 0 LIMIT 0,5";
+    return pdo_query($sql);
+}

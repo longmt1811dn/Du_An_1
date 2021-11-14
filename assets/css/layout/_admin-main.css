@@ -697,3 +697,117 @@
 .news-item-top-title > .image_new-item > img {
   height: 75px;
 }
+/* CSS danh sách mặt hàng */
+.page-top_items {
+}
+.page-top_items .table-top-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+.table-top-items > .items-top-title {
+  display: flex;
+  width: 100%;
+  background-color: lightslategray;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+.items-top-title > .id-top-title,
+.item-top-title > .id-item {
+  width: 10%;
+}
+.items-top-title > .name-top-title,
+.item-top-title > .name-item {
+  width: 30%;
+}
+.items-top-title > .total-top-title,
+.item-top-title > .total-item {
+  width: 10%;
+}
+.items-top-title > .price-top-title,
+.item-top-title > .price-item {
+  width: 20%;
+}
+.table-top-items > .item-top-title {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+}
+/* CSS danh sách top 5 sản phẩm được xem nhiều nhất */
+.table-top-product {
+}
+.table-top-product .product-top-title {
+  display: flex;
+  background: lightslategrey;
+  padding: 1rem 0;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.product-top-title > .id-top-title,
+.product-item-top-title > .id-item {
+  width: 10%;
+}
+.product-top-title > .name-top-title,
+.product-item-top-title > .name-item {
+  width: 30%;
+}
+.product-top-title > .img-top-title,
+.product-item-top-title > .img-item {
+  width: 15%;
+}
+.product-item-top-title > .img-item > img {
+  height: 100px;
+}
+.product-top-title > .price-top-title,
+.product-item-top-title > .price-item {
+  width: 15%;
+}
+.product-top-title > .view-top-title,
+.product-item-top-title > .view-item {
+  width: 15%;
+}
+.product-top-title > .status-top-title,
+.product-item-top-title > .Status-item {
+  width: 15%;
+}
+.product-item-top-title > .Status-item-hide {
+  width: 15%;
+}
+.product-item-top-title > .Status-item-hide > span {
+  color: #000;
+  font-size: 1.4rem;
+  background: rgb(243, 43, 43);
+  padding: 1rem;
+  border-radius: 20px;
+}
+.product-item-top-title > .Status-item > span {
+  color: #000;
+  font-size: 1.4rem;
+  background: lightgreen;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.table-top-product > .product-item-top-title {
+  display: flex;
+  background: #fff;
+  padding: 1rem 0;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+}
