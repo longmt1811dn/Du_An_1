@@ -517,3 +517,185 @@
   color: rgb(255, 255, 255);
   opacity: 0.8;
 }
+/* CSS nút check ẩn hiện quyền role cho users */
+.form_add .form-group-check {
+  display: flex;
+  width: 95%;
+  justify-content: flex-start;
+  margin-bottom: 0.5rem;
+  height: 40px;
+  align-items: center;
+}
+.form-group-check > label {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-right: 0.5rem;
+  width: 120px;
+}
+.form-group-check > .form-checkbox {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  width: 160px;
+}
+.form-group-check > label > span {
+  color: red;
+}
+.form-group-check > .form-checkbox > label {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+.form-checkbox > input[type="radio"] {
+  width: 50px;
+  height: 25px;
+  background-color: #c6c6c6;
+  outline: none;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  transition: all 0.5s linear;
+  position: relative;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.form-checkbox > input:checked[type="radio"] {
+  background-color: var(--admin-bg-nav);
+}
+
+.form-checkbox > input[type="radio"]:before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: all 0.5s linear;
+  transform: scale(1.1);
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.form-checkbox > input:checked[type="radio"]:before {
+  left: 30px;
+}
+/* CSS form thêm mới, sửa bài viết */
+.form_add_news {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 1.5rem;
+}
+.form_add_news .form-group-new {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  margin-bottom: 0.5rem;
+}
+.form-group-new > label {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: 0.3rem;
+}
+.form-group-new > label > span {
+  color: red;
+}
+.form-group-new > input {
+  height: 43px;
+  width: 90%;
+  border: 1px solid rgb(207, 204, 204);
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  outline: none;
+}
+.form-group-new input[type="file"] {
+  padding-top: 1rem;
+}
+.form_add_news .form-group-check {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  height: 40px;
+  align-items: center;
+}
+.form_add_news .form-group-check > .form-checkbox {
+}
+.form-group-new-content {
+  width: 95%;
+  margin-bottom: 1rem;
+}
+.form-group-new-content > label {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+/* CSS hover input form thêm mới bài viết */
+.form-group-new > input:focus {
+  border: 2px solid lightseagreen;
+}
+/* CSS danh sách bài viết */
+.page-top_news {
+  padding: 0 1.5rem;
+}
+.page-top_news .table-top-news {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.table-top-news .news-top-title {
+  display: flex;
+  width: 100%;
+  background: lightslategray;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+.news-top-title > .id-top-title,
+.news-item-top-title > .id-item {
+  width: 5%;
+}
+.news-top-title > .name-top-title,
+.news-item-top-title > .name-item {
+  width: 15%;
+}
+.news-top-title > .date-top-title,
+.news-item-top-title > .date-item {
+  width: 10%;
+}
+.news-top-title > .status-top-title,
+.news-item-top-title > .status-item {
+  width: 10%;
+}
+.news-top-title > .user-top-title,
+.news-item-top-title > .user-item {
+  width: 15%;
+}
+.news-top-title > .highlights-top-title,
+.news-item-top-title > .highlights-item {
+  width: 15%;
+}
+.news-top-title > .image_new-top-title,
+.news-item-top-title > .image_new-item {
+  width: 15%;
+}
+.news-top-title > .action-top-title,
+.news-item-top-title > .action-item {
+  width: 15%;
+}
+.table-top-news > .news-item-top-title {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+.news-item-top-title > .image_new-item > img {
+  height: 75px;
+}

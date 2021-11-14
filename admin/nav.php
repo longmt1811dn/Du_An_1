@@ -44,8 +44,8 @@
         <i class="fas fa-newspaper"></i> </span>Bài viết
     </button>
     <div class="admin-nav__menu-item">
-        <a href="../product/?listproduct" class="admin-nav__menu-link">Danh sách</a>
-        <a href="../product/?add" class="admin-nav__menu-link">Thêm mới</a>
+        <a href="../news/?listnew" class="admin-nav__menu-link">Danh sách</a>
+        <a href="../news/?add" class="admin-nav__menu-link">Thêm mới</a>
     </div>
     <button class="admin-nav__menu-list">
         <span class="admin-nav__menu-icon">

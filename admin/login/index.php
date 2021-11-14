@@ -51,6 +51,7 @@ if ($act == "") {
         $_SESSION['login_id_admin'] = $row_user['id_user'];
         $_SESSION['login_admin'] = $row_user['account'];
         $_SESSION['login_group'] = $row_user['role'];
+        
         header("location: ../demo");
     }
     require_once './login_admin.php';

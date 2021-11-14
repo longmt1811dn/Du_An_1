@@ -14,8 +14,10 @@ if (exist_param("listusers")) {
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
     $email = $_POST['email'];
+    $activated = $_POST['activated'];
+    $role = $_POST['role'];
     $id_user = $_POST['id_user'];
-    users_update($account, $password, $first_name, $last_name, $email, $id_user);
+    users_update($account, $password, $first_name, $last_name, $email, $activated, $role, $id_user);
     $listUsers = users_listall();
     $VIEW_NAME = "list.php";
 } else if (exist_param("delete")) {

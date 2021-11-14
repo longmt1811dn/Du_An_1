@@ -26,9 +26,9 @@ function users_loaddata($id_user){
 }
 
 // cập nhật user
-function  users_update($account, $password, $first_name, $last_name, $email, $id_user){
-    $sql = "UPDATE users SET account = ?, pass = ?, first_name=?, last_name=?, email=? WHERE id_user = ?";
-    pdo_execute($sql, $account, $password, $first_name, $last_name, $email, $id_user);
+function  users_update($account, $password, $first_name, $last_name, $email, $activated, $role, $id_user){
+    $sql = "UPDATE users SET account = ?, pass = ?, first_name=?, last_name=?, email=?, activated = ?, role = ? WHERE id_user = ?";
+    pdo_execute($sql, $account, $password, $first_name, $last_name, $email, $activated, $role, $id_user);
 }
 
 // xoá user
