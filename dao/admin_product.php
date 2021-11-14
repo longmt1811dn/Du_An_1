@@ -17,22 +17,6 @@ function product_listall()
     return pdo_query($sql);
 }
 
-// lấy tên type trong product
-function product_getNameType($id_type)
-{
-    $sql = "SELECT name_type FROM type WHERE id_type = ?";
-    $nameType = pdo_query_one($sql, $id_type);
-    return $nameType['name_type'];
-}
-
-// lấy tên brand trong product
-function product_getNameBrand($id_brand)
-{
-    $sql = "SELECT name_brand FROM brand WHERE id_brand = ?";
-    $nameBrand = pdo_query_one($sql, $id_brand);
-    return $nameBrand['name_brand'];
-}
-
 // 
 function product_getAllTypeBrand()
 {

@@ -1,6 +1,8 @@
 <?php
 require_once "../../global.php";
 require_once "../../dao/admin_product.php";
+require_once '../../dao/admin_brand.php';
+require_once '../../dao/admin_type.php';
 
 if (exist_param("listproduct")) {
     $listOb = product_listall();

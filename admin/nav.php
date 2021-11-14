@@ -30,6 +30,15 @@
         <a href="../brand/?listbrand" class="admin-nav__menu-link">Danh sách</a>
         <a href="../brand/?add" class="admin-nav__menu-link">Thêm mới</a>
     </div>
+    
+    <button class="admin-nav__menu-list">
+        <span class="admin-nav__menu-icon">
+        <i class="fas fa-archive"></i> </span>Kiểu dáng - Thương hiệu
+    </button>
+    <div class="admin-nav__menu-item">
+        <a href="../type_brand/?list" class="admin-nav__menu-link">Danh sách</a>
+        <a href="../type_brand/?add" class="admin-nav__menu-link">Thêm mới</a>
+    </div>
 
     <button class="admin-nav__menu-list">
         <span class="admin-nav__menu-icon">
