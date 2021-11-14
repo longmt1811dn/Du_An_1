@@ -50,7 +50,7 @@ footer .footer__contact .container li ~ li {
 footer .footer__contact .container a,
 i,
 p {
-  font-size: 1.8rem;
+  font-size: var(--font-size18);
   color: #aaaaaa;
 }
 
@@ -86,7 +86,7 @@ footer .footer__contact .contact-us p + p {
   }
 
   footer .footer__contact h4 {
-    font-size: 1.8rem;
+    font-size: var(--font-size18);
     text-align: center;
   }
 
@@ -157,7 +157,7 @@ footer .connection__left .icons ul {
 }
 
 footer .connection__left .icons ul li span {
-  font-size: 1.8rem;
+  font-size: var(--font-size18);
   color: #aaaaaa;
 }
 
