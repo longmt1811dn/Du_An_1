@@ -82,8 +82,8 @@
 
   font-size: 1.6rem;
 }
-.top-title .id-top-title,
-.item-top-title .id-item {
+.top-title .idz-top-title,
+.item-top-title > .idz-item {
   width: 5%;
 }
 .top-title .name-top-title,
@@ -94,8 +94,8 @@
 .item-top-title .img-item {
   width: 15%;
 }
-.top-title .price-top-title,
-.item-top-title .price-item {
+.top-title .pricez-top-title,
+.item-top-title .pricez-item {
   width: 15%;
 }
 .top-title .view-top-title,
