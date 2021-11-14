@@ -1,61 +1,47 @@
 <?php
-require_once "pdo.php";
-
-// lấy danh sách thương hiệu brand
-function brand_listall(){
-    $pageSize = 9;
-    $startRow = 0;
-    $pageNum = 1;
+    function type_brand_listall(){
+        $pageSize = 9;
+        $startRow = 0;
+        $pageNum = 1;
     
-    if(isset($_GET['pagenum']) == true) $pageNum = $_GET['pagenum']; 
+        if(isset($_GET['pagenum']) == true) $pageNum = $_GET['pagenum']; 
     
-    $startRow = ($pageNum - 1) * $pageSize;
+        $startRow = ($pageNum - 1) * $pageSize;
     
-    $sql = "SELECT * FROM brand  LIMIT $startRow,$pageSize";
-    return pdo_query($sql);
-}
-
-// thêm mới brand
-function brand_add($name_brand, $hide, $location){
-    $sql = "INSERT INTO brand(name_brand, hide, location) VALUES(?,?,?)";
-    pdo_execute($sql, $name_brand, $hide, $location);
-}
-
-// xoá brand
-function brand_delete($id_brand){
-    $sql = "DELETE FROM brand WHERE id_brand=?";
-    pdo_execute($sql, $id_brand);
-}
-
-// load dữ liệu lên khi click vào sửa
-function brand_loaddata($id_brand){
-    $sql = "SELECT * FROM brand WHERE id_brand=?";
-    return pdo_query_one($sql, $id_brand);
-}
-
-// cập nhật brand
-function brand_update($name_brand, $hide, $location, $id_brand){
-    $sql = "UPDATE brand SET name_brand=?, hide=?, location = ? WHERE id_brand=?";
-    pdo_execute($sql, $name_brand, $hide, $location, $id_brand);
-}
-
-// lấy tên brand
-function product_getNameBrand($id_brand)
-{
-    $sql = "SELECT name_brand FROM brand WHERE id_brand = ?";
-    $nameBrand = pdo_query_one($sql, $id_brand);
-    return $nameBrand['name_brand'];
-}
-
-//Lấy tất cả type không phân trang
-function brand_selectall(){
-    $sql = "SELECT * FROM brand";
+        $sql = "SELECT * FROM type_brand LIMIT $startRow,$pageSize";
+        
+        return pdo_query($sql);
+    }
     
-    return pdo_query($sql);
-}
+    // Thêm type brand
+    function type_brand_add($idType, $idBrand, $hide){
+        $sql = "INSERT INTO type_brand (`id_type`, `id_brand`, `hide`) VALUES (?, ?, ?)";
+        
+        pdo_execute($sql, $idType, $idBrand, $hide);
+    }
+    
+    // load dữ liệu lên khi click vào nút sửa
+    function type_brand_loaddata($id_type_brand){
+        $sql = "SELECT * FROM type_brand WHERE id_type_brand = ?";
+        
+        return pdo_query_one($sql, $id_type_brand);
+    }
+    
+    // cập nhật lại type
+    function type_brand_update($idType, $idBrand, $hide, $id_type_brand){
+        $sql = "UPDATE type_brand SET id_type = ?, id_brand = ?, hide = ? WHERE id_type_brand = ?";
+        pdo_execute($sql, $idType, $idBrand, $hide, $id_type_brand);
+    }
+    
+    // Xoá type brand
+    function type_brand_delete($id_type_brand){
+        $sql = "DELETE FROM type_brand WHERE id_type_brand = ?";
+        
+        pdo_execute($sql, $id_type_brand);
+    }
 
-//Phân trang
-function brand_pagination(){
+    //Phân trang
+    function type_brand_pagination(){
         $pageSize = 9;
         $pageNum = 1;
     
@@ -63,7 +49,7 @@ function brand_pagination(){
         $offSet = 2;
         
         if(isset($_GET['pagenum']) == true) $pageNum = $_GET['pagenum']; 
-        $sql = "SELECT count(*) FROM brand";
+        $sql = "SELECT count(*) FROM type_brand";
         $kq = $conn->query($sql);
         $r = $kq->fetch();
         

@@ -37,6 +37,7 @@
 }
 
 .admin-nav__menu-list {
+  display: flex;
   padding: 1.3rem 2.4rem;
   width: 100%;
 
@@ -47,6 +48,7 @@
   font-size: 1.7rem;
   color: var(--admin-color-nav-text);
   cursor: pointer;
+  line-height: 25px;
 
   outline: none;
 
@@ -97,7 +99,7 @@
 
 .admin-nav__menu-list:after {
   float: right;
-  margin-left: 5px;
+  margin-left: auto;
 
   content: "\002B";
   color: var(--admin-color-nav-text);

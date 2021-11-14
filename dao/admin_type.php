@@ -52,6 +52,21 @@ function type_update($name_type, $hide, $location, $id_object, $id_type){
     pdo_execute($sql, $name_type, $hide, $location, $id_object, $id_type);
 }
 
+// lấy tên type
+function product_getNameType($id_type)
+{
+    $sql = "SELECT name_type FROM type WHERE id_type = ?";
+    $nameType = pdo_query_one($sql, $id_type);
+    return $nameType['name_type'];
+}
+
+//Lấy tất cả type không phân trang
+function type_selectall(){
+    $sql = "SELECT * FROM type";
+    
+    return pdo_query($sql);
+}
+
 //Phân trang
 function type_pagination(){
         $pageSize = 9;
