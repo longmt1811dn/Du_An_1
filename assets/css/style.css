@@ -20,6 +20,7 @@
 @import url(./page/_about.css);
 @import url(./page/_collections.css);
 @import url(./page/_login.css);
+@import url(./page/_all__collection.css);
 
 /* component */
 @import url(./component/_button.css);
