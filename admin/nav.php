@@ -70,7 +70,7 @@
             <i class="fas fa-star-half-alt"></i> </span>Thống kê đánh giá
     </button>
     <div class="admin-nav__menu-item">
-        <a href="#" class="admin-nav__menu-link">Danh sách</a>
+        <a href="../review/?list" class="admin-nav__menu-link">Danh sách</a>
     </div>
 
     <button class="admin-nav__menu-list">

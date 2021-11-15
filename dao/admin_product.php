@@ -70,6 +70,14 @@ function product_updateA($name_product, $price, $describe, $content, $size, $tar
     pdo_execute($sql, $name_product, $price, $targer_file, $describe, $content, $size, $material, $highlights, $promotion, $hide,  $id_type_brand, $id_product);
 }
 
+//Lấy name sản phẩm
+function product_name($idProduct){
+    $sql = "SELECT * FROM product WHERE id_product = ?";
+    $row = pdo_query_one($sql, $idProduct);
+    
+    return $row['name_product'];
+}
+
 // Phân trang
 function object_pagination()
 {

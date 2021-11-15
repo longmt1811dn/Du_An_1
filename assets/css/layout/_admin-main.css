@@ -428,6 +428,7 @@
   box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
   margin-bottom: 0.5rem;
 }
+
 .user-top-title > .id-title,
 .user-item-title > .id-item {
   width: 5%;
@@ -719,6 +720,11 @@
 .item-top-title > .id-item {
   width: 10%;
 }
+
+.id-type-brand-title {
+  width: 10%;
+}
+
 .items-top-title > .name-top-title,
 .item-top-title > .name-item {
   width: 30%;
