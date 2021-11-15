@@ -20,4 +20,11 @@ function review_list_id_product($id_product){
     
     return pdo_query($sql, $id_product);
 }
+
+//Xoa review
+// xoá user
+function review_delete($idReview){
+    $sql = "DELETE FROM review WHERE id_review = ?";
+    pdo_execute($sql, $idReview);
+}
 ?>

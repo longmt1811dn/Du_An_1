@@ -36,3 +36,11 @@ function users_delete($id_user){
     $sql = "DELETE FROM users WHERE id_user = ?";
     pdo_execute($sql, $id_user);
 }
+
+//Lay name user
+function users_name($idUsers){
+    $sql = "SELECT * FROM users WHERE id_user = ?";
+    $row = pdo_query_one($sql, $idUsers);
+    
+    return $row['last_name'] . ' ' . $row['first_name'];
+}
