@@ -24,7 +24,7 @@
                     <br>
                     <input type="submit" class="p_admin__input-btn" name="btn" value="Đăng nhập">
                     <br>
-                    <a href="../../index.html">Về lại trang chủ</a>
+                    <a href="../../index.php">Về lại trang chủ</a>
                 </form>
             </div>
         </div>
