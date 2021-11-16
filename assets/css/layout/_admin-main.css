@@ -36,6 +36,35 @@
   width: 24.5%;
   justify-content: space-around;
 }
+.admin-main_page .page-list-total_box .page-item-total:first-child {
+  background: linear-gradient(
+    0deg,
+    rgb(217, 175, 217) 0%,
+    rgb(151, 217, 225) 100%
+  );
+}
+.admin-main_page .page-list-total_box .page-item-total:nth-child(2) {
+  background: linear-gradient(
+    62deg,
+    rgb(251, 171, 126) 0%,
+    rgb(247, 206, 104) 100%
+  );
+}
+.admin-main_page .page-list-total_box .page-item-total:nth-child(3) {
+  background: linear-gradient(
+    45deg,
+    rgb(133, 255, 189) 0%,
+    rgb(255, 251, 125) 100%
+  );
+}
+.admin-main_page .page-list-total_box .page-item-total:nth-child(4) {
+  background: linear-gradient(
+    135deg,
+    rgb(139, 198, 236) 0%,
+    rgb(149, 153, 226) 100%
+  );
+}
+
 .admin-main_page .page-list-total_box .page-item-total .img_page-item {
   width: 40%;
   display: flex;
@@ -43,14 +72,14 @@
 }
 .admin-main_page .page-list-total_box .page-item-total .img_page-item img {
   height: 85px;
-  border: 2px dashed #98a6ad;
+  border: 2px dashed #909497;
   border-radius: 50%;
 }
 
 .admin-main_page .page-list-total_box .name_page-item > p {
   font-size: 1.3rem;
   text-transform: uppercase;
-  color: rgb(206, 198, 198);
+  color: #000;
   font-weight: 550;
 }
 .admin-main_page .page-list-total_box .name_page-item > .number-total {
@@ -76,10 +105,10 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  background-color: lightslategray;
+  background-color: #0f1a34;
   font-weight: 600;
   padding: 1rem 0;
-
+  color: #fff;
   font-size: 1.6rem;
 }
 .top-title .idz-top-title,
@@ -236,7 +265,8 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  background-color: lightslategray;
+  background-color: #0f1a34;
+  color: #fff;
   font-weight: 600;
   padding: 1rem 0;
 
@@ -287,7 +317,8 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  background-color: lightslategray;
+  background-color: #0f1a34;
+  color: #fff;
   font-weight: 600;
   padding: 1rem 0;
 
@@ -410,7 +441,8 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  background-color: lightslategray;
+  background-color: #0f1a34;
+  color: #fff;
   font-weight: 600;
   padding: 1rem 0;
 
@@ -557,6 +589,7 @@
   transition: all 0.5s linear;
   position: relative;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .form-checkbox > input:checked[type="radio"] {
@@ -645,7 +678,8 @@
 .table-top-news .news-top-title {
   display: flex;
   width: 100%;
-  background: lightslategray;
+  background-color: #0f1a34;
+  color: #fff;
   text-align: center;
   font-weight: 600;
   font-size: 1.6rem;
@@ -710,7 +744,8 @@
 .table-top-items > .items-top-title {
   display: flex;
   width: 100%;
-  background-color: lightslategray;
+  background-color: #0f1a34;
+  color: #fff;
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
@@ -753,7 +788,8 @@
 }
 .table-top-product .product-top-title {
   display: flex;
-  background: lightslategrey;
+  background-color: #0f1a34;
+  color: #fff;
   padding: 1rem 0;
   align-items: center;
   width: 100%;
