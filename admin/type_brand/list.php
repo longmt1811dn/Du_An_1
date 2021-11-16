@@ -6,10 +6,10 @@
                 <div class="table-top-product">
                     <div class="top-title">
                         <div class="id-top-title id-type-brand-title"><span>#</span></div>
-                        <div class="name-top-title"><span>Name type</span></div>
-                        <div class="name-top-title"><span>Name brand</span></div>
-                        <div class="status-top-title"><span>Status</span></div>
-                        <div class="action-top-title">Action</div>
+                        <div class="name-top-title"><span>Tên loại</span></div>
+                        <div class="name-top-title"><span>Tên thương hiệu</span></div>
+                        <div class="status-top-title"><span>Trạng thái</span></div>
+                        <div class="action-top-title">Hành động</div>
                     </div>
 
             <?php foreach ($listTypeBrand as $list) { ?>

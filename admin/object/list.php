@@ -7,10 +7,10 @@
         <div class="table-top-object">
             <div class="object-top-title">
                 <div class="id-title"><span>#</span></div>
-                <div class="name-title"><span>Name Object</span></div>
-                <div class="location-title"><span>Location</span></div>
-                <div class="status-title"><span>Status</span></div>
-                <div class="action-title"><span>Action</span></div>
+                <div class="name-title"><span>Dối tượng người sử dụng</span></div>
+                <div class="location-title"><span>Vị trí hiện</span></div>
+                <div class="status-title"><span>Tạng thái</span></div>
+                <div class="action-title"><span>Hành động</span></div>
             </div>
 
 

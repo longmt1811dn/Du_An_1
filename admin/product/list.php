@@ -6,12 +6,12 @@
         <div class="table-top-product">
             <div class="top-title">
                 <div class="idz-top-title"><span>#</span></div>
-                <div class="name-top-title"><span>Name product</span></div>
-                <div class="img-top-title"><span>Image</span></div>
-                <div class="pricez-top-title"><span>Price</span></div>
-                <div class="view-top-title"><span>View</span></div>
-                <div class="status-top-title"><span>Status</span></div>
-                <div class="action-top-title">Action</div>
+                <div class="name-top-title"><span>Tên sản phẩm</span></div>
+                <div class="img-top-title"><span>Hình ảnh</span></div>
+                <div class="pricez-top-title"><span>Đơn giá</span></div>
+                <div class="view-top-title"><span>Xem</span></div>
+                <div class="status-top-title"><span>Trạng thái</span></div>
+                <div class="action-top-title">Hành động</div>
             </div>
             <?php $listprod = product_listall(); ?>
             <?php foreach ($listprod as $list) { ?>

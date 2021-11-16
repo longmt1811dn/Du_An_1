@@ -6,9 +6,9 @@
         <div class="table-top-object">
             <div class="object-top-title">
                 <div class="id-title"><span>#</span></div>
-                <div class="name-title"><span>Name product</span></div>
-                <div class="location-title"><span>Number</span></div>
-                <div class="action-title" style="width: 30%"><span>Action</span></div>
+                <div class="name-title"><span>Tên sản phẩm</span></div>
+                <div class="location-title"><span>Số lượng</span></div>
+                <div class="action-title" style="width: 30%"><span>Hành động</span></div>
             </div>
 
             <?php foreach ($list as $item) { ?>

@@ -6,12 +6,12 @@
         <div class="table-top-product">
             <div class="top-title">
                 <div class="idz-top-title"><span>#</span></div>
-                <div class="img-top-title"><span>Title</span></div>
-                <div class="name-top-title"><span>Content</span></div>
-                <div class="pricez-top-title"><span>Date</span></div>
-                <div class="view-top-title"><span>Star</span></div>
-                <div class="status-top-title"><span>Full Name</span></div>
-                <div class="action-top-title">Action</div>
+                <div class="img-top-title"><span>Tiêu đề</span></div>
+                <div class="name-top-title"><span>Nội dung đánh giá</span></div>
+                <div class="pricez-top-title"><span>Ngày gửi</span></div>
+                <div class="view-top-title"><span>Sao</span></div>
+                <div class="status-top-title"><span>Người gửi</span></div>
+                <div class="action-top-title">Hành động</div>
             </div>
             <?php foreach ($list as $item) { ?>
                 <div class="item-top-title">

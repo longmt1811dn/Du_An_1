@@ -7,14 +7,14 @@
         <div class="table-top-user">
             <div class="user-top-title">
                 <div class="id-title"><span>#</span></div>
-                <div class="account-title"><span>account</span></div>
-                <div class="pass-title"><span>password</span></div>
-                <div class="first-title"><span>first name</span></div>
-                <div class="last-title"><span>last name</span></div>
-                <div class="email-title"><span>email</span></div>
-                <div class="role-title"><span>role</span></div>
-                <div class="activated-title"><span>activated</span></div>
-                <div class="action-title"><span>Action</span></div>
+                <div class="account-title"><span>Tài khoản</span></div>
+                <div class="pass-title"><span>Mật khẩu</span></div>
+                <div class="first-title"><span>Tên</span></div>
+                <div class="last-title"><span>Họ</span></div>
+                <div class="email-title"><span>Email</span></div>
+                <div class="role-title"><span>Vai trò</span></div>
+                <div class="activated-title"><span>Kích hoạt</span></div>
+                <div class="action-title"><span>Hành động</span></div>
             </div>
 
 

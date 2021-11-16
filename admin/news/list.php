@@ -7,13 +7,13 @@
         <div class="table-top-news">
             <div class="news-top-title">
                 <div class="id-top-title"><span>#</span></div>
-                <div class="name-top-title"><span>Title</span></div>
-                <div class="date-top-title"><span>Date</span></div>
-                <div class="status-top-title"><span>Status</span></div>
-                <div class="highlights-top-title">Highlights</div>
-                <div class="image_new-top-title">Image</div>
-                <div class="user-top-title"><span>User</span></div>
-                <div class="action-top-title">Action</div>
+                <div class="name-top-title"><span>Tiêu đề</span></div>
+                <div class="date-top-title"><span>Ngày đăng</span></div>
+                <div class="status-top-title"><span>Trạng thái</span></div>
+                <div class="highlights-top-title">Nổi bật</div>
+                <div class="image_new-top-title">Hình ảnh</div>
+                <div class="user-top-title"><span>Người viết</span></div>
+                <div class="action-top-title">Hành động</div>
             </div>
 
             <?php $listnew = news_listall();

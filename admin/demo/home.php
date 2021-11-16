@@ -12,7 +12,7 @@
                 <img src="../../assets/image/total-product.png" alt="" />
             </div>
             <div class="name_page-item">
-                <p>Total product</p>
+                <p>Tổng sản phẩm</p>
                 <?php $total_product = product_countAll();
                 foreach ($total_product as $total) { ?>
                     <span class="number-total"><?= $total['soLuong'] ?></span>
@@ -24,7 +24,7 @@
                 <img src="../../assets/image/total_reviewz.png" alt="" />
             </div>
             <div class="name_page-item">
-                <p>Total review</p>
+                <p>Tổng lượt đánh giá</p>
                 <?php $total_review = review_countAll();
                 foreach ($total_review as $total) { ?>
                     <span class="number-total"><?= $total['soLuong'] ?></span>
@@ -36,7 +36,7 @@
                 <img src="../../assets/image/total_post.png" alt="" />
             </div>
             <div class="name_page-item">
-                <p>Total posts</p>
+                <p>Tổng số bài viết</p>
                 <?php $total_news = news_countAll();
                 foreach ($total_news as $total) { ?>
                     <span class="number-total"><?= $total['soLuong'] ?></span>
@@ -48,7 +48,7 @@
                 <img src="../../assets/image/total_userz.png" alt="" />
             </div>
             <div class="name_page-item">
-                <p>Total users</p>
+                <p>Tổng số người dùng</p>
                 <?php $total_users = users_countAll();
                 foreach ($total_users as $total) { ?>
                     <span class="number-total"><?= $total['soLuong'] ?></span>
@@ -63,11 +63,11 @@
         <div class="table-top-product">
             <div class="product-top-title">
                 <div class="id-top-title"><span>#</span></div>
-                <div class="name-top-title"><span>Name product</span></div>
-                <div class="img-top-title"><span>Image</span></div>
-                <div class="price-top-title"><span>Price</span></div>
-                <div class="view-top-title"><span>View</span></div>
-                <div class="status-top-title"><span>Status</span></div>
+                <div class="name-top-title"><span>Tên sản phẩm</span></div>
+                <div class="img-top-title"><span>Hình ảnh</span></div>
+                <div class="price-top-title"><span>Đơn giá</span></div>
+                <div class="view-top-title"><span>Lượt xem</span></div>
+                <div class="status-top-title"><span>Trạng thái</span></div>
 
             </div>
             <?php $listTop = product_top();

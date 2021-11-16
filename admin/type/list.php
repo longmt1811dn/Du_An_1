@@ -7,11 +7,11 @@
         <div class="table-top-type">
             <div class="top-title">
                 <div class="id-title"><span>#</span></div>
-                <div class="name-title"><span>Name type</span></div>
-                <div class="location-title"><span>Location</span></div>
-                <div class="status-title"><span>Status</span></div>
-                <div class="object-title"><span>Object</span></div>
-                <div class="action-title"><span>Action</span></div>
+                <div class="name-title"><span>Tên loại</span></div>
+                <div class="location-title"><span>Vị trí</span></div>
+                <div class="status-title"><span>Trạng thái</span></div>
+                <div class="object-title"><span>Đối tượng sử dụng</span></div>
+                <div class="action-title"><span>Hoạt động</span></div>
             </div>
 
             <?php $listtype = type_listall(); ?>

@@ -7,11 +7,11 @@
         <div class="table-top-items">
             <div class="items-top-title">
                 <div class="id-top-title"><span>#</span></div>
-                <div class="name-top-title"><span>Name brand</span></div>
-                <div class="total-top-title"><span>Total</span></div>
-                <div class="price-top-title"><span>Price min</span></div>
-                <div class="price-top-title"><span>Price avg</span></div>
-                <div class="price-top-title"><span>Price max</span></div>
+                <div class="name-top-title"><span>Tên thương hiệu</span></div>
+                <div class="total-top-title"><span>Tổng</span></div>
+                <div class="price-top-title"><span>Giá thấp nhất</span></div>
+                <div class="price-top-title"><span>Trung bình giá</span></div>
+                <div class="price-top-title"><span>Giá lớn nhất</span></div>
             </div>
             <?php $listitems = items_thongke();
             foreach ($listitems as $list) { ?>

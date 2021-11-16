@@ -17,7 +17,7 @@
             </div>
             <div class="p_admin_login__right">
                 <form action="" method="post">
-                    <h2>Admin Login</h2>
+                    <h2>Admin Đăng Nhập</h2>
                     <input type="text" class="p_admin__input-text" name="u" placeholder="Vui lòng nhập tài khoản" required>
                     <br>
                     <input type="password" class="p_admin__input-pass" name="p" placeholder="Vui lòng nhập mật khẩu" required>
