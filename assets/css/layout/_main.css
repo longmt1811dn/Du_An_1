@@ -1,10 +1,7 @@
 .flash-sale {
   padding: 9rem 0;
-<<<<<<< HEAD
   background-color: #030d1d;
-=======
   background-color: var(--bg-darkblue);
->>>>>>> FE
 }
 
 .flash-sale .container-fs {
@@ -89,11 +86,8 @@
 }
 
 .flash-sale .item p {
-<<<<<<< HEAD
   font-size: 2.4rem;
-=======
   font-size: var(--font-size24);
->>>>>>> FE
   line-height: 4.1rem;
 }
 .flash-sale .item h3 {
@@ -135,11 +129,8 @@
   width: 100%;
   height: 0.5rem;
 
-<<<<<<< HEAD
   background-color: #cca471;
-=======
   background-color: var(--bg-yellow);
->>>>>>> FE
   bottom: 0.6rem;
   left: 0;
   right: 0;
@@ -147,11 +138,8 @@
 }
 
 .main__store .main__store-menu {
-<<<<<<< HEAD
   font-size: 1.8rem;
-=======
   font-size: var(--font-size18);
->>>>>>> FE
   text-transform: uppercase;
   padding: 2rem 2%;
 
@@ -289,11 +277,8 @@
 }
 
 .main__store-list .product__detail .product__detail-title a {
-<<<<<<< HEAD
   font-size: 1.8rem;
-=======
   font-size: var(--font-size18);
->>>>>>> FE
   font-family: var(--font-playfair);
   font-weight: var(--font-weight500);
   text-align: center;
@@ -306,13 +291,10 @@
 }
 
 .main__store-list .product .product__detail-price .price {
-<<<<<<< HEAD
   font-size: 2.4rem;
   color: var(--bg-gray);
-=======
   font-size: var(--font-size24);
   color: var(--color-gray);
->>>>>>> FE
   display: block;
   padding-top: 2rem;
   padding-bottom: 0.5rem;
@@ -335,11 +317,8 @@
 .main__store-list .product__detail-cart i {
   color: var(--color-white);
   margin-right: 0.5rem;
-<<<<<<< HEAD
   font-size: 1.8rem;
-=======
   font-size: var(--font-size18);
->>>>>>> FE
   margin-top: 1rem;
 }
 
@@ -441,11 +420,8 @@
 }
 
 .main__products2 .item__block p {
-<<<<<<< HEAD
   font-size: 1.8rem;
-=======
   font-size: var(--font-size18);
->>>>>>> FE
   color: #aaa;
   padding: 3rem 4rem;
 }

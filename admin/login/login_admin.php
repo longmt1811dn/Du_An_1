@@ -18,11 +18,11 @@
             <div class="p_admin_login__right">
                 <form action="" method="post">
                     <h2>Admin Login</h2>
-                    <input type="text" name="u" placeholder="Vui lòng nhập tài khoản" required>
+                    <input type="text" class="p_admin__input-text" name="u" placeholder="Vui lòng nhập tài khoản" required>
                     <br>
-                    <input type="password" name="p" placeholder="Vui lòng nhập mật khẩu" required>
+                    <input type="password" class="p_admin__input-pass" name="p" placeholder="Vui lòng nhập mật khẩu" required>
                     <br>
-                    <input type="submit" name="btn" value="Đăng nhập">
+                    <input type="submit" class="p_admin__input-btn" name="btn" value="Đăng nhập">
                     <br>
                     <a href="../../index.html">Về lại trang chủ</a>
                 </form>

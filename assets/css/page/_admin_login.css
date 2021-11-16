@@ -53,8 +53,8 @@
   font-size: 2.2rem;
 }
 
-.p_admin_login__right input[type="text"],
-input[type="password"] {
+.p_admin_login__right .p_admin__input-text,
+.p_admin__input-pass {
   margin-bottom: 1rem;
   padding: 0 20px;
   width: 80%;
@@ -67,7 +67,7 @@ input[type="password"] {
   font-size: 1.5rem;
 }
 
-.p_admin_login__right input[type="submit"] {
+.p_admin_login__right .p_admin__input-btn {
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 80%;
@@ -85,7 +85,7 @@ input[type="password"] {
   transition: 0.5s all;
 }
 
-.p_admin_login__right input[type="submit"]:hover {
+.p_admin_login__right .p_admin__input-btn:hover {
   background-color: var(--admin_color-bg-blue);
 
   color: white;
