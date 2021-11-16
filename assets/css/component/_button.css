@@ -3,7 +3,7 @@
   position: absolute;
   content: "";
   height: 0.5rem;
-  background: #cca471;
+  background: var(--bg-yellow);
   width: 100%;
   bottom: 0.6rem;
   left: 0;
@@ -95,28 +95,28 @@
 
 .btn-sl {
   background: rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid #cca471;
+  border-bottom: 1px solid var(--bg-yellow);
   border-top: none;
   border-left: none;
   border-right: none;
 
-  color: #fff;
+  color: var(--color-white);
   text-transform: uppercase;
 
   font-weight: 40rem;
-  font-size: 1.8rem;
+  font-size: var(--font-size18);
   color: var(--color-white);
 }
 
 .btn-sl2 {
   background: rgba(0, 0, 0, 0.2);
-  color: #ffffff;
+  color: var(--color-white);
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: var(--font-size18);
   font-weight: 40rem;
   padding: 1.7rem 4.2rem;
 
-  border-bottom: 1px solid #cca471;
+  border-bottom: 1px solid var(--bg-yellow);
   border-top: none;
   border-left: none;
   border-right: none;
@@ -124,22 +124,22 @@
 
 .btn-sl2:hover {
   background: rgba(204, 164, 113, 0.3);
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .btn-sl:hover {
   background: rgba(204, 164, 113, 0.3);
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .btn-cart {
   font-family: var(--font-main);
   background: rgba(255, 255, 255, 0.2);
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: var(--font-size18);
   color: var(--color-white);
   border-bottom: 0.2rem solid var(--color-yellow);
-  padding: 1rem 2.4rem;
+  padding: 1rem var(--font-size24);
 }
 
 .btn-cart:hover {
@@ -148,13 +148,13 @@
 
 .btn-sn {
   background: rgba(204, 164, 113, 0.3);
-  color: #ffffff;
+  color: var(--color-white);
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: var(--font-size18);
   font-weight: 40rem;
-  padding: 1rem 2.4rem;
+  padding: 1rem var(--font-size24);
 
-  border-bottom: 1px solid #cca471;
+  border-bottom: 1px solid var(--bg-yellow);
   border-top: none;
   border-left: none;
   border-right: none;
@@ -162,13 +162,26 @@
 
 .btn-sn:hover {
   background: rgba(0, 0, 0, 0.2);
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .text__gray {
   font-family: var(--font-main);
   color: var(--color-gray);
   font-size: var(--font-size18);
-  line-height: var(--line-height30);
+  line-height: var(--line-height31);
   font-weight: var(--font-weight400);
+}
+
+.input__control {
+  font-family: var(--font-main);
+  border: 0.1rem solid var(--color-yellow);
+  display: inline-block;
+  color: var(--color-gray);
+  font-size: var(--font-size18);
+  line-height: var(--line-height26);
+  font-weight: var(--font-weight400);
+  background: transparent;
+  padding: 1.4rem 1rem;
+  width: 36.9rem;
 }

@@ -23,6 +23,7 @@ button:active {
   outline: none;
 }
 
+input,
 button:focus {
   outline: 0;
 }

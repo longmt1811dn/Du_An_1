@@ -1,0 +1,37 @@
+.login__form {
+  background: var(--bg-darkblue);
+  display: flex;
+  justify-content: center;
+  padding-top: 9rem;
+}
+
+.login__control-input {
+  margin-bottom: 2rem;
+}
+
+.login__form-control {
+  margin-bottom: 2rem;
+}
+
+.login__form-control .login__control-text {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: var(--font-size18);
+  line-height: var(--line-height31);
+  font-weight: var(--font-weight400);
+  color: var(--color-gray);
+  display: block;
+}
+
+.login__form-control .login__control-text:hover {
+  color: var(--color-yellow);
+}
+
+.login__control-button button {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.border-bot {
+  text-decoration: underline;
+}

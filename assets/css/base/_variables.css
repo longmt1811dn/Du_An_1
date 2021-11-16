@@ -34,6 +34,7 @@
 
   --line-height18: 1.8rem;
   --line-height24: 2.4rem;
+  --line-height26: 2.6rem;
   --line-height27: 2.7rem;
   --line-height31: 3.1rem;
   --line-height-normal: normal;
@@ -43,6 +44,7 @@
 
   --font-weight400: 400;
   --font-weight600: 600;
+  --font-weight500: 500;
   --font-weight700: 700;
   --font-weight900: 900;
 
