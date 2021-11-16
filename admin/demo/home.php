@@ -9,7 +9,7 @@
     <div class="page-list-total_box">
         <div class="page-item-total">
             <div class="img_page-item">
-                <img src="../../assets/image/avt-username_admin.png" alt="" />
+                <img src="../../assets/image/total-product.png" alt="" />
             </div>
             <div class="name_page-item">
                 <p>Total product</p>
@@ -21,7 +21,7 @@
         </div>
         <div class="page-item-total">
             <div class="img_page-item">
-                <img src="../../assets/image/avt-username_admin.png" alt="" />
+                <img src="../../assets/image/total_reviewz.png" alt="" />
             </div>
             <div class="name_page-item">
                 <p>Total review</p>
@@ -33,7 +33,7 @@
         </div>
         <div class="page-item-total">
             <div class="img_page-item">
-                <img src="../../assets/image/avt-username_admin.png" alt="" />
+                <img src="../../assets/image/total_post.png" alt="" />
             </div>
             <div class="name_page-item">
                 <p>Total posts</p>
@@ -45,7 +45,7 @@
         </div>
         <div class="page-item-total">
             <div class="img_page-item">
-                <img src="../../assets/image/avt-username_admin.png" alt="" />
+                <img src="../../assets/image/total_userz.png" alt="" />
             </div>
             <div class="name_page-item">
                 <p>Total users</p>
@@ -89,14 +89,14 @@
                     <div class="view-item">
                         <?= $list['view'] ?>
                     </div>
-                    <?php if($list['hide']==1){ 
+                    <?php if ($list['hide'] == 1) {
                         echo '<div class="Status-item">
                                 <span>Hiện</span>
                             </div>';
                     } else { ?>
                         <div class="Status-item-hide">
-                        <span>Ẩn</span>
-                    </div>
+                            <span>Ẩn</span>
+                        </div>
                     <?php } ?>
 
                 </div>
