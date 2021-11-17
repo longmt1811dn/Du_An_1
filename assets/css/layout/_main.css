@@ -177,6 +177,7 @@
 
 .main__store-list .product {
   margin: 0 1.6rem;
+  width: 25%;
 }
 
 .main__store-list .product {
@@ -204,7 +205,10 @@
   position: relative;
   z-index: 1;
   cursor: pointer;
+  display: block;
+
 }
+
 
 .main__store-list .product .product__img:hover .imgOverlay::before {
   content: "";
@@ -220,7 +224,7 @@
 }
 
 .main__store .main__store-list img {
-  width: 100%;
+  width: 100%;  
 }
 
 .main__store .main__store-list .product .imgOverlay::before {
@@ -298,6 +302,7 @@
   display: block;
   padding-top: 2rem;
   padding-bottom: 0.5rem;
+  min-height: 9rem;
 }
 
 .main__store .main__store-list .product .product__detail-price .starrating i {

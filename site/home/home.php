@@ -1,3 +1,5 @@
+
+
 <main class="main">
 
       <div class="slider">
@@ -100,22 +102,24 @@
 
       <div class="main__store">
         <div class="container">
-            <div class="main__store-title text-ct"><h2>Popular In Store</h2></div>
-
-            <ul class="main__store-menu">
-              <li style="padding-bottom: 0.5rem;"><a href="#">Classic</a></li>
-              <li><a href="#">Modern</a></li>
-              <li><a href="#">Special Edition </a></li>
-            </ul>
+            <div class="main__store-title text-ct"><h2>Sản phẩm nổi bật</h2></div>
 
             <div class="main__store-list">`
               <div class="container">
                 <div class="list-item">
+                 
+                  <?php foreach ($list_highlights as $itemsProduct) { ?>
+                    <div class="product">
 
-                  <div class="product">
+                    <?php if ($itemsProduct["promotion"]>0 ) { ?>
+                      <div class="product__sale">
+                        <span class="product__sale-p">Sale</span>
+                      </div> 
+                    <?php } ?>
+
                      <div class="product__img">
                        <div class="imgOverlay">
-                         <img src="./assets/image/dongho_orient (2).png" alt="">
+                         <img src= "../<?= $itemsProduct["image"]?>" alt="">
                        </div>
                        <div class="product__img-button">
                           <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
@@ -126,16 +130,28 @@
                      </div>
                      <div class="product__detail">
                        <div class="product__detail-title">
-                         <a href="">Analog Numeral</a>
+                         <a href=""><?= $itemsProduct["name_product"]?></a>
                        </div>
                        <div class="product__detail-price">
-                         <span class="price">$750.00</span>
+                         <?php if ($itemsProduct["promotion"]>0 ) { ?>
+
+
+                         <span class="price"><?= number_format($itemsProduct["price"] - ($itemsProduct["price"]/100 * $itemsProduct["promotion"]))?> VND                                                      
+                          <br>
+                         <s style="font-size:1.7rem"><?= number_format($itemsProduct["price"])?> VND</s>
+                         </span>
+                         <?php } else { ?>
+                          <span class="price"><?= number_format($itemsProduct["price"])?> VND 
+                                                                                                      
+                         </span>
+      
+                         
+                         <?php } ?>
                          <span class="starrating">
+                            <?php for($i = 0; $i < $itemsProduct["star"];$i++) { ?>
                             <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <?php } ?>
+
                           </span>
                        </div>                     
                        <div class="product__detail-sale"><span>Ex to Sale Tax</span></div>
@@ -143,9 +159,9 @@
                          <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Add to cart</a>
                        </div>
                      </div>
-                  </div>  
-
-                  <div class="product">
+                    </div>                  
+                  <?php } ?>
+                  <!-- <div class="product">
                      <div class="product__sale">
                        <span class="product__sale-p">Sale</span>
                      </div>
@@ -179,76 +195,9 @@
                          <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Add to cart</a>
                        </div>
                      </div>
-                  </div> 
+                  </div>  -->
 
-                  <div class="product">
-                    <div class="product__sale">
-                       <span class="product__sale-p">Sale</span>
-                     </div>
-                     <div class="product__img">
-                       <div class="imgOverlay">
-                         <img src="./assets/image/dongho_orient (2).png" alt="">
-                       </div>
-                       <div class="product__img-button">
-                          <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
-                          <a href="#" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
-                          <a href="#" class="compare" title="Product Link"><i class="fas fa-link"></i></a>
-                          <a href="#" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
-                       </div>
-                     </div>
-                     <div class="product__detail">
-                       <div class="product__detail-title">
-                         <a href="">Analog Numeral</a>
-                       </div>
-                       <div class="product__detail-price">
-                         <span class="price">$250.00 <s style="font-size:1.7rem">$300.00</s></span>
-                         <span class="starrating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                          </span>
-                       </div>                     
-                       <div class="product__detail-sale"><span>Ex to Sale Tax</span></div>
-                       <div class="product__detail-cart">
-                         <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Add to cart</a>
-                       </div>
-                     </div>
-                  </div> 
-
-                  <div class="product">
-                     <div class="product__img">
-                       <div class="imgOverlay">
-                         <img src="./assets/image/dongho_orient (2).png" alt="">
-                       </div>
-                       <div class="product__img-button">
-                          <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
-                          <a href="#" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
-                          <a href="#" class="compare" title="Product Link"><i class="fas fa-link"></i></a>
-                          <a href="#" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
-                       </div>
-                     </div>
-                     <div class="product__detail">
-                       <div class="product__detail-title">
-                         <a href="">Analog Numeral</a>
-                       </div>
-                       <div class="product__detail-price">
-                         <span class="price">$750.00</span>
-                         <span class="starrating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                          </span>
-                       </div>                     
-                       <div class="product__detail-sale"><span>Ex to Sale Tax</span></div>
-                       <div class="product__detail-cart">
-                         <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Add to cart</a>
-                       </div>
-                     </div>
-                  </div> 
+                  
 
                 </div>
               </div>

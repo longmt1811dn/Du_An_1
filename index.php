@@ -3,7 +3,7 @@ require_once("./dao/admin_object.php");
 require_once("./dao/admin_type.php");
 require_once("./dao/admin_type_brand.php");
 require_once("./dao/admin_brand.php");
-
+require_once("./dao/admin_product.php");
 
 ?>
 <!DOCTYPE html>
