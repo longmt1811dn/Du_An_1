@@ -1,0 +1,47 @@
+.introduct {
+  background: var(--bg-darkblue);
+  padding: 0 13.3rem;
+}
+
+.introduct__member {
+  padding: 8.2rem 20.3rem;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  grid-gap: 3rem;
+}
+
+.introduct__member:nth-child(even) .introduct__member-info {
+  order: 2;
+}
+
+.introduct__member:nth-child(even) .introduct__member-img {
+  order: 1;
+}
+
+.introduct__member-info {
+  order: 1;
+}
+
+.introduct__member-info .introduct__info-member {
+  margin: 0 0 3rem 0;
+}
+
+.introduct__member-info .introduct__info-role {
+  font-size: var(--font-size32);
+  line-height: var(--line-height42);
+  font-weight: var(--font-weight400);
+  color: var(--color-gray);
+  margin-bottom: 4rem;
+}
+
+.introduct__member-info .introduct__info-text {
+  text-align: justify;
+}
+
+.introduct__member-img {
+  order: 2;
+}
+
+.introduct__member-img img {
+  width: 100%;
+}
