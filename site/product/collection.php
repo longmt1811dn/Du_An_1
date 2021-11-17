@@ -2,8 +2,7 @@
       <nav class="collection__nav">
         <div class="collection__nav-text center-center">
           <h1>Digital</h1>
-          <a href="index.html" class="text__gray">Home </a
-          ><span class="text__gray">/</span>
+          <a href="index.html" class="text__gray">Home </a><span class="text__gray">/</span>
           <span class="text__gray">Digital</span>
         </div>
       </nav>
@@ -21,7 +20,7 @@
           <div class="collection__show-sort">
             <span class="text__gray">Sort by</span>
             <form action="">
-              <select class="btn .sort__select" name="" id="">
+              <select class="btn sort__select" name="" id="">
                 <option value="">A-Z</option>
                 <option value="">Z-A</option>
                 <option value="">Date , old to new</option>
@@ -34,10 +33,7 @@
           <div class="container collection__product-container">
             <div class="main__store-list">
               <div class="container collection__product-container">
-                <div
-                  class="list-item collection__product-list"
-                  id="collection__product-list"
-                >
+                <div class="list-item collection__product-list" id="collection__product-list">
                   <!-- HIện sản phẩm bằng js -->
                 </div>
               </div>
@@ -47,4 +43,4 @@
       </div>
     </main>
 
-<script src="./assets/js/product-list.js"></script>
+    <script src="./assets/js/product-list.js"></script>
