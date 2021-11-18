@@ -48,7 +48,7 @@ $menu_obj = obj_select_all();
 
 
       <ul class="submenu submenu__page">
-        <li><a href="#">About us</a></li>
+        <li><a href="index.php?page=home&act=about">About us</a></li>
         <li><a href="#">Contact us</a></li>
         <li><a href="#">Blog</a></li>
       </ul>
