@@ -115,11 +115,13 @@
 
 .container__list-item {
   margin: 0 3.5rem;
+  width: 25%;
 }
 
 .container__item-img {
   position: relative;
   z-index: 1;
+  display: block;
 }
 
 .container__item-img::before {
@@ -142,6 +144,10 @@
 .container__list-item img {
   width: 100%;
   display: block;
+}
+
+.container__list-item p {
+  font-size: var(--font-size18);
 }
 
 .container__list-item:hover p {

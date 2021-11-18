@@ -50,3 +50,10 @@ function news_update($title, $describe, $content, $hide, $highlights, $targer_fi
     $sql = "UPDATE news SET title = ?, summary = ?, content = ?, date = now() , hide = ?, highlights = ? ,image_new = ?, id_user = ? WHERE id_news = ?";
     pdo_execute($sql, $title, $describe, $content, $hide, $highlights, $targer_file, $id_user, $id_news);
 }
+
+// lấy 2 tin trang chủ 
+function new_2()
+{
+    $sql = "SELECT * from news order by date limit 0 , 2";
+    return pdo_query($sql);
+}

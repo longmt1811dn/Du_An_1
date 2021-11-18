@@ -43,5 +43,5 @@
         </div>
     </div>
 
-    <?php object_pagination(); ?>
+    <?php product_pagination(); ?>
 </div>

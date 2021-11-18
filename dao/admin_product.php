@@ -71,68 +71,69 @@ function product_updateA($name_product, $price, $describe, $content, $size, $tar
 }
 
 //Lấy name sản phẩm
-function product_name($idProduct){
+function product_name($idProduct)
+{
     $sql = "SELECT * FROM product WHERE id_product = ?";
     $row = pdo_query_one($sql, $idProduct);
-    
+
     return $row['name_product'];
 }
 
 // Phân trang
-// function object_pagination()
-// {
-//     $pageSize = 5;
-//     $pageNum = 1;
+function product_pagination()
+{
+    $pageSize = 5;
+    $pageNum = 1;
 
-//     $conn = pdo_get_connection();
-//     $offSet = 2;
+    $conn = pdo_get_connection();
+    $offSet = 2;
 
-//     if (isset($_GET['pagenum']) == true) $pageNum = $_GET['pagenum'];
-//     $sql = "SELECT count(*) FROM product";
-//     $kq = $conn->query($sql);
-//     $r = $kq->fetch();
+    if (isset($_GET['pagenum']) == true) $pageNum = $_GET['pagenum'];
+    $sql = "SELECT count(*) FROM product";
+    $kq = $conn->query($sql);
+    $r = $kq->fetch();
 
-//     $tongSoReCord = $r[0];
-//     $tongSoTrang = ceil($tongSoReCord / $pageSize);
+    $tongSoReCord = $r[0];
+    $tongSoTrang = ceil($tongSoReCord / $pageSize);
 
-//     $from = $pageNum - $offSet;
-//     if ($from < 1) $from = 1;
-//     $to = $pageNum + $offSet;
-//     if ($to > $tongSoTrang) $to = $tongSoTrang;
-//     $pagePrev = $pageNum - 1;
-//     $pageNext = $pageNum + 1;
+    $from = $pageNum - $offSet;
+    if ($from < 1) $from = 1;
+    $to = $pageNum + $offSet;
+    if ($to > $tongSoTrang) $to = $tongSoTrang;
+    $pagePrev = $pageNum - 1;
+    $pageNext = $pageNum + 1;
 
-//     echo '<ul class="page_phantrang">';
+    echo '<ul class="page_phantrang">';
 
-//     if ($pageNum > 1) {
+    if ($pageNum > 1) {
 
-//         echo '<li class=""><a class="page_num" href="?pagenum=1"><<</a></li>';
-//         echo '<li class=""><a class="page_num" href="?pagenum=' . $pagePrev . '"><</a></li>';
-//     }
+        echo '<li class=""><a class="page_num" href="?pagenum=1"><<</a></li>';
+        echo '<li class=""><a class="page_num" href="?pagenum=' . $pagePrev . '"><</a></li>';
+    }
 
-//     for ($i = $from; $i <= $to; $i++) {
+    for ($i = $from; $i <= $to; $i++) {
 
-//         if ($tongSoTrang > 1) {
+        if ($tongSoTrang > 1) {
 
-//             if ($i == $pageNum) {
+            if ($i == $pageNum) {
 
-//                 echo '<li class=""><a class="page_num activex" href="?pagenum=' . $i . '">' . $i . '</a></li>';
-//             } else {
+                echo '<li class=""><a class="page_num activex" href="?pagenum=' . $i . '">' . $i . '</a></li>';
+            } else {
 
-//                 echo '<li class=""><a class="page_num" href="?pagenum=' . $i . '">' . $i . '</a></li>';
-//             }
-//         }
-//     }
+                echo '<li class=""><a class="page_num" href="?pagenum=' . $i . '">' . $i . '</a></li>';
+            }
+        }
+    }
 
-//     if ($pageNum < $tongSoTrang) {
+    if ($pageNum < $tongSoTrang) {
 
-//         echo '<li class=""><a class="page_num" href="?pagenum=' . $pageNext . '">></a></li>';
-//         echo '<li class=""><a class="page_num" href="?pagenum=' . $tongSoTrang . '">>></a></li>';
-//     }
-//     '</ul>
-//             </nav>
-//             </div> ';
-// }
+        echo '<li class=""><a class="page_num" href="?pagenum=' . $pageNext . '">></a></li>';
+        echo '<li class=""><a class="page_num" href="?pagenum=' . $tongSoTrang . '">>></a></li>';
+    }
+    '</ul>
+            </nav>
+            </div> ';
+}
 
 // Đếm tổng số lượng sản phẩm
 function product_countAll()
@@ -141,13 +142,22 @@ function product_countAll()
     return pdo_query($sql);
 }
 // lấy TOP 5 sản phẩm hiển thị ra trang chủ
-function product_top(){
+function product_top()
+{
     $sql = "SELECT * FROM product WHERE view > 0 LIMIT 0,5";
     return pdo_query($sql);
 }
 
 // lấy 4 sản phẩm nổi bật
-function product_selectFourHighlight() {
+function product_selectFourHighlight()
+{
     $sql = "SELECT * FROM product WHERE highlights=0 limit 0,4";
+    return pdo_query($sql);
+}
+
+// lấy 5 sp mới
+function product_new()
+{
+    $sql = "SELECT * FROM product order by id_product limit 0, 5";
     return pdo_query($sql);
 }
