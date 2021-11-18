@@ -39,7 +39,7 @@
                         if (strlen($list['image_new']) == 0) {
                             echo "Không có hình ảnh hoặc đường dẫn sai";
                         } else { ?>
-                            <img src="../../../<?= $list['image_new'] ?>" alt="">
+                            <img src="../../<?= $list['image_new'] ?>" alt="">
                         <?php  }  ?>
                     </div>
                     <div class="user-item">

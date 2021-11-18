@@ -15,10 +15,10 @@ if (exist_param("listproduct")) {
     $content = $_POST['content'];
     $size = $_POST['size'];
     
-    $target_dir = "Du_An_1/assets/image/";
+    $target_dir = "assets/image/products/";
     $targer_file = $target_dir . basename($_FILES['url_product']['name']);
     
-    move_uploaded_file($_FILES["url_product"]["tmp_name"], '../../../' . $targer_file);
+    move_uploaded_file($_FILES["url_product"]["tmp_name"], '../../' . $targer_file);
     
     settype($size, "int");
     $material = $_POST['material'];
@@ -52,16 +52,16 @@ if (exist_param("listproduct")) {
     $size = $_POST['size'];
     
 //    Xử lý hình ảnh
-    $target_dir = "Du_An_1/assets/image/";
+    $target_dir = "assets/image/products/";
     
     if(basename($_FILES['url_product']['name']) == ""){
         $targer_file = $product['image'];
     } else {
-        unlink("../../../" . $product['image']);
+        unlink("../../" . $product['image']);
         
         $targer_file = $target_dir . basename($_FILES['url_product']['name']);
     
-        move_uploaded_file($_FILES["url_product"]["tmp_name"], '../../../' . $targer_file);
+        move_uploaded_file($_FILES["url_product"]["tmp_name"], '../../' . $targer_file);
     }
     
     settype($size, "int");

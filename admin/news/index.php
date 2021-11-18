@@ -11,9 +11,9 @@ if (exist_param("listnew")) {
     $content = $_POST['content'];
     $hide = $_POST['hide'];
     $highlights = $_POST['highlights'];
-    $target_dir = "Du_An_1/assets/image/";
+    $target_dir = "assets/image/blogs/";
     $targer_file = $target_dir . basename($_FILES['image_new']['name']);
-    move_uploaded_file($_FILES["image_new"]["tmp_name"], '../../../' . $targer_file);
+    move_uploaded_file($_FILES["image_new"]["tmp_name"], '../../' . $targer_file);
     $id_user = $_POST['id_user'];
     news_add($title, $describe, $content, $hide, $highlights, $targer_file, $id_user);
     $VIEW_NAME = "add.php";
@@ -28,16 +28,16 @@ if (exist_param("listnew")) {
     $hide = $_POST['hide'];
     $highlights = $_POST['highlights'];
     //    Xử lý hình ảnh
-    $target_dir = "Du_An_1/assets/image/";
+    $target_dir = "assets/image/blogs/";
 
     if (basename($_FILES['image_new']['name']) == "") {
         $targer_file = $news['image_new'];
     } else {
-        unlink("../../../" . $news['image_new']);
+        unlink("../../" . $news['image_new']);
 
         $targer_file = $target_dir . basename($_FILES['image_new']['name']);
 
-        move_uploaded_file($_FILES["image_new"]["tmp_name"], '../../../' . $targer_file);
+        move_uploaded_file($_FILES["image_new"]["tmp_name"], '../../' . $targer_file);
     }
     $id_user = $_POST['id_user'];
     $id_news = $_POST['id_news'];
