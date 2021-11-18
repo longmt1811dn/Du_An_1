@@ -31,32 +31,3 @@ function demo1(btn, type) {
 
 demo1(tangSL, "tang");
 demo1(giamSL, "giam");
-
-// parseInt(count);
-// count = 1;
-// function tru() {
-//   takevalue();
-//   if (count > 1) {
-//     count--;
-//     document.getElementById("cart__count").value = count;
-//   }
-// }
-
-// function cong() {
-//   takevalue();
-//   count++;
-//   document.getElementById("cart__count").value = count;
-//   setmaxvalue();
-// }
-
-// function takevalue() {
-//   if (count != document.getElementById("cart__count").value) {
-//     count = document.getElementById("cart__count").value;
-//   }
-// }
-// function setmaxvalue() {
-//   if (count > 100) {
-//     count = 99;
-//     count = document.getElementById("cart__count").value = count;
-//   }
-// }

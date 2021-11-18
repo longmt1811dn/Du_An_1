@@ -1,7 +1,7 @@
 /* Chia layout như flex hay grid code ở đây đối với những layout dùng lại */
 
 .container {
-  max-width: 1200px;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -11,30 +11,25 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-   
 
 /* flex */
 
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 
-.flex-jc{
-    display: flex;
-    justify-content: center;
+.flex-jc {
+  display: flex;
+  justify-content: center;
 }
 
-.flex-ac{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.flex-ac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.flex-w
-{
-    display: flex;
-    flex-wrap: wrap;
+.flex-w {
+  display: flex;
+  flex-wrap: wrap;
 }
-
-
-

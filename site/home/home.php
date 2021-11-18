@@ -109,7 +109,7 @@
           <div class="list-item">
 
             <?php foreach ($list_highlights as $itemsProduct) { ?>
-              <div class="product">
+              <div class="product max-w25">
 
                 <?php if ($itemsProduct["promotion"] > 0) { ?>
                   <div class="product__sale">

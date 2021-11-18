@@ -3,7 +3,7 @@ $menu_obj = obj_select_all();
 ?>
 <nav class="header__nav">
   <ul class="main__menu">
-    <li><a href="index.php"> Home </a></li>
+    <li><a href="index.php"> Trang chủ </a></li>
 
     <?php foreach ($menu_obj as $menu_obj) { ?>
       <li>
@@ -44,13 +44,13 @@ $menu_obj = obj_select_all();
 
     <?php } ?>
     <li>
-      <a href="#"> Pages <i class="fas fa-caret-down"></i></a>
+      <a href="#"> Các trang khác <i class="fas fa-caret-down"></i></a>
 
 
       <ul class="submenu submenu__page">
-        <li><a href="index.php?page=home&act=about">About us</a></li>
-        <li><a href="#">Contact us</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="index.php?page=home&act=about">Về chúng tôi</a></li>
+        <li><a href="#">Liên hệ</a></li>
+        <li><a href="#">Tin tức</a></li>
       </ul>
     </li>
   </ul>
