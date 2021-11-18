@@ -136,8 +136,7 @@
                     <?php if ($itemsProduct["promotion"] > 0) { ?>
 
                       <span class="price"><?= number_format($itemsProduct["price"] - ($itemsProduct["price"] / 100 * $itemsProduct["promotion"])) ?> VND
-                        <br>
-                        <s style="font-size:1.7rem"><?= number_format($itemsProduct["price"]) ?> VND</s>
+                        <s style="font-size:1.5rem , display:block"><?= number_format($itemsProduct["price"]) ?> VND</s>
                       </span>
                     <?php } else { ?>
                       <span class="price"><?= number_format($itemsProduct["price"]) ?> VND
