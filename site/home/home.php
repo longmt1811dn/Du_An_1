@@ -8,15 +8,15 @@
                       <img src="./assets/image/banner (1).jpg" alt="">
                       <div class="item__content">
                           <div class="border-title">
-                             <h2 class="title binding">Alertzy </h2>
+                             <h2 class="title binding">TimeZee</h2>
                           </div>
                           <div class="inner-block">
-                              <h5>Exclusive Offer -20% Off This Week</h5>
-                              <p>Expanding the offering is the choice between a leather strap or a metal bracelet, bringing the total new look. Black-tone stainless steel case with a black rubber strap. Scratch free sapphire crystal.</p>
+                              <h5>Chúng tôi sẵn sàng phục vụ bạn</h5>
+                              <p>Mở rộng sản phẩm là sự lựa chọn giữa dây đeo bằng da hoặc vòng tay bằng kim loại, mang lại diện mạo hoàn toàn mới. Vỏ thép không gỉ tông đen với dây đeo cao su đen. Tinh thể sapphire không bị xước.</p>
                               <div class="block-price">
-                                <p>Starting @ <span class="price">$ 250.00</span></p>
+                                <p>Bắt đầu @ <span class="price">699.000 VND</span></p>
                               </div>
-                              <a href="#" class="slider-button btn-sl">Explore services</a>
+                              <a href="index.php?page=product&act=collectionall" class="slider-button btn-sl">Tất cả sản phẩm</a>
                           </div>
                       </div>
                   </div>
@@ -25,15 +25,15 @@
                       <img src="./assets/image/banner (3).jpg" alt="">
                       <div class="item__content2">
                           <div class="border-title">
-                             <h2 class="title binding">Gertious </h2>
+                             <h2 class="title binding">TimeZee </h2>
                           </div>
                           <div class="inner-block">
-                              <h5>Exclusive of Sales Tax</h5>
-                              <p>The watch bracelet gives a much far colder personality.Dress watch style. Swiss made luxury watch. Stainless steel case with a brown leather strap. Scratch resistant sapphire crystal. </p>
+                              <h5>Hân hạnh phục vụ quý khách</h5>
+                              <p>Chiếc đồng hồ đeo tay mang đến một cá tính lạnh lùng hơn nhiều. Đồng hồ Thụy Sĩ sang trọng. Vỏ thép không gỉ với dây đeo bằng da màu nâu. Mặt kính sapphire chống xước.</p>
                               <div class="block-price">
-                                <p><span class="price">$ 250.00</span><s class="sale">$ 320.00</s></p>
+                                <p>Bắt đầu @ <span class="price">999.000 VND</span></p>
                               </div>
-                              <a href="#" class="btn-sl2 slider-button">Explore services</a>
+                              <a href="index.php?page=product&act=collectionall" class="btn-sl2 slider-button">Tất cả sản phẩm</a>
                           </div>
                       </div>
                   </div>
@@ -42,20 +42,20 @@
                       <img src="./assets/image/banner (2).jpg" alt="">
                       <div class="item__content3">
                           <div class="border-title">
-                             <h2 class="title binding">New Release</h2>
+                             <h2 class="title binding">TimeZee</h2>
                              <p>2019</p>
                           </div>
                           <div class="inner-block">    
-                              <p>One of the most advanced watch released during 2019. True style that always remains in fashion. Timepiece is the perfect complement to any outfit.</p>   
+                              <p>Một trong những chiếc đồng hồ cao cấp nhất được phát hành trong năm 2019. Phong cách đích thực luôn tồn tại trong thời trang. Đồng hồ là sự bổ sung hoàn hảo cho bất kỳ trang phục nào.</p>   
                           </div>
-                         <a href="#" class="btn-sl slider-button">Explore</a>
+                         <a href="index.php?page=product&act=collectionall" class="btn-sl slider-button">Tất cả sản phẩm</a>
                       </div>
                   </div>                 
           </div>           
       </div>
    
       <div class="flash-sale">
-      <div class="container-fs">
+        <div class="container-fs">
         <div class="feature-items">
           <div class="item">
             <div class="item__overlay">
@@ -64,9 +64,9 @@
                 <div class="overly">   </div>
               </a>
               <div class="item__overlay-content" >
-                  <h5>Flash Sale</h5>
-                  <h3>Men's Watch</h3>
-                  <p>25% Discount</p>
+                  <h5>Phong cách</h5>
+                  <h3>Đồng hồ nam</h3>
+                  <p>Quyền lực</p>
                 </div>
             </div>
           </div>
@@ -77,9 +77,9 @@
                 <div class="overly"> </div>
               </a>
               <div class="item__overlay-content2">
-                  <h5 style="color: white;">Flash Sale</h5>
-                  <h3>Men's Watch</h3>
-                  <p>25% Discount</p>
+                  <h5 style="color: white;">Phong cách</h5>
+                  <h3>Đồng hồ nữ</h3>
+                  <p>Quyến rũ</p>
                 </div>
             </div>
           </div> 
@@ -90,14 +90,14 @@
                 <div class="overly"> </div>
               </a>
               <div class="item__overlay-content3">
-                  <h5 style="color:white">Flash Sale</h5>
-                  <h3>Men's Watch</h3>
-                  <p>25% Discount</p>
+                  <h5 style="color:white">Phong cách</h5>
+                  <h3>Đồng hồ cặp đôi</h3>
+                  <p>Bền lâu</p>
                 </div>
             </div>
           </div>
         </div>
-      </div>
+        </div>
       </div>
 
       <div class="main__store">
@@ -209,13 +209,13 @@
         <div class="banner-type-5-block">
             <div class="container">
                 <div class="main__products-tittle">
-                    <h2>Most wanted of the year</h2>
+                    <h2>Phong cách của riêng bạn</h2>
                 </div>
                 <div class="main__products-expired">
-                  Expired
+                  Bức phá
                 </div>
                 <div class="main__products-content">
-                  <a href="" class="btn-sn">Shop now</a>
+                  <a href="index.php?page=product&act=collectionall" class="btn-sn">Mua ngay</a>
                 </div>
             </div>
         </div>
@@ -226,18 +226,18 @@
           <div class="wrapper">
             <div class="item__block">
                 <div class="item__block-title">
-                  <h2>Roman or Numeral</h2>
+                  <h2>LA MÃ - SỐ</h2>
                 </div>
                 <div class="item__block-para">
-                  <p>Limited Edition of 200 pieces world-wide. Watch Big Bang, 361.PE.2010.RW.1104 
-                    The stainless steel case and band are thick and prominent, creating a durable feel on the wrist. However, the dial is much more whimsical.
+                  <p>Phiên bản giới hạn gồm 200 chiếc trên toàn thế giới. Xem Big Bang, 361.PE.2010.RW.1104
+                    Vỏ và dây đeo bằng thép không gỉ dày và nổi bật, tạo cảm giác bền trên cổ tay. Tuy nhiên, mặt số kỳ lạ hơn nhiều.
                   </p>
                 </div>
                 <div class="item__block-para2">
-                  <p>Accurate and Comfortable Imported Japanese quartz movement ensures precise time keeping.  Its classic design of multi display watches and comfortable silicone material can provide to users excellent outdoor experiences.</p>
+                  <p>Bộ máy thạch anh Nhật Bản nhập khẩu chính xác và thoải mái đảm bảo giữ thời gian chính xác. Thiết kế cổ điển của đồng hồ đa màn hình và chất liệu silicone thoải mái có thể mang đến cho người dùng những trải nghiệm ngoài trời tuyệt vời.</p>
                 </div>
                 <div class="item__block-btn">
-                  <a href="" class="btn-sn">Shop now</a>
+                  <a href="index.php?page=product&act=collectionall" class="btn-sn">Mua ngay</a>
                 </div>
             </div>
           </div>
