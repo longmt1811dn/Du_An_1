@@ -16,13 +16,6 @@
 
 .header__logo a {
   display: block;
-<<<<<<< HEAD
-}
-
-/* .header__logo img {
-  padding-left: 4rem;
-} */
-=======
   width: 100%;
 }
 
@@ -30,7 +23,6 @@
   width: 100%;
   max-width: 80%;
 }
->>>>>>> lam
 
 /* .header__nav {
 } */
@@ -44,25 +36,16 @@
 }
 
 .header__nav .main__menu > li {
-<<<<<<< HEAD
-  display: block;
-  margin: 0 auto;
-=======
   height: 100%;
   display: inline-flex;
   align-items: center;
   cursor: default;
->>>>>>> lam
 }
 
 .header__nav .main__menu > li > a {
   font-size: var(--font-size16);
   line-height: var(--line-height27);
   font-weight: var(--font-weight600);
-<<<<<<< HEAD
-=======
-
->>>>>>> lam
   color: var(--color-gray);
   text-transform: uppercase;
   display: block;
@@ -146,7 +129,7 @@
 
 .submenu__bar-box {
   width: 100%;
-  max-width: 22.1rem;
+  max-width: 47%;
   padding-bottom: 4rem;
 }
 
