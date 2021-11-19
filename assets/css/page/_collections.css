@@ -57,8 +57,12 @@
   margin-left: 0.5rem;
 }
 
+.collection__show-sort .sort__select option {
+  color: var(--color-black);
+}
+
 .collection__product-container {
-  max-width: 100% !important;
+  max-width: 90% !important;
 }
 
 .collection__show-product {

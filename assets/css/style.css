@@ -27,6 +27,7 @@
 @import url(./page/_collections.css);
 @import url(./page/_login.css);
 @import url(./page/_all__collection.css);
+@import url(./page/_cart.css);
 
 /* component */
 @import url(./component/_button.css);

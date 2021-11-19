@@ -71,15 +71,16 @@ function product_updateA($name_product, $price, $describe, $content, $size, $tar
 }
 
 //Lấy name sản phẩm
-function product_name($idProduct){
+function product_name($idProduct)
+{
     $sql = "SELECT * FROM product WHERE id_product = ?";
     $row = pdo_query_one($sql, $idProduct);
-    
+
     return $row['name_product'];
 }
 
 // Phân trang
-function object_pagination()
+function product_pagination()
 {
     $pageSize = 5;
     $pageNum = 1;
@@ -141,7 +142,22 @@ function product_countAll()
     return pdo_query($sql);
 }
 // lấy TOP 5 sản phẩm hiển thị ra trang chủ
-function product_top(){
+function product_top()
+{
     $sql = "SELECT * FROM product WHERE view > 0 LIMIT 0,5";
+    return pdo_query($sql);
+}
+
+// lấy 4 sản phẩm nổi bật
+function product_selectFourHighlight()
+{
+    $sql = "SELECT * FROM product WHERE highlights=0 limit 0,4";
+    return pdo_query($sql);
+}
+
+// lấy 5 sp mới
+function product_new()
+{
+    $sql = "SELECT * FROM product order by id_product limit 0, 5";
     return pdo_query($sql);
 }

@@ -9,6 +9,8 @@
 .all-collection__show-item {
   border: 0.1rem solid var(--color-yellow);
   margin-right: 2rem;
+  max-width: 25%;
+  width: 100%;
 }
 
 .all-collection__item-img a {
@@ -16,7 +18,7 @@
 }
 
 .all-collection__item-img img {
-  width: 37.3rem;
+  width: 100%;
 }
 
 .all-collection__item-detail {
@@ -40,4 +42,8 @@
 
 .all-collection__show-item:hover .all-collection__item-detail p {
   color: var(--color-yellow);
+}
+
+.collection__product-list {
+  justify-content: space-between;
 }

@@ -28,6 +28,7 @@
   --font-size14: 1.4rem;
   --font-size16: 1.6rem;
   --font-size18: 1.8rem;
+  --font-size20: 2rem;
   --font-size24: 2.4rem;
   --font-size30: 3rem;
   --font-size32: 3.2rem;
@@ -38,11 +39,13 @@
   --line-height26: 2.6rem;
   --line-height27: 2.7rem;
   --line-height31: 3.1rem;
+  --line-height40: 4rem;
   --line-height42: 4.2rem;
   --line-height-normal: normal;
 
   --letter-spacing84: 0.084rem;
   --letter-spacing6: 0.06rem;
+  --letter-spacing36: 0.036rem;
 
   --font-weight400: 400;
   --font-weight600: 600;
