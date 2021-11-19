@@ -81,7 +81,7 @@
                         <?= $list['name_product'] ?>
                     </div>
                     <div class="img-item">
-                        <img src="../../../<?= $list['image'] ?>" alt="" />
+                        <img src="../../<?= $list['image'] ?>" alt="" />
                     </div>
                     <div class="price-item">
                         <?= number_format($list['price']) ?>
