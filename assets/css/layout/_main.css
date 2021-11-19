@@ -177,7 +177,8 @@
 
 .main__store-list .product {
   margin: 0 1.6rem;
-  width: 25%;
+  max-width: 25%;
+  width: 100%;
 }
 
 .main__store-list .product {
@@ -206,9 +207,7 @@
   z-index: 1;
   cursor: pointer;
   display: block;
-
 }
-
 
 .main__store-list .product .product__img:hover .imgOverlay::before {
   content: "";
@@ -224,7 +223,7 @@
 }
 
 .main__store .main__store-list img {
-  width: 100%;  
+  width: 100%;
 }
 
 .main__store .main__store-list .product .imgOverlay::before {

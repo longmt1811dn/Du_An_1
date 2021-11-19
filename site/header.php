@@ -16,13 +16,13 @@
       <div class="header__user-box account__box">
         <ul class="account__box-menu">
           <li>
-            <a href="./index.php?page=account&act=login"><i class="fas fa-sign-in-alt"></i>Login</a>
+            <a href="./index.php?page=account&act=login"><i class="fas fa-sign-in-alt"></i>Đăng nhập</a>
           </li>
           <li>
-            <a href="./index.php?page=account&act=register"><i class="fas fa-user"></i>Create account</a>
+            <a href="./index.php?page=account&act=register"><i class="fas fa-user"></i>Đăng ký</a>
           </li>
           <li>
-            <a href="#"><i class="far fa-heart"></i>Wishlist</a>
+            <a href="#"><i class="far fa-heart"></i>Yêu thích</a>
           </li>
         </ul>
       </div>
@@ -30,7 +30,7 @@
     <div class="header__user-bag">
       <i class="fas fa-shopping-bag"> </i>
       <div class="header__user-box shopping__bag">
-        <p>Your cart is currently empty!</p>
+        <p>Giỏ hàng đang trống!</p>
       </div>
     </div>
     <div class="header__user-menu mobile-menu">
