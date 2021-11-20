@@ -40,4 +40,3 @@ if (isset($_POST['submit'])) {
     </form>
   </div>
 </main>
-<script src="assets/js/switch__forgot_pass.js"></script>

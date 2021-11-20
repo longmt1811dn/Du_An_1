@@ -1,14 +1,8 @@
-.login__container {
+.login__form {
   background: var(--bg-darkblue);
-  padding: 7rem 0;
-}
-
-.login__form,
-.forgot_password__form {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  padding-top: 9rem;
 }
 
 .login__control-input {
@@ -41,23 +35,6 @@
 .border-bot {
   text-decoration: underline;
 }
-<<<<<<< HEAD
-
-.forgot_password__form,
-.login__form {
-  text-align: center;
-}
-
-.forgot_password__form {
-  opacity: 0;
-  visibility: hidden;
-  height: 0;
-}
-
-.forgot_password__form-sub {
-  display: block;
-  margin: 2rem 0;
-=======
 /* CSS trang quên mật khẩu */
 .forgotpass {
   display: flex;
@@ -136,5 +113,4 @@
 }
 .button-forgotpass:hover {
   opacity: 1;
->>>>>>> BE
 }
