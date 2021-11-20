@@ -119,11 +119,7 @@
 
                 <div class="product__img">
                   <div class="imgOverlay">
-<<<<<<< HEAD
-                    <img src="<?= $itemsProduct["image"] ?>" alt="">
-=======
                     <img src="./<?= $itemsProduct["image"] ?>" alt="">
->>>>>>> BE
                   </div>
                   <div class="product__img-button">
                     <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
@@ -287,27 +283,6 @@
     </div>
   </div>
 
-<<<<<<< HEAD
-  <div class="main__category">
-    <div class="category__container">
-      <h2 class="category__container-title title__borderbottom">
-        Sản Phẩm
-      </h2>
-
-      <ul class="category__container-menu">
-        <li><a href="#">Mới nhất</a></li>
-        <li><a href="#">Xem nhiều</a></li>
-      </ul>
-      <div class="category__container-list">
-        <?php
-        $new_product = product_new();
-        foreach ($new_product as $product) { ?>
-          <div class="container__list-item">
-            <div class="container__item-img">
-              <img src="<?= $product['image'] ?>" alt="" />
-            </div>
-            <p class="product__text"><?= $product['name_product'] ?></p>
-=======
     <div class="main__store">
     <div class="container">
       <div class="main__store-title text-ct">
@@ -366,7 +341,6 @@
               </div>
             <?php } ?>
 
->>>>>>> BE
           </div>
         </div>
       </div>
@@ -446,11 +420,7 @@
       <?php foreach ($list_newsTwo as $new) { ?>
         <div class="main__post">
           <div class="main__post-img">
-<<<<<<< HEAD
-            <a href="#"><img src="<?= $new['image_new'] ?>" alt="" /></a>
-=======
             <a href="#"><img src="./<?= $new['image_new'] ?>" alt="" /></a>
->>>>>>> BE
           </div>
 
           <div class="main__post-text">
