@@ -17,7 +17,7 @@
         <input type="password" class="input__control" placeholder="Password" />
       </div>
 
-      <p class="login__control-text">Quên mật khẩu?</p>
+      <a href="?page=account&act=forgotpass" class="login__control-text">Quên mật khẩu?</a>
       <div class="login__control-button">
         <button type="submit" class="btn">Đăng nhập</button>
         <p class="login__control-text border-bot">Create Tài khoản</p>

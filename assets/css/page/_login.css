@@ -35,3 +35,82 @@
 .border-bot {
   text-decoration: underline;
 }
+/* CSS trang quên mật khẩu */
+.forgotpass {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #030d1d;
+  padding: 5rem;
+}
+.forgotpass > .box-forgotpass {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+}
+.box-forgotpass > .text-forgotpass {
+  margin-bottom: 1rem;
+}
+.text-forgotpass > h2 {
+  font-size: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+.box-forgotpass > .text-small-forgotpass {
+  margin-bottom: 1rem;
+}
+.text-small-forgotpass > p {
+  font-size: 1.7rem;
+  color: #000;
+}
+.box-forgotpass > .form-forgotpass {
+}
+.form-forgotpass > .form-group_forgotpass {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.form-group_forgotpass > input {
+  width: 320px;
+  height: 40px;
+  padding: 0 1rem;
+  border: 1px solid #8a8d91;
+  border-radius: 0.5rem;
+}
+.form-submit-forgotpass {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.form-submit-forgotpass > button {
+  width: 75px;
+  background: #e4e6eb;
+  color: #4b4f56;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0 2rem;
+  line-height: 35px;
+  margin-right: 1rem;
+  opacity: 0.8;
+  transition: all 0.3s linear;
+}
+.form-submit-forgotpass > a > button:hover {
+  opacity: 1;
+}
+.form-submit-forgotpass > .button-forgotpass {
+  width: 100px;
+  background: #1877f2;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0 2rem;
+  line-height: 35px;
+  opacity: 0.8;
+  transition: all 0.3s linear;
+}
+.button-forgotpass:hover {
+  opacity: 1;
+}
