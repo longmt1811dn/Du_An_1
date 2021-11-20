@@ -177,6 +177,11 @@
 
 .main__store-list .product {
   margin: 0 1.6rem;
+<<<<<<< HEAD
+=======
+  max-width: 25%;
+  width: 100%;
+>>>>>>> lam
 }
 
 .main__store-list .product {
