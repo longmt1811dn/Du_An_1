@@ -21,33 +21,38 @@ function users_listall()
     return pdo_query($sql);
 }
 // load dữ liệu khi click vào sửa
-function users_loaddata($id_user){
+function users_loaddata($id_user)
+{
     $sql = "SELECT * FROM users WHERE id_user = ?";
     return pdo_query_one($sql, $id_user);
 }
 
 // cập nhật user
-function  users_update($account, $password, $first_name, $last_name, $email, $activated, $role, $id_user){
+function  users_update($account, $password, $first_name, $last_name, $email, $activated, $role, $id_user)
+{
     $sql = "UPDATE users SET account = ?, pass = ?, first_name=?, last_name=?, email=?, activated = ?, role = ? WHERE id_user = ?";
     pdo_execute($sql, $account, $password, $first_name, $last_name, $email, $activated, $role, $id_user);
 }
 
 // xoá user
-function users_delete($id_user){
+function users_delete($id_user)
+{
     $sql = "DELETE FROM users WHERE id_user = ?";
     pdo_execute($sql, $id_user);
 }
 
 //Lay name user
-function users_name($idUsers){
+function users_name($idUsers)
+{
     $sql = "SELECT * FROM users WHERE id_user = ?";
     $row = pdo_query_one($sql, $idUsers);
-    
+
     return $row['last_name'] . ' ' . $row['first_name'];
 }
 
 // gửi email
-function  send_mail($email, $token){
+function  send_mail($email, $token)
+{
     require "./PHPMailer-master/PHPMailer-master/src/PHPMailer.php";
     require "./PHPMailer-master/PHPMailer-master/src/SMTP.php";
     require './PHPMailer-master/PHPMailer-master/src/Exception.php';
@@ -62,7 +67,7 @@ function  send_mail($email, $token){
         $mail->Password = '01663261181';   // SMTP password
         $mail->SMTPSecure = 'ssl';  // encryption TLS/SSL 
         $mail->Port = 465;  // port to connect to                
-        $mail->setFrom('tienjerry2000@gmail.com', 'TimZee');
+        $mail->setFrom('tienjerry2000@gmail.com', 'TimeZee');
         $mail->addAddress($email);
         $mail->isHTML(true);  // Set email format to HTML
         $mail->Subject = 'Khôi phục mật khẩu tài khoản';
@@ -70,7 +75,7 @@ function  send_mail($email, $token){
         Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi, để hoàn tất việc khôi phục tài khoản<br>
         Bạn vui lòng nhấp vào liên kết này để đặt lại mật khẩu của bạn:<br><br>
         <a href="http://localhost/DUAN1_LEXUANPHAT/Du_An_1/index.php?page=account&act=resert-pass&email=' . $email . '&token=' . $token . '">Cập nhật lại mật khẩu cho tài khoản</a> <br><br>
-        Lưu ý: Liên kết này sẽ chỉ hoạt động trong 3 ngày từ hôm nay đến hết ngày '.date("d-m-Y", strtotime($_SESSION["date"])).' và chỉ có thể dùng được một lần.<br><br>
+        Lưu ý: Liên kết này sẽ chỉ hoạt động trong 3 ngày từ hôm nay đến hết ngày ' . date("d-m-Y", strtotime($_SESSION["date"])) . ' và chỉ có thể dùng được một lần.<br><br>
         Cảm ơn bạn!';
         $mail->Body = $noidungthu;
         $mail->smtpConnect(array(
@@ -81,8 +86,8 @@ function  send_mail($email, $token){
             )
         ));
         $mail->send();
-        echo 'Đã gửi mail xong';
+        return true;
     } catch (Exception $e) {
-        echo 'Error: ', $mail->ErrorInfo;
+        return false;
     }
 }
