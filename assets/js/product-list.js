@@ -44,7 +44,7 @@ function run() {
   DATA_DONG_HO.forEach((element) => {
     let divProduct = document.createElement("div");
     divProduct.classList.add("product");
-
+    divProduct.classList.add("product__collection");
     divProduct.innerHTML = `
           <div class="product__img">
           <div class="imgOverlay">

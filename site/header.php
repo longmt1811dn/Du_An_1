@@ -30,7 +30,7 @@
     <div class="header__user-bag">
       <i class="fas fa-shopping-bag"> </i>
       <div class="header__user-box shopping__bag">
-        <p>Giỏi hàng bạn đang trống</p>
+        <p>Giỏ hàng đang trống!</p>
       </div>
     </div>
     <div class="header__user-menu mobile-menu">

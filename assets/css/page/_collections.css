@@ -79,6 +79,11 @@
   margin: 2rem 0;
 }
 
+#collection__product-list .product__collection {
+  width: auto;
+}
+
 .collection__product-list > .product .imgOverlay {
-  width: 35rem;
+  max-width: 35rem;
+  width: 100%;
 }

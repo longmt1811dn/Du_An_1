@@ -1,0 +1,51 @@
+.wishlist__container {
+  background: var(--bg-darkblue);
+  padding: 9rem 13rem;
+}
+
+.wishlist__container-table {
+  width: 90%;
+  margin: 0 auto;
+  border-spacing: 0;
+}
+
+table,
+tr,
+td {
+  border: 0.1rem solid var(--color-yellow);
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.wishlist__head-remove,
+.wishlist__head-img {
+  padding: 2rem 1.5rem;
+}
+
+.wishlist__head-name,
+.wishlist__head-price,
+.wishlist__head-stock {
+  width: 15%;
+  padding: 2rem 2.5rem;
+}
+
+.wishlist__head-view {
+  width: 40%;
+  padding: 2rem 5rem;
+}
+
+.wishlist__table-head span {
+  font-weight: var(--font-weight700);
+  font-size: var(--font-size18);
+  color: var(--color-gray);
+  line-height: var(--line-height31);
+  text-transform: capitalize;
+}
+
+.wishlist__head-img a {
+  display: block;
+}
+
+.wishlist__head-img img {
+  width: 50%;
+}
