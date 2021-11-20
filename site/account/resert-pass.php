@@ -37,4 +37,5 @@ if (isset($_POST['submit'])) {
     $sql = "UPDATE users SET pass = ?, token = NULL, date = NULL WHERE email = ?";
     $stmt = $conn->prepare($sql);
     $stmt->execute([$password, $email]);
+    echo "<script>alert('Cập nhật mật khẩu thành công');  window.location='index.php'; </script>";
 }
