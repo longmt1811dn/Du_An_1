@@ -91,3 +91,18 @@ function  send_mail($email, $token)
         return false;
     }
 }
+// đăng ký tài khoản
+function users_register($username, $first_name, $last_name, $email, $pass){
+    $sql = "INSERT INTO users(account, first_name, last_name, email, pass) VALUES(?,?,?,?,?)";
+    pdo_execute($sql, $username, $first_name, $last_name, $email, $pass);
+}
+// Kiểm tra sự tồn tại của một user hoặc email
+function users_checkEmailOrUsername($email, $username){
+    $sql = "SELECT * FROM users WHERE email = ? OR account = ?";
+    return pdo_query_one($sql, $email, $username);
+}
+// Kiểm tra sự tồn tại của một email và password
+function users_checkEmailandPassword($email, $pass){
+    $sql = "SELECT * FROM users WHERE email = ? AND pass = ?";
+    return pdo_query_one($sql, $email, $pass);
+}
