@@ -171,3 +171,19 @@ function product_selectFourView()
     
     return pdo_query($sql);
 }
+
+//Đếm sản phẩm theo thương hiệu
+function product_countIdBrand($idBrand){
+    $sql = "SELECT COUNT(*) as so_luong FROM product WHERE id_brand = ?";
+    $row = pdo_query_one($sql, $idBrand);
+    
+    return $row['so_luong'];
+}
+
+//Lấy hình ảnh của sản phẩm mới nhất từ thương hiệu
+function product_imageIdBrand($idBrand){
+    $sql = "SELECT * FROM product WHERE id_brand = ? ORDER BY date DESC LIMIT 0,1";
+    $row = pdo_query_one($sql, $idBrand);
+    
+    return $row['image'];
+}

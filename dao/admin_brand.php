@@ -123,3 +123,75 @@ function brand_pagination()
             </nav>
             </div> ';
 }
+
+//Lấy thương hiệu có phân trang
+function brand_colectionAll()
+{
+    $pageSize = 8;
+    $startRow = 0;
+    $pageNum = 1;
+
+    if (isset($_GET['pagenum']) == true) $pageNum = $_GET['pagenum'];
+
+    $startRow = ($pageNum - 1) * $pageSize;
+
+    $sql = "SELECT * FROM brand LIMIT $startRow,$pageSize";
+
+    return pdo_query($sql);
+}
+
+//Phân trang thương hiệu trang người dùng
+function brand_colectionAllPagination()
+{
+    $pageSize = 8;
+    $pageNum = 1;
+
+    $conn = pdo_get_connection();
+    $offSet = 2;
+
+    if (isset($_GET['pagenum']) == true) $pageNum = $_GET['pagenum'];
+    $sql = "SELECT count(*) FROM brand";
+    $kq = $conn->query($sql);
+    $r = $kq->fetch();
+
+    $tongSoReCord = $r[0];
+    $tongSoTrang = ceil($tongSoReCord / $pageSize);
+
+    $from = $pageNum - $offSet;
+    if ($from < 1) $from = 1;
+    $to = $pageNum + $offSet;
+    if ($to > $tongSoTrang) $to = $tongSoTrang;
+    $pagePrev = $pageNum - 1;
+    $pageNext = $pageNum + 1;
+
+    echo '<ul class="pagination__list">';
+
+    if ($pageNum > 1) {
+
+        echo '<li class=""><a class="pagination__item" href="index.php?page=product&act=collectionall&pagenum=1"><<</a></li>';
+        echo '<li class=""><a class="pagination__item" href="index.php?page=product&act=collectionall&pagenum=' . $pagePrev . '"><</a></li>';
+    }
+
+    for ($i = $from; $i <= $to; $i++) {
+
+        if ($tongSoTrang > 1) {
+
+            if ($i == $pageNum) {
+
+                echo '<li class=""><a class="pagination__item activex" href="index.php?page=product&act=collectionall&pagenum=' . $i . '">' . $i . '</a></li>';
+            } else {
+
+                echo '<li class=""><a class="pagination__item" href="index.php?page=product&act=collectionall&pagenum=' . $i . '">' . $i . '</a></li>';
+            }
+        }
+    }
+
+    if ($pageNum < $tongSoTrang) {
+
+        echo '<li class=""><a class="pagination__item" href="index.php?page=product&act=collectionall&pagenum=' . $pageNext . '">></a></li>';
+        echo '<li class=""><a class="pagination__item" href="index.php?page=product&act=collectionall&pagenum=' . $tongSoTrang . '">>></a></li>';
+    }
+    '</ul>
+            </nav>
+            </div> ';
+}

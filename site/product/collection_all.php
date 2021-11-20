@@ -8,23 +8,26 @@
       <div class="all-collection__show all-collection__container" id="all-collection__show">
       
       <?php foreach ($listBrand as $item) { ?>
+      <?php if(product_countIdBrand($item['id_brand']) > 0) { ?>
           
       <!-- Xuất item -->
       <div class="all-collection__show-item">
       <div class="all-collection__item-img">
-            <a href="./collection.html"><img src="https://casiovietnam.net/upload/a168wg-9wdf-600.jpg" alt="No Image"></a>
+            <a href="./collection.html"><img src="<?= product_imageIdBrand($item['id_brand']) ?>" alt="No Image"></a>
       </div>
 
       <div class="all-collection__item-detail">
             <p class="text__gray"><?= $item['name_brand'] ?></p>
-            <span class="text__gray">10 Items</span>
+            <span class="text__gray"><?= product_countIdBrand($item['id_brand']) ?> Sản phẩm</span>
             <button class="btn">
                     <a href="collection.html">Xem tất cả</a>
             </button>
       </div>
       </div>
 
-      <?php } ?>
+      <?php }} ?>
       
       </div>
+        
+        <?php brand_colectionAllPagination(); ?>
     </main>

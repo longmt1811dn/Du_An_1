@@ -13,6 +13,7 @@
   max-width: 20%;
   width: 100%;
 
+  padding: 10px;
   border: 0.1rem solid var(--color-yellow);
 }
 
@@ -22,6 +23,7 @@
 
 .all-collection__item-img img {
   width: 100%;
+  height: 240px;
 }
 
 .all-collection__item-detail {
