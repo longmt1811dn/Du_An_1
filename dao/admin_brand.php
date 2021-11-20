@@ -168,8 +168,8 @@ function brand_colectionAllPagination()
 
     if ($pageNum > 1) {
 
-        echo '<li class=""><a class="pagination__item" href="index.php?page=product&act=collectionall&pagenum=1"><<</a></li>';
-        echo '<li class=""><a class="pagination__item" href="index.php?page=product&act=collectionall&pagenum=' . $pagePrev . '"><</a></li>';
+        echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=collectionall&pagenum=1"><<</a></li>';
+        echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=collectionall&pagenum=' . $pagePrev . '"><</a></li>';
     }
 
     for ($i = $from; $i <= $to; $i++) {
@@ -178,18 +178,18 @@ function brand_colectionAllPagination()
 
             if ($i == $pageNum) {
 
-                echo '<li class=""><a class="pagination__item activex" href="index.php?page=product&act=collectionall&pagenum=' . $i . '">' . $i . '</a></li>';
+                echo '<li class=""><a class="btn btn--m activex" href="index.php?page=product&act=collectionall&pagenum=' . $i . '">' . $i . '</a></li>';
             } else {
 
-                echo '<li class=""><a class="pagination__item" href="index.php?page=product&act=collectionall&pagenum=' . $i . '">' . $i . '</a></li>';
+                echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=collectionall&pagenum=' . $i . '">' . $i . '</a></li>';
             }
         }
     }
 
     if ($pageNum < $tongSoTrang) {
 
-        echo '<li class=""><a class="pagination__item" href="index.php?page=product&act=collectionall&pagenum=' . $pageNext . '">></a></li>';
-        echo '<li class=""><a class="pagination__item" href="index.php?page=product&act=collectionall&pagenum=' . $tongSoTrang . '">>></a></li>';
+        echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=collectionall&pagenum=' . $pageNext . '">></a></li>';
+        echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=collectionall&pagenum=' . $tongSoTrang . '">>></a></li>';
     }
     '</ul>
             </nav>

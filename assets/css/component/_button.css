@@ -52,6 +52,13 @@
   background: var(--bg-lightgray03);
 }
 
+.btn.activex {
+  background: var(--bg-lightgray03);
+}
+
+.btn--m {
+}
+
 /* Button admin */
 .admin__btn-del {
   padding: 5px 15px;
