@@ -1,8 +1,14 @@
-.login__form {
+.login__container {
   background: var(--bg-darkblue);
+  padding: 7rem 0;
+}
+
+.login__form,
+.forgot_password__form {
   display: flex;
   justify-content: center;
-  padding-top: 9rem;
+  flex-direction: column;
+  align-items: center;
 }
 
 .login__control-input {
@@ -34,4 +40,20 @@
 
 .border-bot {
   text-decoration: underline;
+}
+
+.forgot_password__form,
+.login__form {
+  text-align: center;
+}
+
+.forgot_password__form {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
+
+.forgot_password__form-sub {
+  display: block;
+  margin: 2rem 0;
 }

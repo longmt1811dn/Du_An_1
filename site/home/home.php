@@ -119,7 +119,7 @@
 
                 <div class="product__img">
                   <div class="imgOverlay">
-                    <img src="../<?= $itemsProduct["image"] ?>" alt="">
+                    <img src="<?= $itemsProduct["image"] ?>" alt="">
                   </div>
                   <div class="product__img-button">
                     <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
@@ -299,7 +299,7 @@
         foreach ($new_product as $product) { ?>
           <div class="container__list-item">
             <div class="container__item-img">
-              <img src="../<?= $product['image'] ?>" alt="" />
+              <img src="<?= $product['image'] ?>" alt="" />
             </div>
             <p class="product__text"><?= $product['name_product'] ?></p>
           </div>
@@ -317,7 +317,7 @@
       <?php foreach ($new2 as $new) { ?>
         <div class="main__post">
           <div class="main__post-img">
-            <a href="#"><img src="../<?= $new['image_new'] ?>" alt="" /></a>
+            <a href="#"><img src="<?= $new['image_new'] ?>" alt="" /></a>
           </div>
 
           <div class="main__post-text">

@@ -185,3 +185,19 @@
   padding: 1.4rem 1rem;
   width: 36.9rem;
 }
+
+.h1__name-big {
+  font-family: var(--font-playfair);
+  font-size: var(--font-size42);
+  line-height: var(--line-height-normal);
+  color: var(--color-white);
+  font-weight: var(--font-weight400);
+  user-select: none;
+}
+
+.p__sub-text {
+  font-size: var(--font-size18);
+  color: var(--color-gray);
+  line-height: var(--line-height31);
+  letter-spacing: var(--letter-spacing84);
+}

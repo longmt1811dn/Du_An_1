@@ -29,6 +29,7 @@
 @import url(./page/_all__collection.css);
 @import url(./page/_cart.css);
 @import url(./page/_wishlist.css);
+@import url(./page/_news.css);
 
 /* component */
 @import url(./component/_button.css);
