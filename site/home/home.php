@@ -420,7 +420,7 @@
       <?php foreach ($list_newsTwo as $new) { ?>
         <div class="main__post">
           <div class="main__post-img">
-            <a href="#"><img src="./<?= $new['image_new'] ?>" alt="" /></a>
+            <a href="index.php?page=blogs&act=news"><img src="./<?= $new['image_new'] ?>" alt="" /></a>
           </div>
 
           <div class="main__post-text">
@@ -430,7 +430,7 @@
 
           <div class="main__post-button">
             <button class="btn main__post-btn">
-              <a href="#" class="">Đọc Thêm</a>
+              <a href="index.php?page=blogs&act=news" class="">Đọc Thêm</a>
             </button>
           </div>
         </div>
