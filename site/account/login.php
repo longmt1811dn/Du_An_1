@@ -1,8 +1,12 @@
 <?php
 require_once "./dao/admin_users.php";
+if(isset($_SESSION['users'])){
+  echo '<script>window.location="./index.php";</script>';
+}
 if (isset($_POST['submit'])) {
   $email = $_POST['email'];
-  $pass = $_POST['pass'];
+  $password = $_POST['pass'];
+  $pass = md5($password);
   $kiemtra = users_checkEmailandPassword($email, $pass);
   if (is_array($kiemtra)) {
     $_SESSION['users'] = $kiemtra;
