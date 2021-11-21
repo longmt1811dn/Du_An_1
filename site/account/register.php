@@ -1,11 +1,16 @@
 <?php
 require_once "./dao/admin_users.php";
+if(isset($_SESSION['users'])){
+  echo '<script>window.location="./index.php";</script>';
+}
 if (isset($_POST['submit'])) {
   $first_name = $_POST['first_name'];
   $last_name = $_POST['last_name'];
   $username = $_POST['username'];
   $email = $_POST['email'];
-  $pass = $_POST['pass'];
+  $password = $_POST['pass'];
+  $pass = md5($password);
+  // 
   $kiemtra = users_checkEmailOrUsername($email, $username);
   if (strlen($first_name) <= 1) {
     $thongbao =  "Họ không được dưới 1 kí tự";
@@ -21,6 +26,7 @@ if (isset($_POST['submit'])) {
     $thongbao =  "Username hoặc email đã có người sử dụng";
   } else {
     users_register($username, $first_name, $last_name, $email, $pass);
+    print_r($_POST);
     $thongbao = "Đăng ký thành công";
   }
 }

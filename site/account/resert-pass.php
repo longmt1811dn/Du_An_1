@@ -33,9 +33,10 @@ if (isset($_GET['email']) && isset($_GET['token'])) {
 <?php
 if (isset($_POST['submit'])) {
     $password = $_POST['password'];
+    $pass = md5($password);
     $email = $_POST['email'];
     $sql = "UPDATE users SET pass = ?, token = NULL, date = NULL WHERE email = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->execute([$password, $email]);
+    $stmt->execute([$pass, $email]);
     echo "<script>alert('Cập nhật mật khẩu thành công');  window.location='index.php'; </script>";
 }
