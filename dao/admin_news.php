@@ -52,8 +52,9 @@ function news_update($title, $describe, $content, $hide, $highlights, $targer_fi
 }
 
 // lấy 2 tin trang chủ 
-function new_2()
+function new_selectTwo()
 {
-    $sql = "SELECT * from news order by date limit 0 , 2";
+    $sql = "SELECT * FROM news ORDER BY date DESC LIMIT 0,2";
+    
     return pdo_query($sql);
 }

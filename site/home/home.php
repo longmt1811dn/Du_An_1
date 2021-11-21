@@ -119,7 +119,7 @@
 
                 <div class="product__img">
                   <div class="imgOverlay">
-                    <img src="<?= $itemsProduct["image"] ?>" alt="">
+                    <img src="./<?= $itemsProduct["image"] ?>" alt="">
                   </div>
                   <div class="product__img-button">
                     <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
@@ -136,7 +136,7 @@
                     <?php if ($itemsProduct["promotion"] > 0) { ?>
 
                       <span class="price"><?= number_format($itemsProduct["price"] - ($itemsProduct["price"] / 100 * $itemsProduct["promotion"])) ?> VND
-                        <s style="font-size:1.5rem , display:block"><?= number_format($itemsProduct["price"]) ?> VND</s>
+                        <s style="font-size:1.5rem ; display:block"><?= number_format($itemsProduct["price"]) ?> VND</s>
                       </span>
                     <?php } else { ?>
                       <span class="price"><?= number_format($itemsProduct["price"]) ?> VND
@@ -148,9 +148,9 @@
                       <?php } ?>
                     </span> -->
                   </div>
-                  <div class="product__detail-sale"><span>Ex to Sale Tax</span></div>
+                  <div class="product__detail-sale"><span>Sản phẩm nổi bật</span></div>
                   <div class="product__detail-cart">
-                    <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+                    <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Mua sản phẩm</a>
                   </div>
                 </div>
               </div>
@@ -283,41 +283,144 @@
     </div>
   </div>
 
-  <div class="main__category">
-    <div class="category__container">
-      <h2 class="category__container-title title__borderbottom">
-        Sản Phẩm
-      </h2>
+    <div class="main__store">
+    <div class="container">
+      <div class="main__store-title text-ct">
+        <h2>Sản phẩm mới</h2>
+      </div>
 
-      <ul class="category__container-menu">
-        <li><a href="#">Mới nhất</a></li>
-        <li><a href="#">Xem nhiều</a></li>
-      </ul>
-      <div class="category__container-list">
-        <?php
-        $new_product = product_new();
-        foreach ($new_product as $product) { ?>
-          <div class="container__list-item">
-            <div class="container__item-img">
-              <img src="<?= $product['image'] ?>" alt="" />
-            </div>
-            <p class="product__text"><?= $product['name_product'] ?></p>
+      <div class="main__store-list">`
+        <div class="container">
+          <div class="list-item">
+
+            <?php foreach ($list_date as $itemsProduct) { ?>
+              <div class="product max-w25">
+
+                <?php if ($itemsProduct["promotion"] > 0) { ?>
+                  <div class="product__sale">
+                    <span class="product__sale-p">Sale</span>
+                  </div>
+                <?php } ?>
+
+                <div class="product__img">
+                  <div class="imgOverlay">
+                    <img src="./<?= $itemsProduct["image"] ?>" alt="">
+                  </div>
+                  <div class="product__img-button">
+                    <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
+                    <a href="#" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
+                    <a href="#" class="compare" title="Product Link"><i class="fas fa-link"></i></a>
+                    <a href="#" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                  </div>
+                </div>
+                <div class="product__detail">
+                  <div class="product__detail-title">
+                    <a href=""><?= $itemsProduct["name_product"] ?></a>
+                  </div>
+                  <div class="product__detail-price">
+                    <?php if ($itemsProduct["promotion"] > 0) { ?>
+
+                      <span class="price"><?= number_format($itemsProduct["price"] - ($itemsProduct["price"] / 100 * $itemsProduct["promotion"])) ?> VND
+                        <s style="font-size:1.5rem ; display:block"><?= number_format($itemsProduct["price"]) ?> VND</s>
+                      </span>
+                    <?php } else { ?>
+                      <span class="price"><?= number_format($itemsProduct["price"]) ?> VND
+                      </span>
+                    <?php } ?>
+                    <!-- <span class="starrating">
+                      <?php for ($i = 0; $i < $itemsProduct["star"]; $i++) { ?>
+                        <i class="fas fa-star"></i>
+                      <?php } ?>
+                    </span> -->
+                  </div>
+                    <div class="product__detail-sale"><span>Ngày: <?= date("d/m/Y", strtotime($itemsProduct['date'])) ?></span></div>
+                  <div class="product__detail-cart">
+                    <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Mua sản phẩm</a>
+                  </div>
+                </div>
+              </div>
+            <?php } ?>
+
           </div>
-        <?php } ?>
+        </div>
       </div>
     </div>
   </div>
-  <?php $new2 = new_2(); ?>
+    
+    <div class="main__store">
+    <div class="container">
+      <div class="main__store-title text-ct">
+        <h2>Sản phẩm xem nhiều</h2>
+      </div>
+
+      <div class="main__store-list">`
+        <div class="container">
+          <div class="list-item">
+
+            <?php foreach ($list_view as $itemsProduct) { ?>
+              <div class="product max-w25">
+
+                <?php if ($itemsProduct["promotion"] > 0) { ?>
+                  <div class="product__sale">
+                    <span class="product__sale-p">Sale</span>
+                  </div>
+                <?php } ?>
+
+                <div class="product__img">
+                  <div class="imgOverlay">
+                    <img src="./<?= $itemsProduct["image"] ?>" alt="">
+                  </div>
+                  <div class="product__img-button">
+                    <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
+                    <a href="#" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
+                    <a href="#" class="compare" title="Product Link"><i class="fas fa-link"></i></a>
+                    <a href="#" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                  </div>
+                </div>
+                <div class="product__detail">
+                  <div class="product__detail-title">
+                    <a href=""><?= $itemsProduct["name_product"] ?></a>
+                  </div>
+                  <div class="product__detail-price">
+                    <?php if ($itemsProduct["promotion"] > 0) { ?>
+
+                      <span class="price"><?= number_format($itemsProduct["price"] - ($itemsProduct["price"] / 100 * $itemsProduct["promotion"])) ?> VND
+                        <s style="font-size:1.5rem; display:block"><?= number_format($itemsProduct["price"]) ?> VND</s>
+                      </span>
+                    <?php } else { ?>
+                      <span class="price"><?= number_format($itemsProduct["price"]) ?> VND
+                      </span>
+                    <?php } ?>
+                    <!-- <span class="starrating">
+                      <?php for ($i = 0; $i < $itemsProduct["star"]; $i++) { ?>
+                        <i class="fas fa-star"></i>
+                      <?php } ?>
+                    </span> -->
+                  </div>
+                  <div class="product__detail-sale"><span>Lượt xem: <?= $itemsProduct['view'] ?></span></div>
+                  <div class="product__detail-cart">
+                    <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Mua sản phẩm</a>
+                  </div>
+                </div>
+              </div>
+            <?php } ?>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
   <div class="main__blog">
     <div class="main__blog-title">
       <h2 class="title__borderbottom">Tin Tức</h2>
     </div>
 
     <div class="main__blog-post">
-      <?php foreach ($new2 as $new) { ?>
+      <?php foreach ($list_newsTwo as $new) { ?>
         <div class="main__post">
           <div class="main__post-img">
-            <a href="#"><img src="<?= $new['image_new'] ?>" alt="" /></a>
+            <a href="#"><img src="./<?= $new['image_new'] ?>" alt="" /></a>
           </div>
 
           <div class="main__post-text">

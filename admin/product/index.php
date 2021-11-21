@@ -3,6 +3,7 @@ require_once "../../global.php";
 require_once "../../dao/admin_product.php";
 require_once '../../dao/admin_brand.php';
 require_once '../../dao/admin_type.php';
+require_once '../../dao/admin_type_brand.php';
 
 if (exist_param("listproduct")) {
     $listOb = product_listall();
@@ -30,7 +31,13 @@ if (exist_param("listproduct")) {
     
     $id_type_brand = $_POST['id_type-brand'];
     
-    product_add($name_product, $price, $describe, $content, $size, $targer_file, $material, $highlights, $promotion, $hide,  $id_type_brand);
+//    Lấy id type
+    $id_type = select_idType($id_type_brand);
+    
+//    Lấy id brand
+    $id_brand = select_idBrand($id_type_brand);
+    
+    product_add($name_product, $price, $describe, $content, $size, $targer_file, $material, $highlights, $promotion, $hide, $id_type, $id_brand,  $id_type_brand);
     
     $VIEW_NAME = "add.php";
     $thongbao = "Thêm mới thành công";
@@ -74,7 +81,13 @@ if (exist_param("listproduct")) {
     
     $id_type_brand = $_POST['id_type-brand'];
     
-    product_updateA($name_product, $price, $describe, $content, $size, $targer_file ,$material, $highlights, $promotion, $hide,  $id_type_brand, $id_product);
+    //    Lấy id type
+    $id_type = select_idType($_POST['id_type-brand']);
+    
+//    Lấy id brand
+    $id_brand = select_idBrand($_POST['id_type-brand']);
+    
+    product_updateA($name_product, $price, $describe, $content, $size, $targer_file ,$material, $highlights, $promotion, $hide, $id_type, $id_brand,  $id_type_brand, $id_product);
     
     $listOb = product_listall();
     $VIEW_NAME = "list.php";

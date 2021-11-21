@@ -2,53 +2,53 @@
             <div class="footer__contact pd-6">
                 <div class="container flex flex-w">
                   <div class="contact-help">
-                    <h4>Help</h4>
+                    <h4>Trợ giúp</h4>
                     <ul class="contact-help__links">
-                      <li><a href="#">Search</a></li>
-                      <li><a href="#">Help</a></li>
-                      <li><a href="#">Information</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
-                      <li><a href="#">Shipping Details</a></li>
+                      <li><a href="#">Tìm kiếm</a></li>
+                      <li><a href="#">Trợ giúp</a></li>
+                      <li><a href="#">Thông tin</a></li>
+                      <li><a href="#">Chính sách bảo mật</a></li>
+                      <li><a href="#">Chi tiết vận chuyển</a></li>
                     </ul>
                   </div>
                   <div class="contact-support">
-                    <h4>Support</h4>
+                    <h4>Hổ trợ</h4>
                     <ul class="contact-support__link">
-                      <li><a href="#">Contact us</a></li>
-                      <li><a href="#">About us</a></li>
-                      <li><a href="#">Careers</a></li>
-                      <li><a href="#">Refunds & Returns</a></li>
-                      <li><a href="#">Deliveries</a></li>
+                      <li><a href="#">Liên hệ</a></li>
+                      <li><a href="#">Giới thiệu</a></li>
+                      <li><a href="#">Nghề nghiệp</a></li>
+                      <li><a href="#">Hoàn lại tiền & trả hàng</a></li>
+                      <li><a href="#">Giao hàng</a></li>
                     </ul>
                   </div>
                   <div class="contact-information">
-                    <h4>Information</h4>
+                    <h4>Thông tin</h4>
                     <ul class="contact-information__link">
-                      <li><a href="#">Search Tems</a></li>
-                      <li><a href="#">Advanced Search</a></li> 
-                      <li><a href="#">Help & Faq's </a></li>
-                      <li><a href="#">Store Location</a></li>
-                      <li><a href="#">Order & Return</a></li>
+                      <li><a href="#">Cụm từ tìm kiếm</a></li>
+                      <li><a href="#">Tìm kiếm nâng cao</a></li> 
+                      <li><a href="#">Trợ giúp & Câu hỏi thường gặp</a></li>
+                      <li><a href="#">Vị trí cửa hàng</a></li>
+                      <li><a href="#">Đặt hàng & Trả hàng</a></li>
                     </ul>
                   </div>
                   <div class="contact-us">
-                    <h4>Contact us</h4>
+                    <h4>Liên hệ</h4>
                     <div class="contact-us__address">
                       <p>
                         <i class="fa fa-home"></i>
                            No: 58 A, East Madison Street,<br>
-                           <p class="mt">Baltimore, MD, USA 4508</p>
+                           <p class="mt">Baltimore, MD, Hoa Kỳ 4508</p>
                       </p>
                       <p class="phone">
                         <i class="fa fa-phone"></i>
-                           +91 12345678
+                           +84 933666999
                       </p>
                     </div>
                     <div class="contact-us__email mt-1">
                       <p class="email">
                         <i class="fa fa-envelope">
                         </i>
-                        <a href="">support@somemail.com</a>
+                        <a href="">admin@gmail.com</a>
                       </p>
                     </div>
                   </div>
@@ -58,7 +58,7 @@
             <div class="footer__connection pd-2"> 
               <div class="connection__left">
                 <div class="wrapper">
-                  <h4>Connnect with us</h4>
+                  <h4>Kết nối với chúng tôi</h4>
                   <div class="icons">
                       <ul>
                         <li> <a href=""><span class="fab fa-twitter"></span></a> </li>
@@ -73,7 +73,7 @@
               </div>
               <div class="connection__right">
                 <div class="wrapper">
-                  <h4>Download our app</h4>
+                  <h4>Tải xuống ứng dụng của chúng tôi</h4>
                   <div class="download_app">
                     <ul>
                       <li><a href=""><img src="//cdn.shopify.com/s/files/1/0075/1832/2770/files/App-logo-1_small_small_d09bc29f-61cf-4e34-a235-3170614f870b_small.png?v=1558675085" alt=""></a></li>
@@ -87,7 +87,7 @@
             
              <div class="footer__copyright"> 
               <div class="container flex-sb">
-                <p class="copyright">Copyright <a href="#">Powered by Shopify</a></p>
+                <p class="copyright">Bản quyền <a href="#">được cung cấp bởi Shopify</a></p>
                 <div class="payment_section">
                   <ul>
                     <li><a href="#"><img src="./assets/image/card-icons_0000_23_55x.png" alt=""></a></li>

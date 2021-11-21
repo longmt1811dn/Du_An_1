@@ -25,10 +25,10 @@ function product_getAllTypeBrand()
 }
 
 // thêm mới product
-function product_add($name_product, $price, $describe, $content, $size, $targer_file, $material, $highlights, $promotion, $hide,  $id_type_brand)
+function product_add($name_product, $price, $describe, $content, $size, $targer_file, $material, $highlights, $promotion, $hide, $id_type, $id_brand,  $id_type_brand)
 {
-    $sql = "INSERT INTO product (`name_product`, `price`, `describe`, `content`, `size`,`image`,`material`, `date`,  `highlights`, `promotion`, `hide`, `id_type_brand`) VALUES(?,?,?,?,?,?,?,now(),?,?,?,?)";
-    pdo_execute($sql, $name_product, $price, $describe, $content, $size, $targer_file, $material, $highlights, $promotion, $hide,  $id_type_brand);
+    $sql = "INSERT INTO product (`name_product`, `price`, `describe`, `content`, `size`,`image`,`material`, `date`,  `highlights`, `promotion`, `hide`, `id_type`, `id_brand`, `id_type_brand`) VALUES(?,?,?,?,?,?,?,now(),?,?,?,?,?,?)";
+    pdo_execute($sql, $name_product, $price, $describe, $content, $size, $targer_file, $material, $highlights, $promotion, $hide, $id_type, $id_brand,  $id_type_brand);
 }
 
 //Xóa product
@@ -63,11 +63,11 @@ function product_update($name_product, $id_product)
 }
 
 // cập nhật lại products
-function product_updateA($name_product, $price, $describe, $content, $size, $targer_file, $material, $highlights, $promotion, $hide,  $id_type_brand, $id_product)
+function product_updateA($name_product, $price, $describe, $content, $size, $targer_file, $material, $highlights, $promotion, $hide, $id_type, $id_brand, $id_type_brand, $id_product)
 {
-    $sql = "UPDATE product SET `name_product`= ? ,`price`= ?,`image`= ?,`describe`= ?,`content`= ?,`size`= ?,`material`= ?,`date`= now() ,`highlights`= ?,`promotion`= ?, `hide`= ?,`id_type_brand`= ? WHERE `id_product` = ?";
+    $sql = "UPDATE product SET `name_product`= ? ,`price`= ?,`image`= ?,`describe`= ?,`content`= ?,`size`= ?,`material`= ?,`date`= now() ,`highlights`= ?,`promotion`= ?, `hide`= ?,`id_type`= ?,`id_brand`= ?, `id_type_brand`= ? WHERE `id_product` = ?";
 
-    pdo_execute($sql, $name_product, $price, $targer_file, $describe, $content, $size, $material, $highlights, $promotion, $hide,  $id_type_brand, $id_product);
+    pdo_execute($sql, $name_product, $price, $targer_file, $describe, $content, $size, $material, $highlights, $promotion, $hide, $id_type, $id_brand,  $id_type_brand, $id_product);
 }
 
 //Lấy name sản phẩm
@@ -141,10 +141,10 @@ function product_countAll()
     $sql = "SELECT COUNT(*) as 'soLuong' FROM product";
     return pdo_query($sql);
 }
-// lấy TOP 5 sản phẩm hiển thị ra trang chủ
+// lấy TOP 5 sản phẩm xem nhiều hiển thị ra trang chủ admin
 function product_top()
 {
-    $sql = "SELECT * FROM product WHERE view > 0 LIMIT 0,5";
+    $sql = "SELECT * FROM product WHERE hide = 1 ORDER BY view DESC LIMIT 0,5";
     return pdo_query($sql);
 }
 
@@ -152,12 +152,38 @@ function product_top()
 function product_selectFourHighlight()
 {
     $sql = "SELECT * FROM product WHERE highlights=0 limit 0,4";
+    
     return pdo_query($sql);
 }
 
-// lấy 5 sp mới
-function product_new()
+// lấy 4 sản phẩm mới nhất
+function product_selectFourDate()
 {
-    $sql = "SELECT * FROM product order by id_product limit 0, 5";
+    $sql = "SELECT * FROM product WHERE hide = 1 ORDER BY date DESC LIMIT 0,4";
+    
     return pdo_query($sql);
+}
+
+// lấy 4 sản phẩm xem nhiều
+function product_selectFourView()
+{
+    $sql = "SELECT * FROM product WHERE hide = 1 ORDER BY view DESC LIMIT 0,4";
+    
+    return pdo_query($sql);
+}
+
+//Đếm sản phẩm theo thương hiệu
+function product_countIdBrand($idBrand){
+    $sql = "SELECT COUNT(*) as so_luong FROM product WHERE id_brand = ?";
+    $row = pdo_query_one($sql, $idBrand);
+    
+    return $row['so_luong'];
+}
+
+//Lấy hình ảnh của sản phẩm mới nhất từ thương hiệu
+function product_imageIdBrand($idBrand){
+    $sql = "SELECT * FROM product WHERE id_brand = ? ORDER BY date DESC LIMIT 0,1";
+    $row = pdo_query_one($sql, $idBrand);
+    
+    return $row['image'];
 }

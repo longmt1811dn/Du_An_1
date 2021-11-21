@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once("./dao/admin_object.php");
 require_once("./dao/admin_type.php");
 require_once("./dao/admin_type_brand.php");

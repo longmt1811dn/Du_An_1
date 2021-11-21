@@ -106,3 +106,19 @@ function type_brand_pagination()
             </nav>
             </div> ';
 }
+
+// lấy id type dựa vào id type brand
+function select_idType($idTypeBrand){
+    $sql = "SELECT * FROM type_brand WHERE id_type_brand = ?";
+    $row = pdo_query_one($sql, $idTypeBrand);
+    
+    return $row['id_type'];
+}
+
+// lấy id type dựa vào id type brand
+function select_idBrand($idTypeBrand){
+    $sql = "SELECT * FROM type_brand WHERE id_type_brand = ?";
+    $row = pdo_query_one($sql, $idTypeBrand);
+    
+    return $row['id_brand'];
+}
