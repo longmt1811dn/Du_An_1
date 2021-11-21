@@ -20,7 +20,7 @@
             <p class="text__gray"><?= $item['name_brand'] ?></p>
             <span class="text__gray"><?= product_countIdBrand($item['id_brand']) ?> Sản phẩm</span>
             <button class="btn">
-                    <a href="collection.html">Xem tất cả</a>
+                    <a href="index.php?page=product&act=collection&id=<?= $item['id_brand'] ?>">Xem tất cả</a>
             </button>
       </div>
       </div>

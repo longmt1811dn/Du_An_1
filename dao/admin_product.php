@@ -187,3 +187,10 @@ function product_imageIdBrand($idBrand){
     
     return $row['image'];
 }
+
+// Lấy tất cả sản phẩm thuộc thương hiệu
+function product_selelctIdBrand($idBrand){
+    $sql = " SELECT * FROM product WHERE id_brand = ?";
+    
+    return pdo_query($sql, $idBrand);
+}

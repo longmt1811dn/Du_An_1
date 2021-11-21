@@ -127,7 +127,7 @@ function brand_pagination()
 //Lấy thương hiệu có phân trang
 function brand_colectionAll()
 {
-    $pageSize = 8;
+    $pageSize = 12;
     $startRow = 0;
     $pageNum = 1;
 
@@ -143,7 +143,7 @@ function brand_colectionAll()
 //Phân trang thương hiệu trang người dùng
 function brand_colectionAllPagination()
 {
-    $pageSize = 8;
+    $pageSize = 12;
     $pageNum = 1;
 
     $conn = pdo_get_connection();
