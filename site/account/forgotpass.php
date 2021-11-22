@@ -32,11 +32,11 @@ if (isset($_POST['submit'])) {
         </div>
         <form action="" class="form-forgotpass" method="post">
             <div class="form-group_forgotpass">
-                <input type="email" id="email" name="email" placeholder="Email của bạn">
+                <input type="email" id="email" name="email" placeholder="Email của bạn" class="input__control">
             </div>
             <div class="form-submit-forgotpass">
-                <button> <a href="./index.php">Huỷ</a></button>
-                <button class="button-forgotpass" type="submit" name="submit">Gửi</button> <br />
+                <button class="btn"> <a href="index.php?page=account&act=login">Huỷ</a></button>
+                <button class="btn" type="submit" name="submit">Gửi</button> <br />
             </div>
         </form>
     </div>

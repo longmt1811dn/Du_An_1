@@ -1,0 +1,36 @@
+.account__container {
+  background: var(--bg-darkblue);
+  height: 100vh;
+}
+
+.account__container-box {
+  padding: 2rem 0;
+  max-width: 70%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.account__box-img {
+  width: 36.9rem;
+  height: 36.9rem;
+  background-image: url("../../image/avata_lam.JPG");
+  background-position: 50% 50%;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: 2rem auto;
+}
+
+.account__container-box h1 {
+  font-family: var(--font-playfair);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--font-size42);
+}
+
+.account__detail-form {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,6 +1,6 @@
 <?php
 require_once "./dao/admin_users.php";
-if(isset($_SESSION['users'])){
+if (isset($_SESSION['users'])) {
   echo '<script>window.location="./index.php";</script>';
 }
 if (isset($_POST['submit'])) {
@@ -36,8 +36,10 @@ if (isset($_POST['submit'])) {
       <a href="?page=account&act=forgotpass" class="login__control-text">Quên mật khẩu?</a>
       <div class="login__control-button">
         <button type="submit" name="submit" class="btn">Đăng nhập</button>
-        <p class="login__control-text border-bot">Tạo tài khoản</p>
-        <a href="index.php" class="login__control-text">Trở về trang chủ</a>
+        <a href="index.php?page=account&act=register">
+          <p class="login__control-text border-bot">Tạo tài khoản</p>
+        </a>
+        <a href="index.html" class="login__control-text">Trở về trang chủ</a>
       </div>
     </form>
   </div>
