@@ -7,12 +7,7 @@
       <div class="collection__show">
         <div class="collection__show-option">
           <div class="collection__option-layout">
-            <button class="btn collection__layout-btn">
-              <i class="fas fa-th-large"></i>
-            </button>
-            <button class="btn btn collection__layout-btn">
-              <i class="fas fa-th-list"></i>
-            </button>
+
           </div>
 
           <div class="collection__show-sort">
