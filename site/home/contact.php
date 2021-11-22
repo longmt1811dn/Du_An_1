@@ -1,47 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TimeZee</title>
-
-    <!-- Logo Website A-->
-    <link
-      rel="shortcut icon"
-      href="//cdn.shopify.com/s/files/1/0075/1832/2770/t/7/assets/favicon.png?v=3722167649135258256"
-      type="image/png"
-    />
-    <!-- Font Google -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Playfair+Display&family=Source+Sans+Pro:ital,wght@0,400;1,200&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    />
-
-    <!-- Style Css -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <main class="main">
+<main class="main">
       <nav class="collection__nav">
         <div class="collection__nav-text center-center">
           <h1>Liên hệ</h1>
-          <a href="index.html" class="text__gray">Trang chủ </a
-          ><span class="text__gray">/</span>
-          <span class="text__gray">Liên hệ</span>
+
         </div>
       </nav>
 
@@ -54,7 +15,7 @@
 
             <p>Số điện thoại</p>
             <div class="contact__item-detail">
-              <p>Số điện thoại : <span>070.3148.802</span></p>
+              <p>Số điện thoại : <span>+84 933666999</span></p>
             </div>
           </div>
 
@@ -65,7 +26,7 @@
 
             <p>Email</p>
             <div class="contact__item-detail">
-              <p>lamccps14962@fpt.edu.vn</p>
+              <p>admin@gmail.com</p>
             </div>
           </div>
 
@@ -81,7 +42,7 @@
           </div>
         </div>
 
-        <div class="contact__container-form">
+        <!-- <div class="contact__container-form">
           <form action="" class="login__form-control">
             <div class="login__control-input">
               <input
@@ -125,8 +86,6 @@
               <a href="#">Gửi</a>
             </button>
           </form>
-        </div>
+        </div> -->
       </div>
     </main>
-  </body>
-</html>

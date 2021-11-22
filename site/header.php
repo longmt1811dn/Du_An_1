@@ -24,7 +24,7 @@ if (isset($_GET['logout'])) {
         <div class="header__user-box account__box">
           <ul class="account__box-menu">
             <li>
-              Xin chào <span style="color: red;"><?= $last_name ?></span>
+              Xin chào <span style="color: red;"><?= $last_name ." ". $first_name ?></span>
             </li>
             <li>
               <a href="./index.php?page=account&act=profile">Hồ sơ</a>

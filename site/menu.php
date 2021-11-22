@@ -53,7 +53,7 @@ $conn = pdo_get_connection();
 
       <ul class="submenu submenu__page">
         <li><a href="index.php?page=home&act=about">Về chúng tôi</a></li>
-        <li><a href="#">Liên hệ</a></li>
+        <li><a href="index.php?page=home&act=contact">Liên hệ</a></li>
         <li><a href="#">Tin tức</a></li>
       </ul>
     </li>

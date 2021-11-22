@@ -425,12 +425,12 @@
 
           <div class="main__post-text">
             <p class="product__text"><?= $new['title'] ?></p>
-            <span class="text__gray"><?= $new['date'] ?></span>
+            <span class="text__gray">Ngày đăng: <?= date("d/m/Y", strtotime($new['date'])) ?></span>
           </div>
 
           <div class="main__post-button">
             <button class="btn main__post-btn">
-              <a href="index.php?page=blogs&act=news" class="">Đọc Thêm</a>
+              <a href="index.php?page=blogs&act=news&id=<?= $new['id_news'] ?>" class="">Đọc Thêm</a>
             </button>
           </div>
         </div>

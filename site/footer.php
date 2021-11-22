@@ -36,8 +36,8 @@
                     <div class="contact-us__address">
                       <p>
                         <i class="fa fa-home"></i>
-                           No: 58 A, East Madison Street,<br>
-                           <p class="mt">Baltimore, MD, Hoa Kỳ 4508</p>
+                           Số nhà 11 Đường Không Tên,<br>
+                           <p class="mt">Hồ Chí Minh</p>
                       </p>
                       <p class="phone">
                         <i class="fa fa-phone"></i>

@@ -1,6 +1,6 @@
 .contact__container {
   background: var(--bg-darkblue);
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
