@@ -11,7 +11,7 @@
     </div>
     <div class="profile-info">
         <div class="profile-info_detail">
-            <a href="">Hồ sơ</a>
+            <a href="../../index.php">Trở về trang chủ</a>
             <a href="../login/?act=logout">Thoát</a>
         </div>
     </div>
