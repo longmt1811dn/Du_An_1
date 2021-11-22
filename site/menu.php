@@ -16,7 +16,9 @@ $menu_obj = obj_select_all();
             foreach ($title_type as $title_type) { ?>
               <div class="submenu__bar-box">
                 <div class="box-title">
-                  <p><?= $title_type['name_type'] ?></p>
+                  <a href="">
+                    <p><?= $title_type['name_type'] ?></p>
+                  </a>
                 </div>
 
                 <?php
@@ -25,10 +27,10 @@ $menu_obj = obj_select_all();
 
                 <ul class="box-menu">
 
-                  <?php
-                  foreach ($name_type_brand as $name_type_brand) { ?>
+                  <!-- <?php
+                        foreach ($name_type_brand as $name_type_brand) { ?>
                     <li><a href="index.php?page=product&act=collection"><?= brand_select_by_id_type_brand($name_type_brand['id_brand']);  ?></a></li>
-                  <?php } ?>
+                  <?php } ?> -->
 
                 </ul>
               </div>
