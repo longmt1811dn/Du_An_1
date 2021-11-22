@@ -20,8 +20,6 @@ if (isset($_POST['submit'])) {
   <nav class="collection__nav">
     <div class="collection__nav-text center-center">
       <h1>Tài khoản</h1>
-      <a href="index.html" class="text__gray">Trang chủ </a><span class="text__gray">/</span>
-      <span class="text__gray">Tài khoản</span>
     </div>
   </nav>
 
@@ -32,14 +30,14 @@ if (isset($_POST['submit'])) {
       </div>
 
       <div class="login__control-input">
-        <input type="password" class="input__control" placeholder="Password" name="pass" />
+        <input type="password" class="input__control" placeholder="Mật khẩu" name="pass" />
       </div>
 
       <a href="?page=account&act=forgotpass" class="login__control-text">Quên mật khẩu?</a>
       <div class="login__control-button">
         <button type="submit" name="submit" class="btn">Đăng nhập</button>
-        <p class="login__control-text border-bot">Create Tài khoản</p>
-        <a href="index.html" class="login__control-text">Trở về trang chủ</a>
+        <p class="login__control-text border-bot">Tạo tài khoản</p>
+        <a href="index.php" class="login__control-text">Trở về trang chủ</a>
       </div>
     </form>
   </div>

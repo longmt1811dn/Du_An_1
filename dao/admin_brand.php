@@ -60,14 +60,6 @@ function brand_selectall()
     return pdo_query($sql);
 }
 
-// Lấy theo id brand
-function brand_select_by_id_type_brand($id_brand)
-{
-    $sql = "SELECT * FROM brand WHERE id_brand = ?";
-    $row = pdo_query_one($sql, $id_brand);
-    return $row['name_brand'];
-}
-
 //Phân trang
 function brand_pagination()
 {

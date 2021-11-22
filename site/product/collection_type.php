@@ -1,7 +1,7 @@
     <main class="main">
       <nav class="collection__nav">
         <div class="collection__nav-text center-center">
-          <h1><?= brand_select_by_id_type_brand($idBrand) ?></h1>
+          <h1><?= product_getNameType($idType) ?></h1>
         </div>
       </nav>
       <div class="collection__show">

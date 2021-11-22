@@ -194,3 +194,10 @@ function product_selelctIdBrand($idBrand){
     
     return pdo_query($sql, $idBrand);
 }
+
+// Lấy tất cả sản phẩm thuộc loại
+function product_selelctIdType($idType){
+    $sql = " SELECT * FROM product WHERE id_type = ?";
+    
+    return pdo_query($sql, $idType);
+}

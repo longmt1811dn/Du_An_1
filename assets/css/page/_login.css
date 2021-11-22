@@ -46,7 +46,7 @@
 .forgotpass > .box-forgotpass {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 100px auto;
   background: #fff;
   padding: 1.5rem 2rem;
   border-radius: 1rem;

@@ -34,9 +34,7 @@ if (isset($_POST['submit'])) {
 <main class="main">
   <nav class="collection__nav">
     <div class="collection__nav-text center-center">
-      <h1>Create Account</h1>
-      <a href="index.html" class="text__gray">Home </a><span class="text__gray">/</span>
-      <span class="text__gray">Create Account</span>
+      <h1>Đăng ký tài khoản</h1>
     </div>
   </nav>
   <div class="login__form">
@@ -46,25 +44,25 @@ if (isset($_POST['submit'])) {
         <?php echo "<p>" . $thongbao . "</p>" ?>
       </div>
       <div class="login__control-input">
-        <input type="text" class="input__control" placeholder="First Name" name="first_name" />
+        <input type="text" class="input__control" placeholder="Tên" name="first_name" />
       </div>
 
       <div class="login__control-input">
-        <input type="text" class="input__control" placeholder="Last Name" name="last_name" />
+        <input type="text" class="input__control" placeholder="Họ" name="last_name" />
       </div>
       <div class="login__control-input">
-        <input type="text" class="input__control" placeholder="Username" name="username" />
+        <input type="text" class="input__control" placeholder="Tài khoản" name="username" />
       </div>
       <div class="login__control-input">
         <input type="email" class="input__control" placeholder="Email" name="email" />
       </div>
 
       <div class="login__control-input">
-        <input type="password" class="input__control" placeholder="Password" name="pass" />
+        <input type="password" class="input__control" placeholder="Mật khẩu" name="pass" />
       </div>
       <div class="login__control-button">
-        <button type="submit" name="submit" class="btn">CREAT</button>
-        <a href="index.html" class="login__control-text border-bot">Return to Store</a>
+        <button type="submit" name="submit" class="btn">ĐĂNG KÝ</button>
+        <a href="index.php" class="login__control-text border-bot">Về trang chủ</a>
       </div>
 
     </form>

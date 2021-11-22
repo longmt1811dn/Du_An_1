@@ -183,7 +183,7 @@
       <div class="wrapper">
         <div class="item__block">
           <div class="item__block-title">
-            <h2>LA MÃ - SỐ</h2>
+            <h2>La Mã - Số</h2>
           </div>
           <div class="item__block-para">
             <p>Phiên bản giới hạn gồm 200 chiếc trên toàn thế giới. Xem Big Bang, 361.PE.2010.RW.1104
