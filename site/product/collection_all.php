@@ -1,7 +1,7 @@
     <main class="main">
       <nav class="collection__nav">
         <div class="collection__nav-text center-center">
-          <h1>Thương hiệu sản phẩm</h1>
+          <h1>Tất cả sản phẩm</h1>
         </div>
       </nav>
 
@@ -20,7 +20,7 @@
             <p class="text__gray"><?= $item['name_brand'] ?></p>
             <span class="text__gray"><?= product_countIdBrand($item['id_brand']) ?> Sản phẩm</span>
             <button class="btn">
-                    <a href="collection.html">Xem tất cả</a>
+                    <a href="index.php?page=product&act=cb&id=<?= $item['id_brand'] ?>">Xem tất cả</a>
             </button>
       </div>
       </div>

@@ -1,38 +1,38 @@
 <?php
 $menu_obj = obj_select_all();
+$conn = pdo_get_connection();
 ?>
+
 <nav class="header__nav">
   <ul class="main__menu">
     <li><a href="index.php"> Trang chủ </a></li>
 
     <?php foreach ($menu_obj as $menu_obj) { ?>
+    
       <li>
         <a> <?= $menu_obj['name_object']; ?> <i class="fas fa-caret-down"></i></a>
+        
+        <?php
+        $sql = "SELECT * FROM type where id_object =". $menu_obj['id_object'] .";";
+        $kq = $conn->query($sql);
+        
+        if ($kq->rowCount() > 0) {
+        ?>
+        
+        <!-- SUBMENU ở đây -->
         <ul class="submenu submenu__main">
           <li class="submenu__bar">
 
             <?php
             $title_type = type_select_idObj($menu_obj['id_object']);
             foreach ($title_type as $title_type) { ?>
+
               <div class="submenu__bar-box">
                 <div class="box-title">
-                  <a href="">
+                  <a href="index.php?page=product&act=ct&id=<?= $title_type['id_type'] ?>">
                     <p><?= $title_type['name_type'] ?></p>
                   </a>
                 </div>
-
-                <?php
-                $name_type_brand = type_brand_select_idType($title_type['id_type']);
-                ?>
-
-                <ul class="box-menu">
-
-                  <!-- <?php
-                        foreach ($name_type_brand as $name_type_brand) { ?>
-                    <li><a href="index.php?page=product&act=collection"><?= brand_select_by_id_type_brand($name_type_brand['id_brand']);  ?></a></li>
-                  <?php } ?> -->
-
-                </ul>
               </div>
 
             <?php } ?>
@@ -42,11 +42,13 @@ $menu_obj = obj_select_all();
             <img src="./assets/image/img_brand (2).jpg" alt="" />
           </li>
         </ul>
+        
+        <?php } ?>
+        
       </li>
-
     <?php } ?>
     <li>
-      <a href="#"> Các trang khác <i class="fas fa-caret-down"></i></a>
+      <a> Các trang khác <i class="fas fa-caret-down"></i></a>
 
 
       <ul class="submenu submenu__page">
