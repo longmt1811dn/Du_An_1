@@ -13,10 +13,10 @@ if (isset($_POST['submit'])) {
   $pass = md5($password);
   // kiểm tra sự tồn tại email hoặc user trong phần đăng ký tài khoản
   $kiemtra = users_checkEmailOrUsername($email, $username);
-  if (strlen($first_name) <= 1) {
-    $thongbao =  "Họ không được dưới 1 kí tự";
-  } else if (strlen($last_name) <= 1) {
-    $thongbao =  "Tên không được dưới 1 kí tự";
+  if (strlen($first_name) == "" && strlen($first_name) <= 1) {
+    $thongbao =  "Họ không được để trống và dưới 1 kí tự";
+  } else if (strlen($first_name) == "" && strlen($last_name) <= 1) {
+    $thongbao =  "Tên không được để trống và dưới 1 kí tự";
   } else if (strlen($username) <= 6) {
     $thongbao =  "Username không được dưới 6 kí tự";
   } else if (strlen($pass) <= 6) {

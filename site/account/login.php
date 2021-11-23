@@ -8,11 +8,16 @@ if (isset($_POST['submit'])) {
   $password = $_POST['pass'];
   $pass = md5($password);
   $kiemtra = users_checkEmailandPassword($email, $pass);
+  $kiemtra1 = users_checkVerifile($email);
   if (is_array($kiemtra)) {
     $_SESSION['users'] = $kiemtra;
     echo '<script>alert("Bạn đã đăng nhập thành công"); window.location="./index.php";</script>';
   } else {
-    echo "<script>alert('Tài khoản chưa được kích hoạt hoặc nhập sai tài khoản')</script>";
+    if (is_array($kiemtra1)) {
+      echo '<script>alert("Tài khoản này chưa được kích hoạt, vui lòng kiểm tra email để kích hoạt tài khoản")</script>';
+    } else {
+      echo "<script>alert('Tài khoản hoặc mật khẩu sai')</script>";
+    }
   }
 }
 ?>

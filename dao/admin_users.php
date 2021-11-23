@@ -110,7 +110,11 @@ function users_checkEmailandPassword($email, $pass)
     $sql = "SELECT * FROM users WHERE email = ? AND pass = ? AND verifile = 1";
     return pdo_query_one($sql, $email, $pass);
 }
-
+// Kiểm tra sự tồn tại của một account chưa được kích hoạt 
+function users_checkVerifile($email){
+    $sql = "SELECT * FROM users WHERE email = ? AND verifile = 0";
+    return pdo_query_one($sql, $email);
+}
 function send_mail_verifile($email, $key_actived)
 {
     require "./PHPMailer-master/PHPMailer-master/src/PHPMailer.php";
