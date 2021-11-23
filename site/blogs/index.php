@@ -6,4 +6,6 @@ if($act == "news"){
     $item = news_loaddata($idNew);
     
     require_once './site/blogs/news.php';
+} else if($act = "blogs") {
+    require_once './site/blogs/blogs.php';
 }
