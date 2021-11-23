@@ -197,7 +197,71 @@ function product_selelctIdBrand($idBrand){
 
 // Lấy tất cả sản phẩm thuộc loại
 function product_selelctIdType($idType){
-    $sql = " SELECT * FROM product WHERE id_type = ?";
+    $pageSize = 12;
+    $startRow = 0;
+    $pageNum = 1;
+
+    if (isset($_GET['pagenum']) == true) $pageNum = $_GET['pagenum'];
+
+    $startRow = ($pageNum - 1) * $pageSize;
+
+    $sql = " SELECT * FROM product WHERE id_type = ?  LIMIT $startRow,$pageSize";
     
     return pdo_query($sql, $idType);
+}
+
+//Phân trang thương hiệu trang người dùng
+function type_colectionAllPagination($idType)
+{
+    $pageSize = 12;
+    $pageNum = 1;
+
+    $conn = pdo_get_connection();
+    $offSet = 2;
+
+    if (isset($_GET['pagenum']) == true) $pageNum = $_GET['pagenum'];
+    $sql = "SELECT count(*) FROM product WHERE id_type = $idType";
+    $kq = $conn->query($sql);
+    $r = $kq->fetch();
+
+    $tongSoReCord = $r[0];
+    $tongSoTrang = ceil($tongSoReCord / $pageSize);
+
+    $from = $pageNum - $offSet;
+    if ($from < 1) $from = 1;
+    $to = $pageNum + $offSet;
+    if ($to > $tongSoTrang) $to = $tongSoTrang;
+    $pagePrev = $pageNum - 1;
+    $pageNext = $pageNum + 1;
+
+    echo '<ul class="pagination__list pagination__list--m10">';
+
+    if ($pageNum > 1) {
+
+        echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=ct&id='.$idType.'&pagenum=1"><<</a></li>';
+        echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=ct&id='.$idType.'&pagenum=' . $pagePrev . '"><</a></li>';
+    }
+
+    for ($i = $from; $i <= $to; $i++) {
+
+        if ($tongSoTrang > 1) {
+
+            if ($i == $pageNum) {
+
+                echo '<li class=""><a class="btn btn--m activex" href="index.php?page=product&act=ct&id='.$idType.'&pagenum=' . $i . '">' . $i . '</a></li>';
+            } else {
+
+                echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=ct&id='.$idType.'&pagenum=' . $i . '">' . $i . '</a></li>';
+            }
+        }
+    }
+
+    if ($pageNum < $tongSoTrang) {
+
+        echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=ct&id='.$idType.'&pagenum=' . $pageNext . '">></a></li>';
+        echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=ct&id='.$idType.'&pagenum=' . $tongSoTrang . '">>></a></li>';
+    }
+    '</ul>
+            </nav>
+            </div> ';
 }

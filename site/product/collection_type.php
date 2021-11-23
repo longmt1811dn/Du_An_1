@@ -87,7 +87,6 @@
                 </div>
 
                 <?php } ?>
-               
 
                 </div>
               </div>
@@ -95,4 +94,7 @@
           </div>
         </div>
       </div>
+        
+            <?php type_colectionAllPagination($idType) ?>
+        
     </main>

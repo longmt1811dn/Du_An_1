@@ -26,7 +26,6 @@ if (isset($_POST['submit'])) {
     $thongbao =  "Username hoặc email đã có người sử dụng";
   } else {
     users_register($username, $first_name, $last_name, $email, $pass);
-    print_r($_POST);
     $thongbao = "Đăng ký thành công";
   }
 }

@@ -16,11 +16,11 @@ if (isset($_GET['email']) && isset($_GET['token'])) {
             </div>
             <form action="" class="form-forgotpass" method="post">
                 <div class="form-group_forgotpass">
-                    <input type="password" id="password" name="password" placeholder="Mật khẩu mới">
+                    <input type="password" id="password" name="password" placeholder="password" class="input__control">
                 </div>
                 <div class="form-submit-forgotpass">
-                    <input type="hidden" name="email" value="' . $_GET['email'] . '">
-                    <button class="button-forgotpass" type="submit" name="submit">Đồng ý</button> <br />
+                    <input type="hidden" value="'.$_GET['email'].'" name="email">
+                    <button class="btn" type="submit" name="submit">Cập nhật</button> <br />
                 </div>
             </form>
         </div>

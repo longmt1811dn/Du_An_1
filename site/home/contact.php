@@ -42,7 +42,7 @@
           </div>
         </div>
 
-        <!-- <div class="contact__container-form">
+        <div class="contact__container-form">
           <form action="" class="login__form-control">
             <div class="login__control-input">
               <input
@@ -86,6 +86,6 @@
               <a href="#">Gửi</a>
             </button>
           </form>
-        </div> -->
+        </div>
       </div>
     </main>
