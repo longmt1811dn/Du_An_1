@@ -29,9 +29,10 @@
 @import url(./page/_all__collection.css);
 @import url(./page/_cart.css);
 @import url(./page/_wishlist.css);
+@import url(./page/_news.css);
+@import url(./page/_blog.css);
 
 /* Css Trang chi tiết tin có 2 theme */
-/* @import url(./page/_news.css); */
 @import url(./page/_news--white.css);
 
 @import url(./page/_contact.css);
