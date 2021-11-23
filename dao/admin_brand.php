@@ -51,6 +51,11 @@ function product_getNameBrand($id_brand)
     $nameBrand = pdo_query_one($sql, $id_brand);
     return $nameBrand['name_brand'];
 }
+// lấy tất cả sản phẩm thuộc về brand
+function brand_getCountProduct($id_brand){
+    $sql = "SELECT * FROM product WHERE id_brand=?";
+    return pdo_query_one($sql, $id_brand);
+}
 
 //Lấy tất cả type không phân trang
 function brand_selectall()

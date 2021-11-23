@@ -27,6 +27,8 @@ function object_delete($id_object)
     $sql = "DELETE FROM object WHERE id_object = ?";
     pdo_execute($sql, $id_object);
 }
+// Điếm số lượng kiểu trong một object
+
 // load lên dữ liệu khi ấn vào sửa
 function object_loaddata($id_object)
 {
