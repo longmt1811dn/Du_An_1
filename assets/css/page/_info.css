@@ -1,0 +1,36 @@
+.account__container {
+  background: var(--bg-darkblue);
+  height: auto;
+}
+
+.account__container-box {
+  padding: 2rem 0;
+  max-width: 70%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.account__box-img {
+  width: 30.9rem;
+  height: 30.9rem;
+  border-radius: 50%;
+  margin: 5rem auto 10rem auto;
+}
+
+.account__box-img img{
+    border-radius: 50%;
+}
+
+.account__container-box h1 {
+  font-family: var(--font-playfair);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--font-size42);
+}
+
+.account__detail-form {
+  display: flex;
+  flex-direction: column;
+}

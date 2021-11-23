@@ -60,14 +60,6 @@ function brand_selectall()
     return pdo_query($sql);
 }
 
-// Lấy theo id brand
-function brand_select_by_id_type_brand($id_brand)
-{
-    $sql = "SELECT * FROM brand WHERE id_brand = ?";
-    $row = pdo_query_one($sql, $id_brand);
-    return $row['name_brand'];
-}
-
 //Phân trang
 function brand_pagination()
 {
@@ -127,7 +119,7 @@ function brand_pagination()
 //Lấy thương hiệu có phân trang
 function brand_colectionAll()
 {
-    $pageSize = 8;
+    $pageSize = 12;
     $startRow = 0;
     $pageNum = 1;
 
@@ -143,7 +135,7 @@ function brand_colectionAll()
 //Phân trang thương hiệu trang người dùng
 function brand_colectionAllPagination()
 {
-    $pageSize = 8;
+    $pageSize = 12;
     $pageNum = 1;
 
     $conn = pdo_get_connection();

@@ -43,8 +43,6 @@ if ($act == "") {
                 exit();
             }
         }
-        
-        
 
         $row_user = $kq->fetch();
         unset($_SESSION['thongbao']);
@@ -54,7 +52,13 @@ if ($act == "") {
         
         header("location: ../demo");
     }
-    require_once './login_admin.php';
+    
+    if(isset($_SESSION['login_id_admin']) == true){
+        header("location: ../demo");
+    } else {
+        require_once './login_admin.php';
+    }
+    
 } elseif ($act == "logout") {
     session_start();
 

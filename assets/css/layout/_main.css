@@ -229,6 +229,7 @@
 
 .main__store .main__store-list img {
   width: 100%;
+  max-height: 300px;
 }
 
 .main__store .main__store-list .product .imgOverlay::before {
@@ -276,11 +277,15 @@
 }
 
 .main__store-list .product__detail {
-  padding: 1.5rem 1rem;
   position: relative;
-  z-index: 1;
+
   width: 100%;
+  /* margin-bottom: 10rem; */
+  padding: 1.5rem 1rem;
+
   text-align: center;
+
+  z-index: 1;
 }
 
 .main__store-list .product__detail > div {

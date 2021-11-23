@@ -33,6 +33,13 @@
 @import url(./page/_blog.css);
 
 
+/* Css Trang chi tiết tin có 2 theme */
+/* @import url(./page/_news.css); */
+@import url(./page/_news--white.css);
+
+@import url(./page/_contact.css);
+@import url(./page/_info.css);
+
 /* component */
 @import url(./component/_button.css);
 @import url(./component/_layout.css);

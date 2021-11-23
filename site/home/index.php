@@ -8,9 +8,9 @@ if($act == ""){
     $list_newsTwo = new_selectTwo();
     
     require_once './site/home/home.php';
-}
-
-else if($act == "about"){
+} else if($act == "about"){
     require_once './site/home/about.php';
+} else if($act == "contact"){
+    require_once './site/home/contact.php';
 }
 ?>

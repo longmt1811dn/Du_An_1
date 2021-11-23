@@ -1,9 +1,7 @@
 <main class="main">
         <nav class="collection__nav">
                 <div class="collection__nav-text center-center">
-                        <h1>Liên hệ</h1>
-                        <a href="index.html" class="text__gray">Trang chủ </a><span class="text__gray">/</span>
-                        <span class="text__gray">Liên hệ</span>
+                        <h1>Giới thiệu</h1>
                 </div>
         </nav>
 

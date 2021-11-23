@@ -148,7 +148,6 @@
                       <?php } ?>
                     </span> -->
                   </div>
-                  <div class="product__detail-sale"><span>Sản phẩm nổi bật</span></div>
                   <div class="product__detail-cart">
                     <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Mua sản phẩm</a>
                   </div>
@@ -183,7 +182,7 @@
       <div class="wrapper">
         <div class="item__block">
           <div class="item__block-title">
-            <h2>LA MÃ - SỐ</h2>
+            <h2>La Mã - Số</h2>
           </div>
           <div class="item__block-para">
             <p>Phiên bản giới hạn gồm 200 chiếc trên toàn thế giới. Xem Big Bang, 361.PE.2010.RW.1104
@@ -420,17 +419,17 @@
       <?php foreach ($list_newsTwo as $new) { ?>
         <div class="main__post">
           <div class="main__post-img">
-            <a href="#"><img src="./<?= $new['image_new'] ?>" alt="" /></a>
+            <a href="index.php?page=blogs&act=news"><img src="./<?= $new['image_new'] ?>" alt="" /></a>
           </div>
 
           <div class="main__post-text">
             <p class="product__text"><?= $new['title'] ?></p>
-            <span class="text__gray"><?= $new['date'] ?></span>
+            <span class="text__gray">Ngày đăng: <?= date("d/m/Y", strtotime($new['date'])) ?></span>
           </div>
 
           <div class="main__post-button">
             <button class="btn main__post-btn">
-              <a href="#" class="">Đọc Thêm</a>
+              <a href="index.php?page=blogs&act=news&id=<?= $new['id_news'] ?>" class="">Đọc Thêm</a>
             </button>
           </div>
         </div>

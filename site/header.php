@@ -24,16 +24,19 @@ if (isset($_GET['logout'])) {
         <div class="header__user-box account__box">
           <ul class="account__box-menu">
             <li>
-              Xin chào <span style="color: red;"><?= $last_name ?></span>
+              <i class="far fa-user-circle"></i>Xin chào <span style="color: red;"><?= $last_name ." ". $first_name ?></span>
             </li>
             <li>
-              <a href="./index.php?page=account&act=profile">Hồ sơ</a>
+              <i class="fas fa-user"></i><a href="./index.php?page=account&act=profile">Hồ sơ</a>
             </li>
             <li>
-              <a href="#"></i>Yêu thích</a>
+              <a href="#"></i><i class="far fa-heart"></i>Yêu thích</a>
             </li>
             <li>
-              <a href="./index.php?logout">Thoát</a>
+              <a href="./admin/login"><i class="fas fa-house-user"></i>Quản trị</a>
+            </li>
+            <li>
+              <i class="fas fa-sign-in-alt"></i><a href="./index.php?logout">Thoát</a>
             </li>
           </ul>
         </div>
@@ -47,7 +50,7 @@ if (isset($_GET['logout'])) {
               <a href="./index.php?page=account&act=register"><i class="fas fa-user"></i>Đăng ký</a>
             </li>
             <li>
-              <a href="#"><i class="far fa-heart"></i>Yêu thích</a>
+              <a href="./admin/login"><i class="fas fa-house-user"></i>Quản trị</a>
             </li>
           </ul>
         </div>

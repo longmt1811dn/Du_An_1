@@ -95,7 +95,7 @@ if (exist_param("listproduct")) {
 } else if (exist_param("delete")) {
     $product = product_selectOne($_GET['id_product']);
     
-    unlink("../../../" . $product['image']);
+    unlink("../../" . $product['image']);
     
     product_delete($_GET['id_product']);
     
