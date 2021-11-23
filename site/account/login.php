@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
     $_SESSION['users'] = $kiemtra;
     echo '<script>alert("Bạn đã đăng nhập thành công"); window.location="./index.php";</script>';
   } else {
-    echo "<script>alert('Sai tài khoản hoặc mật khẩu')</script>";
+    echo "<script>alert('Tài khoản chưa được kích hoạt hoặc nhập sai tài khoản')</script>";
   }
 }
 ?>

@@ -1,6 +1,7 @@
 <?php
+require_once "./dao/pdo.php";
 require_once "./dao/admin_users.php";
-if(isset($_SESSION['users'])){
+if (isset($_SESSION['users'])) {
   echo '<script>window.location="./index.php";</script>';
 }
 if (isset($_POST['submit'])) {
@@ -10,7 +11,7 @@ if (isset($_POST['submit'])) {
   $email = $_POST['email'];
   $password = $_POST['pass'];
   $pass = md5($password);
-  // 
+  // kiểm tra sự tồn tại email hoặc user trong phần đăng ký tài khoản
   $kiemtra = users_checkEmailOrUsername($email, $username);
   if (strlen($first_name) <= 1) {
     $thongbao =  "Họ không được dưới 1 kí tự";
@@ -25,8 +26,13 @@ if (isset($_POST['submit'])) {
   } else if ($kiemtra) {
     $thongbao =  "Username hoặc email đã có người sử dụng";
   } else {
-    users_register($username, $first_name, $last_name, $email, $pass);
-    $thongbao = "Đăng ký thành công";
+      $key_actived = bin2hex(random_bytes(16));
+      $conn = pdo_get_connection();
+      $sql = "INSERT INTO users(account, first_name, last_name, email, pass, key_actived) VALUES(?,?,?,?,?,?)";
+      $stmt = $conn->prepare($sql);
+      $stmt->execute([$username, $first_name, $last_name, $email, $pass, $key_actived]);
+      send_mail_verifile($email, $key_actived);
+      echo "<script>alert('Đăng ký thành công, vui lòng kiểm tra email để kích hoạt tài khoản')</script>";
   }
 }
 ?>

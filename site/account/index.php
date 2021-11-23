@@ -11,4 +11,6 @@ if ($act == "login") {
     require_once './site/account/resert-pass.php';
 } else if ($act == "profile") {
     require_once './site/account/info.php';
+} else if($act == "checkverifile"){
+    require_once './site/account/checkverifile.php';
 }
