@@ -148,7 +148,6 @@
                       <?php } ?>
                     </span> -->
                   </div>
-                  <div class="product__detail-sale"><span>Sản phẩm nổi bật</span></div>
                   <div class="product__detail-cart">
                     <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Mua sản phẩm</a>
                   </div>
