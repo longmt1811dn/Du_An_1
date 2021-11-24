@@ -66,3 +66,12 @@ function new_selectFive(){
     
     return pdo_query($sql);
 }
+
+// lấy đếm tổng số bài viết
+function news_count()
+{
+    $sql = "SELECT COUNT(*) as so_luong FROM news";
+    $row =  pdo_query_one($sql);
+    
+    return $row['so_luong'];
+}

@@ -8,6 +8,8 @@ if($act == "news"){
     require_once './site/blogs/news.php';
 } else if($act = "blogs") {
     $listFive = new_selectFive();
+    $list = news_listall();
+    $i = 0;
     
     require_once './site/blogs/blogs.php';
 }
