@@ -419,7 +419,7 @@
       <?php foreach ($list_newsTwo as $new) { ?>
         <div class="main__post">
           <div class="main__post-img">
-            <a href="index.php?page=blogs&act=news"><img src="./<?= $new['image_new'] ?>" alt="" /></a>
+            <a href="index.php?page=blogs&act=news&id=<?= $new['id_news'] ?>"><img src="./<?= $new['image_new'] ?>" alt="" /></a>
           </div>
 
           <div class="main__post-text">

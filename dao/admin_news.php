@@ -54,7 +54,15 @@ function news_update($title, $describe, $content, $hide, $highlights, $targer_fi
 // lấy 2 tin trang chủ 
 function new_selectTwo()
 {
-    $sql = "SELECT * FROM news ORDER BY date DESC LIMIT 0,2";
+    $sql = "SELECT * FROM news WHERE highlights = 1 ORDER BY date DESC LIMIT 0,2";
+    
+    return pdo_query($sql);
+}
+
+
+// Lấy 5 tin mới nhất show thanh bên trái trang blog
+function new_selectFive(){
+    $sql = "SELECT * FROM news ORDER BY date DESC LIMIT 0,5";
     
     return pdo_query($sql);
 }

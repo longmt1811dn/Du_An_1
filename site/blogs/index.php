@@ -7,5 +7,7 @@ if($act == "news"){
     
     require_once './site/blogs/news.php';
 } else if($act = "blogs") {
+    $listFive = new_selectFive();
+    
     require_once './site/blogs/blogs.php';
 }
