@@ -14,7 +14,12 @@ function news_listall()
     $sql = "SELECT * FROM news";
     return pdo_query($sql);
 }
-
+// lấy danh sách bài viết theo ngày
+function news_listall_days()
+{
+    $sql = "SELECT * FROM news ORDER BY date DESC";
+    return pdo_query($sql);
+}
 // thêm bài viết
 function news_add($title, $describe, $content, $hide, $highlights, $targer_file, $id_user)
 {
@@ -55,15 +60,16 @@ function news_update($title, $describe, $content, $hide, $highlights, $targer_fi
 function new_selectTwo()
 {
     $sql = "SELECT * FROM news WHERE highlights = 1 ORDER BY date DESC LIMIT 0,2";
-    
+
     return pdo_query($sql);
 }
 
 
 // Lấy 5 tin mới nhất show thanh bên trái trang blog
-function new_selectFive(){
+function new_selectFive()
+{
     $sql = "SELECT * FROM news ORDER BY date DESC LIMIT 0,5";
-    
+
     return pdo_query($sql);
 }
 
@@ -72,6 +78,6 @@ function news_count()
 {
     $sql = "SELECT COUNT(*) as so_luong FROM news";
     $row =  pdo_query_one($sql);
-    
+
     return $row['so_luong'];
 }
