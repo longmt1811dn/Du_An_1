@@ -11,6 +11,14 @@ if (isset($_POST['submit'])) {
   $kiemtra1 = users_checkVerifile($email);
   if (is_array($kiemtra)) {
     $_SESSION['users'] = $kiemtra;
+    
+    $sql="SELECT id_user FROM `users` WHERE email='{$email}' AND pass ='{$pass}'";
+    $conn = pdo_get_connection();
+    $kq = $conn->query($sql);
+    $row_user = $kq->fetch();
+    
+    $_SESSION['login_id'] = $row_user['id_user'];//tạo biến ghi nhận user đã login
+    
     echo '<script>alert("Bạn đã đăng nhập thành công"); window.location="./index.php";</script>';
   } else {
     if (is_array($kiemtra1)) {

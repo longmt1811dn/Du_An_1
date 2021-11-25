@@ -19,7 +19,7 @@
                 <input
                   type="text"
                   class="input__control"
-                  value="Chung Chí Lâm"
+                  value="<?= $item['first_name'] . " " . $item['last_name'] ?>"
                   name="ten"
                   disabled
                 />
@@ -29,7 +29,7 @@
                 <input
                   type="text"
                   class="input__control"
-                  value="Chung Chí Lâm"
+                  value="<?= $item['account'] ?>"
                   name="ten"
                   disabled
                 />
@@ -39,18 +39,7 @@
                 <input
                   type="email"
                   class="input__control"
-                  value="lamccps14962@fpt.edu.vn"
-                  name="email"
-                  disabled
-                />
-              </div>
-
-              <div class="login__control-input">
-                <p>Mật khẩu</p>
-                <input
-                  type="password"
-                  class="input__control"
-                  value="ahihi"
+                  value="<?= $item['email'] ?>"
                   name="email"
                   disabled
                 />

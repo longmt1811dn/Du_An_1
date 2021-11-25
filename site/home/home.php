@@ -113,7 +113,7 @@
 
                 <?php if ($itemsProduct["promotion"] > 0) { ?>
                   <div class="product__sale">
-                    <span class="product__sale-p">Sale</span>
+                    <span class="product__sale-p">Sale | <?= $itemsProduct["promotion"] . "%" ?></span>
                   </div>
                 <?php } ?>
 
@@ -297,7 +297,7 @@
 
                 <?php if ($itemsProduct["promotion"] > 0) { ?>
                   <div class="product__sale">
-                    <span class="product__sale-p">Sale</span>
+                    <span class="product__sale-p">Sale  | <?= $itemsProduct["promotion"] . "%" ?></span>
                   </div>
                 <?php } ?>
 
@@ -361,7 +361,7 @@
 
                 <?php if ($itemsProduct["promotion"] > 0) { ?>
                   <div class="product__sale">
-                    <span class="product__sale-p">Sale</span>
+                    <span class="product__sale-p">Sale | <?= $itemsProduct["promotion"] . "%" ?></span>
                   </div>
                 <?php } ?>
 

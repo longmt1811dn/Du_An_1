@@ -30,7 +30,7 @@ if (isset($_GET['logout'])) {
               <i class="fas fa-user"></i><a href="./index.php?page=account&act=profile">Hồ sơ</a>
             </li>
             <li>
-              <a href="#"></i><i class="far fa-heart"></i>Yêu thích</a>
+              <a href="./index.php?page=account&act=love"></i><i class="far fa-heart"></i>Yêu thích</a>
             </li>
             <li>
               <a href="./admin/login"><i class="fas fa-house-user"></i>Quản trị</a>

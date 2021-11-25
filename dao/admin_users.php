@@ -138,7 +138,7 @@ function send_mail_verifile($email, $key_actived)
         $noidungthu = 'Xin chào bạn, <br><br> 
         Cảm ơn bạn đã đăng ký thành viên với chúng tôi, vui lòng nhấp vào link bên dưới kích hoạt tài khoản để trải nghiệm tốt hơn:<br>
         Bạn vui lòng nhấp vào liên kết này để đặt lại mật khẩu của bạn:<br><br>
-        <a href="http://localhost/DUAN1_LEXUANPHAT/Du_An_1/index.php?page=account&act=checkverifile&email=' . $email . '&key_actived=' . $key_actived . '">Kích hoạt tài khoản cá nhân</a> <br><br>
+        <a href="http://localhost/Du_An_1_MaiTieuLong/Du_An_1/index.php?page=account&act=checkverifile&email=' . $email . '&key_actived=' . $key_actived . '">Kích hoạt tài khoản cá nhân</a> <br><br>
         Lưu ý: Liên kết chỉ có thể dùng được một lần.<br><br>
         Cảm ơn bạn!';
         $mail->Body = $noidungthu;
