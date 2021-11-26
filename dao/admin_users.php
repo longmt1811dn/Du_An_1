@@ -92,17 +92,66 @@ function  send_mail($email, $token)
     }
 }
 // đăng ký tài khoản
-function users_register($username, $first_name, $last_name, $email, $pass){
-    $sql = "INSERT INTO users(account, first_name, last_name, email, pass) VALUES(?,?,?,?,?)";
-    pdo_execute($sql, $username, $first_name, $last_name, $email, $pass);
-}
+// function users_register($username, $first_name, $last_name, $email, $pass)
+// {
+
+//     $sql = "INSERT INTO users(account, first_name, last_name, email, pass, key_actived) VALUES(?,?,?,?,?, $key_actived)";
+//     pdo_execute($sql, $username, $first_name, $last_name, $email, $pass);
+// }
 // Kiểm tra sự tồn tại của một user hoặc email
-function users_checkEmailOrUsername($email, $username){
+function users_checkEmailOrUsername($email, $username)
+{
     $sql = "SELECT * FROM users WHERE email = ? OR account = ?";
     return pdo_query_one($sql, $email, $username);
 }
 // Kiểm tra sự tồn tại của một email và password
-function users_checkEmailandPassword($email, $pass){
-    $sql = "SELECT * FROM users WHERE email = ? AND pass = ?";
+function users_checkEmailandPassword($email, $pass)
+{
+    $sql = "SELECT * FROM users WHERE email = ? AND pass = ? AND verifile = 1";
     return pdo_query_one($sql, $email, $pass);
+}
+// Kiểm tra sự tồn tại của một account chưa được kích hoạt 
+function users_checkVerifile($email){
+    $sql = "SELECT * FROM users WHERE email = ? AND verifile = 0";
+    return pdo_query_one($sql, $email);
+}
+function send_mail_verifile($email, $key_actived)
+{
+    require "./PHPMailer-master/PHPMailer-master/src/PHPMailer.php";
+    require "./PHPMailer-master/PHPMailer-master/src/SMTP.php";
+    require './PHPMailer-master/PHPMailer-master/src/Exception.php';
+    $mail = new PHPMailer\PHPMailer\PHPMailer(true); //true:enables exceptions
+    try {
+        $mail->SMTPDebug = 0; //0,1,2: chế độ debug
+        $mail->isSMTP();
+        $mail->CharSet  = "utf-8";
+        $mail->Host = 'smtp.gmail.com';  //SMTP servers
+        $mail->SMTPAuth = true; // Enable authentication
+        $mail->Username = 'tienjerry2000@gmail.com'; // SMTP username
+        $mail->Password = '01663261181';   // SMTP password
+        $mail->SMTPSecure = 'ssl';  // encryption TLS/SSL 
+        $mail->Port = 465;  // port to connect to                
+        $mail->setFrom('tienjerry2000@gmail.com', 'TimeZee');
+        $mail->addAddress($email);
+        $mail->isHTML(true);  // Set email format to HTML
+        $mail->Subject = 'Kích hoạt tài khoản';
+        $noidungthu = 'Xin chào bạn, <br><br> 
+        Cảm ơn bạn đã đăng ký thành viên với chúng tôi, vui lòng nhấp vào link bên dưới kích hoạt tài khoản để trải nghiệm tốt hơn:<br>
+        Bạn vui lòng nhấp vào liên kết này để đặt lại mật khẩu của bạn:<br><br>
+        <a href="http://localhost/Du_An_1_MaiTieuLong/Du_An_1/index.php?page=account&act=checkverifile&email=' . $email . '&key_actived=' . $key_actived . '">Kích hoạt tài khoản cá nhân</a> <br><br>
+        Lưu ý: Liên kết chỉ có thể dùng được một lần.<br><br>
+        Cảm ơn bạn!';
+        $mail->Body = $noidungthu;
+        $mail->smtpConnect(array(
+            "ssl" => array(
+                "verify_peer" => false,
+                "verify_peer_name" => false,
+                "allow_self_signed" => true
+            )
+        ));
+        $mail->send();
+        return true;
+    } catch (Exception $e) {
+        return false;
+    }
 }

@@ -113,7 +113,7 @@
 
                 <?php if ($itemsProduct["promotion"] > 0) { ?>
                   <div class="product__sale">
-                    <span class="product__sale-p">Sale</span>
+                    <span class="product__sale-p">Sale | <?= $itemsProduct["promotion"] . "%" ?></span>
                   </div>
                 <?php } ?>
 
@@ -122,10 +122,8 @@
                     <img src="./<?= $itemsProduct["image"] ?>" alt="">
                   </div>
                   <div class="product__img-button">
-                    <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
                     <a href="#" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
-                    <a href="#" class="compare" title="Product Link"><i class="fas fa-link"></i></a>
-                    <a href="#" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                    <a href="index.php?page=product&act=al&id=<?= $itemsProduct['id_product'] ?>" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
                   </div>
                 </div>
                 <div class="product__detail">
@@ -297,7 +295,7 @@
 
                 <?php if ($itemsProduct["promotion"] > 0) { ?>
                   <div class="product__sale">
-                    <span class="product__sale-p">Sale</span>
+                    <span class="product__sale-p">Sale  | <?= $itemsProduct["promotion"] . "%" ?></span>
                   </div>
                 <?php } ?>
 
@@ -306,10 +304,8 @@
                     <img src="./<?= $itemsProduct["image"] ?>" alt="">
                   </div>
                   <div class="product__img-button">
-                    <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
                     <a href="#" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
-                    <a href="#" class="compare" title="Product Link"><i class="fas fa-link"></i></a>
-                    <a href="#" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                    <a href="index.php?page=product&act=al&id=<?= $itemsProduct['id_product'] ?>" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
                   </div>
                 </div>
                 <div class="product__detail">
@@ -361,7 +357,7 @@
 
                 <?php if ($itemsProduct["promotion"] > 0) { ?>
                   <div class="product__sale">
-                    <span class="product__sale-p">Sale</span>
+                    <span class="product__sale-p">Sale | <?= $itemsProduct["promotion"] . "%" ?></span>
                   </div>
                 <?php } ?>
 
@@ -370,10 +366,8 @@
                     <img src="./<?= $itemsProduct["image"] ?>" alt="">
                   </div>
                   <div class="product__img-button">
-                    <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
                     <a href="#" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
-                    <a href="#" class="compare" title="Product Link"><i class="fas fa-link"></i></a>
-                    <a href="#" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                    <a href="index.php?page=product&act=al&id=<?= $itemsProduct['id_product'] ?>" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
                   </div>
                 </div>
                 <div class="product__detail">
@@ -419,7 +413,7 @@
       <?php foreach ($list_newsTwo as $new) { ?>
         <div class="main__post">
           <div class="main__post-img">
-            <a href="index.php?page=blogs&act=news"><img src="./<?= $new['image_new'] ?>" alt="" /></a>
+            <a href="index.php?page=blogs&act=news&id=<?= $new['id_news'] ?>"><img src="./<?= $new['image_new'] ?>" alt="" /></a>
           </div>
 
           <div class="main__post-text">

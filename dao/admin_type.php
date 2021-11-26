@@ -23,6 +23,13 @@ function type_getNameObject($id_object)
     $getNameOb =  pdo_query_one($sql, $id_object);
     return $getNameOb['name_object'];
 }
+// lấy số lượng type trong object
+function type_getCount($id_object)
+{
+    $sql = "SELECT * FROM type WHERE id_object = ?";
+    $getcount =  pdo_query_one($sql, $id_object);
+    return $getcount;
+}
 
 // lấy option Object của Type
 function type_getNameObject_option()
@@ -66,7 +73,6 @@ function product_getNameType($id_type)
     $nameType = pdo_query_one($sql, $id_type);
     return $nameType['name_type'];
 }
-
 //Lấy tất cả type không phân trang
 function type_selectall()
 {

@@ -8,11 +8,24 @@ if (isset($_POST['submit'])) {
   $password = $_POST['pass'];
   $pass = md5($password);
   $kiemtra = users_checkEmailandPassword($email, $pass);
+  $kiemtra1 = users_checkVerifile($email);
   if (is_array($kiemtra)) {
     $_SESSION['users'] = $kiemtra;
+    
+    $sql="SELECT id_user FROM `users` WHERE email='{$email}' AND pass ='{$pass}'";
+    $conn = pdo_get_connection();
+    $kq = $conn->query($sql);
+    $row_user = $kq->fetch();
+    
+    $_SESSION['login_id'] = $row_user['id_user'];//tạo biến ghi nhận user đã login
+    
     echo '<script>alert("Bạn đã đăng nhập thành công"); window.location="./index.php";</script>';
   } else {
-    echo "<script>alert('Sai tài khoản hoặc mật khẩu')</script>";
+    if (is_array($kiemtra1)) {
+      echo '<script>alert("Tài khoản này chưa được kích hoạt, vui lòng kiểm tra email để kích hoạt tài khoản")</script>';
+    } else {
+      echo "<script>alert('Tài khoản hoặc mật khẩu sai')</script>";
+    }
   }
 }
 ?>

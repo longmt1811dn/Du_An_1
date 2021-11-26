@@ -14,13 +14,20 @@ if (exist_param("listbrand")) {
     $VIEW_NAME = "add.php";
     $thongbao = "THÊM MỚI THÀNH CÔNG";
 } else if (exist_param("delete")) {
-    brand_delete($_GET['id_brand']);
-    $listbrand = brand_listall();
-    $VIEW_NAME = "list.php";
+    if (brand_getCountProduct($_GET['id_brand']) > 0) {
+        echo "<script>alert('Có sản phẩm đang tồn tại thương hiệu này, không thể xoá')</script>";
+        $listbrand = brand_listall();
+        $VIEW_NAME = "list.php";
+    } else {
+       
+            brand_delete($_GET['id_brand']);
+        $listbrand = brand_listall();
+        $VIEW_NAME = "list.php";
+    }
 } else if (exist_param("edit")) {
     $edit = brand_loaddata($_GET['id_brand']);
     $VIEW_NAME = "update.php";
-} else if(exist_param("update")){
+} else if (exist_param("update")) {
     $name_brand = $_POST['name_brand'];
     $hide = $_POST['hide'];
     $location = $_POST['location'];
@@ -28,10 +35,9 @@ if (exist_param("listbrand")) {
     brand_update($name_brand, $hide, $location, $id_brand);
     $listbrand = brand_listall();
     $VIEW_NAME = "list.php";
-} else if(exist_param("add")){
+} else if (exist_param("add")) {
     $VIEW_NAME = "add.php";
-}
- else {
+} else {
     $listbrand = brand_listall();
     $VIEW_NAME = "list.php";
 }

@@ -33,9 +33,7 @@
 @import url(./page/_blog.css);
 @import url(./page/product_details.css);
 
-
 /* Css Trang chi tiết tin có 2 theme */
-/* @import url(./page/_news.css); */
 @import url(./page/_news--white.css);
 
 @import url(./page/_contact.css);
