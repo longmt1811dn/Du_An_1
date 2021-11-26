@@ -33,3 +33,10 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.text-y{
+    color: var(--color-yellow);
+    font-size: 1.8rem;
+    display:inline-block;
+    font-weight: 600;
+}
