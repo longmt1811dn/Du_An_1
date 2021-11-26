@@ -28,6 +28,8 @@ if ($act == "login") {
     require_once './site/account/checkverifile.php';
     
 } else if($act == "love"){
+    $_SESSION['link'] = getCurrentPageURL();
+    $list = like_productIdUser($_SESSION['login_id']);
     
     require_once './site/account/wishlist.php';
     

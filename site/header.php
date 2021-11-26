@@ -1,7 +1,11 @@
 <?php
 if (isset($_GET['logout'])) {
+    
   unset($_SESSION['users']);
+  unset($_SESSION['login_id']);
+  
   echo '<script>alert("Bạn đã đăng xuất"); window.location="./index.php";</script>';
+  
 }
 ?>
 <header class="header grid-container">

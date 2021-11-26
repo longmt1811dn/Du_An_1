@@ -42,16 +42,10 @@
                       />
                     </div>
                       <div class="product__img-button">
-                      <a href="#" class="compare" title="Compare Product"
-                        ><i class="far fa-chart-bar"></i
-                      ></a>
                       <a href="#" class="compare" title="Quick View"
                       ><i class="far fa-eye"></i
                       ></a>
-                      <a href="#" class="compare" title="Product Link"
-                      ><i class="fas fa-link"></i
-                      ></a>
-                      <a href="#" class="compare" title="Add to wishlist"
+                      <a href="index.php?page=product&act=al&id=<?= $item['id_product'] ?>" class="compare" title="Add to wishlist"
                       ><i class="fas fa-heart"></i
                       ></a>
                       </div>
