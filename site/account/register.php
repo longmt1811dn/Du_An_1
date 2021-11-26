@@ -28,9 +28,9 @@ if (isset($_POST['submit'])) {
   } else {
       $key_actived = bin2hex(random_bytes(16));
       $conn = pdo_get_connection();
-      $sql = "INSERT INTO users(account, first_name, last_name, email, pass, key_actived) VALUES(?,?,?,?,?,?)";
+      $sql = "INSERT INTO users(account, last_name, first_name,  email, pass, key_actived) VALUES(?,?,?,?,?,?)";
       $stmt = $conn->prepare($sql);
-      $stmt->execute([$username, $first_name, $last_name, $email, $pass, $key_actived]);
+      $stmt->execute([$username, $last_name, $first_name, $email, $pass, $key_actived]);
       send_mail_verifile($email, $key_actived);
       echo "<script>alert('Đăng ký thành công, vui lòng kiểm tra email để kích hoạt tài khoản')</script>";
   }
@@ -51,11 +51,11 @@ if (isset($_POST['submit'])) {
         <?php echo "<p>" . $thongbao . "</p>" ?>
       </div>
       <div class="login__control-input">
-        <input type="text" class="input__control" placeholder="Họ" name="first_name" />
+        <input type="text" class="input__control" placeholder="Họ" name="last_name" />
       </div>
 
       <div class="login__control-input">
-        <input type="text" class="input__control" placeholder="Tên" name="last_name" />
+        <input type="text" class="input__control" placeholder="Tên" name="first_name" />
       </div>
       <div class="login__control-input">
         <input type="text" class="input__control" placeholder="Tài khoản" name="username" />
