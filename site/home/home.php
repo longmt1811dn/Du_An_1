@@ -128,7 +128,7 @@
                 </div>
                 <div class="product__detail">
                   <div class="product__detail-title">
-                    <a href="index.php?page=product&act=pd"><?= $itemsProduct["name_product"] ?></a>
+                    <a href="?page=product&act=pd&id_product=<?=$itemsProduct['id_product']?>"><?= $itemsProduct["name_product"] ?></a>
                   </div>
                   <div class="product__detail-price">
                     <?php if ($itemsProduct["promotion"] > 0) { ?>
