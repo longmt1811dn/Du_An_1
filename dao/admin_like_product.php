@@ -22,4 +22,22 @@ function like_productIdUser($idUser)
     return pdo_query($sql, $idUser);
 }
 
+// Hiển thị nút tim sản phẩm
+function like_product_btn($idProduct){
+    $conn = pdo_get_connection();
+    
+    if(isset($_SESSION['login_id'])){   
+        $sql = "SELECT * FROM like_product WHERE id_product = {$idProduct} AND id_user = {$_SESSION['login_id']}";
+        $kq = $conn->query($sql);
+
+        if ($kq->rowCount() != 0) {
+            echo "<a href='index.php?page=product&act=al&id=". $idProduct ."' class='compare' style='background-color: red' title='Add to wishlist'><i class='fas fa-heart'></i></a>";
+        } else {
+            echo "<a href='index.php?page=product&act=al&id=". $idProduct ."' class='compare' title='Add to wishlist'><i class='fas fa-heart'></i></a>";
+        }
+    } else {
+        echo "<a href='index.php?page=product&act=al&id=". $idProduct ."' class='compare' title='Add to wishlist'><i class='fas fa-heart'></i></a>";
+    }
+    
+}
 ?>

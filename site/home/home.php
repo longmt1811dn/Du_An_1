@@ -122,13 +122,13 @@
                     <img src="./<?= $itemsProduct["image"] ?>" alt="">
                   </div>
                   <div class="product__img-button">
-                    <a href="#" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
-                    <a href="index.php?page=product&act=al&id=<?= $itemsProduct['id_product'] ?>" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                    <a href="index.php?page=product&act=pd" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
+                    <?php like_product_btn($itemsProduct['id_product']) ?>
                   </div>
                 </div>
                 <div class="product__detail">
                   <div class="product__detail-title">
-                    <a href=""><?= $itemsProduct["name_product"] ?></a>
+                    <a href="index.php?page=product&act=pd"><?= $itemsProduct["name_product"] ?></a>
                   </div>
                   <div class="product__detail-price">
                     <?php if ($itemsProduct["promotion"] > 0) { ?>
@@ -305,7 +305,7 @@
                   </div>
                   <div class="product__img-button">
                     <a href="#" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
-                    <a href="index.php?page=product&act=al&id=<?= $itemsProduct['id_product'] ?>" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                    <?php like_product_btn($itemsProduct['id_product']) ?>
                   </div>
                 </div>
                 <div class="product__detail">
@@ -367,7 +367,7 @@
                   </div>
                   <div class="product__img-button">
                     <a href="#" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
-                    <a href="index.php?page=product&act=al&id=<?= $itemsProduct['id_product'] ?>" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                    <?php like_product_btn($itemsProduct['id_product']) ?>
                   </div>
                 </div>
                 <div class="product__detail">

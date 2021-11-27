@@ -45,9 +45,9 @@
                       <a href="#" class="compare" title="Quick View"
                       ><i class="far fa-eye"></i
                       ></a>
-                      <a href="index.php?page=product&act=al&id=<?= $item['id_product'] ?>" class="compare" title="Add to wishlist"
-                      ><i class="fas fa-heart"></i
-                      ></a>
+                          
+                      <?php like_product_btn($item['id_product']) ?>
+                          
                       </div>
                       </div>
                       <div class="product__detail">

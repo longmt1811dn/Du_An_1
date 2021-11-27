@@ -47,5 +47,10 @@ if($act == "cb"){
             exit();
         }
     }
+} else if($act == "pd"){
+    $_SESSION['link'] = getCurrentPageURL();
+    
+    require_once './site/product/product_details.php';
+    
 }
 ?>
