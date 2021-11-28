@@ -46,8 +46,13 @@ if ($act == "cb") {
     }
 } else if ($act == "pd") {
     $_SESSION['link'] = getCurrentPageURL();
+    
     if (isset($_GET['id_product']))  $id_product = $_GET['id_product'];
+    
     $detail = product_selectallOne($id_product);
+    
+    product_upView($id_product);
+    
     require_once './site/product/product_details.php';
 } else if($act == "deletecomment"){
     if(isset($_GET['id_review'])){

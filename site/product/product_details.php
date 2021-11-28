@@ -23,12 +23,7 @@ if (isset($_POST['submit-comment'])) {
 <main>
   <div class="main__nav">
     <div class="main__nav-name">
-      <h2>Analog Numeral</h2>
-      <a href="#">Home</a>
-      <span>/</span>
-      <a href="#">Gold Case</a>
-      <span>/</span>
-      <span>Analog Numeral</span>
+      <h2><?= $name_product ?></h2>
     </div>
 
   </div>
@@ -51,7 +46,7 @@ if (isset($_POST['submit-comment'])) {
               <div class="item__right">
                 <h2 class="item__right--title"><?= $name_product ?></h2>
                 <div class="item__right--price">
-                  <span>Giá: <?= number_format($price) ?></span>
+                  <span>Giá: <?= number_format($price) ?> vnđ</span>
                 </div>
                 <div class="item__right--view">
                   <p>
@@ -72,37 +67,7 @@ if (isset($_POST['submit-comment'])) {
                 <div class="item__right--description">
                   <p><?= $describe ?></p>
                 </div>
-                <div class="item__right--color">
-                  <div class="title">Color :</div>
-                  <div class="swatch-section">
-                    <div class="swatch-section--white">
-                      <label for="">
-                        <span class="bgImg"></span>
-                      </label>
-                    </div>
-                    <div class="swatch-section--gray">
-                      <label for="">
-                        <span class="bgImg"></span>
-                      </label>
-                    </div>
-                    <div class="swatch-section--black">
-                      <label for="">
-                        <span class="bgImg"></span>
-                      </label>
-                    </div>
-                    <div class="swatch-section--sandal">
-                      <label for="">
-                        <span class="bgImg"></span>
-                      </label>
-                    </div>
-                    <div class="swatch-section--blue">
-                      <label for="">
-                        <span class="bgImg"></span>
-                      </label>
-                    </div>
 
-                  </div>
-                </div>
                 <div class="item__right--material">
                   <div class="title text-y">Chất liệu :</div>
                   <div class="value">
@@ -123,25 +88,22 @@ if (isset($_POST['submit-comment'])) {
                   </div>
                   <div class="total-price">
                     <label for="" class="text-y">Tổng tiền :</label>
-                    <span><?= number_format($price) ?></span>
+                    <span><?= number_format($price) ?> vnđ</span>
                   </div>
                 </div>
 
                 <div class="item__right--button">
                   <div class="add-to-cart">
                     <i class="fa fa-cart-plus">
-                      <span id="AddToCartText">Thêm giỏ hàng</span>
                     </i>
+                      <span id="AddToCartText">Thêm giỏ hàng</span>
                   </div>
                   <div class="add-to-wishlist">
                     <a href="">
                       <i class="far fa-heart">
-                        <span id="AddToWissh">Yêu thích</span>
                       </i>
+                        <span id="AddToWissh">Yêu thích</span>
                     </a>
-                  </div>
-                  <div class="buy-it-now">
-                    <span>Mua ngay</span>
                   </div>
                 </div>
 
@@ -232,17 +194,20 @@ if (isset($_POST['submit-comment'])) {
 
             <div class="product__related">
               <div class="product__related--title">
-                <h4>Related Products</h4>
-                <h2>From this Collection</h2>
+                <h4>SẢN PHẨM TƯƠNG TỰ</h4>
+                <h2>TỪ BỘ SƯU TẬP NÀY</h2>
               </div>
               <div class="product__related--container">
                 <div class="container-rl">
                   <div class="list-item">
-
+                      
+                    <?php $list = product_likeBrand($id_brand); ?>
+                    <?php foreach($list as $item) { ?>
+                      
                     <div class="product">
                       <div class="product__img">
                         <div class="imgOverlay">
-                          <img src="https://cdn.shopify.com/s/files/1/0075/1832/2770/products/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_large.png?v=1562222675" alt="">
+                          <img src="<?= $item['image'] ?>" alt="">
                         </div>
                         <div class="product__img-button">
                           <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
@@ -253,10 +218,10 @@ if (isset($_POST['submit-comment'])) {
                       </div>
                       <div class="product__detail">
                         <div class="product__detail-title">
-                          <a href="">Analog Numeral</a>
+                          <a href=""><?= $item['name_product'] ?></a>
                         </div>
                         <div class="product__detail-price">
-                          <span class="price">$750.00</span>
+                            <span class="price"><?= number_format($item['price']) ?></span>
                           <span class="starrating">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -267,12 +232,14 @@ if (isset($_POST['submit-comment'])) {
                         </div>
                         <div class="product__detail-sale"><span>Ex to Sale Tax</span></div>
                         <div class="product__detail-cart">
-                          <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+                          <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Mua sản phẩm</a>
                         </div>
                       </div>
                     </div>
+                      
+                    <?php } ?>
 
-                    <div class="product">
+<!--                    <div class="product">
                       <div class="product__sale">
                         <span class="product__sale-p">Sale</span>
                       </div>
@@ -306,76 +273,7 @@ if (isset($_POST['submit-comment'])) {
                           <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Add to cart</a>
                         </div>
                       </div>
-                    </div>
-
-                    <div class="product">
-                      <div class="product__sale">
-                        <span class="product__sale-p">Sale</span>
-                      </div>
-                      <div class="product__img">
-                        <div class="imgOverlay">
-                          <img src="https://cdn.shopify.com/s/files/1/0075/1832/2770/products/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_large.png?v=1562222675" alt="">
-                        </div>
-                        <div class="product__img-button">
-                          <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
-                          <a href="#" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
-                          <a href="#" class="compare" title="Product Link"><i class="fas fa-link"></i></a>
-                          <a href="#" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
-                        </div>
-                      </div>
-                      <div class="product__detail">
-                        <div class="product__detail-title">
-                          <a href="">Analog Numeral</a>
-                        </div>
-                        <div class="product__detail-price">
-                          <span class="price">$250.00 <s style="font-size:1.7rem">$300.00</s></span>
-                          <span class="starrating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                          </span>
-                        </div>
-                        <div class="product__detail-sale"><span>Ex to Sale Tax</span></div>
-                        <div class="product__detail-cart">
-                          <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Add to cart</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="product">
-                      <div class="product__img">
-                        <div class="imgOverlay">
-                          <img src="https://cdn.shopify.com/s/files/1/0075/1832/2770/products/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_large.png?v=1562222675" alt="">
-                        </div>
-                        <div class="product__img-button">
-                          <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
-                          <a href="#" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
-                          <a href="#" class="compare" title="Product Link"><i class="fas fa-link"></i></a>
-                          <a href="#" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
-                        </div>
-                      </div>
-                      <div class="product__detail">
-                        <div class="product__detail-title">
-                          <a href="">Analog Numeral</a>
-                        </div>
-                        <div class="product__detail-price">
-                          <span class="price">$750.00</span>
-                          <span class="starrating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                          </span>
-                        </div>
-                        <div class="product__detail-sale"><span>Ex to Sale Tax</span></div>
-                        <div class="product__detail-cart">
-                          <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Add to cart</a>
-                        </div>
-                      </div>
-                    </div>
+                    </div>-->
 
                   </div>
 
@@ -383,68 +281,7 @@ if (isset($_POST['submit-comment'])) {
               </div>
             </div>
 
-            <div class="product__recently">
-              <div class="product__recently--title">
-                <h2>Recently Viewed Products</h2>
-              </div>
-              <div class="product__related--container">
-                <div class="container-rl">
-                  <div class="list-item">
 
-                    <div class="product">
-                      <div class="product__img">
-                        <img src="https://cdn.shopify.com/s/files/1/0075/1832/2770/products/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_large.png?v=1562222675" alt="">
-                      </div>
-                      <div class="product__detail">
-                        <div class="product__detail-title">
-                          <a href="">Analog Numeral</a>
-                        </div>
-                        <div class="product__detail-price">
-                          <span class="price">$750.00</span>
-                        </div>
-                        <div class="product__detail-cart">
-                          <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Select options</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product">
-                      <div class="product__img">
-                        <img src="https://cdn.shopify.com/s/files/1/0075/1832/2770/products/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_large.png?v=1562222675" alt="">
-                      </div>
-                      <div class="product__detail">
-                        <div class="product__detail-title">
-                          <a href="">Analog Numeral</a>
-                        </div>
-                        <div class="product__detail-price">
-                          <span class="price">$750.00</span>
-                        </div>
-                        <div class="product__detail-cart">
-                          <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Select options</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product">
-                      <div class="product__img">
-                        <img src="https://cdn.shopify.com/s/files/1/0075/1832/2770/products/Watch5_0f753270-74d5-471c-b694-5f55d31a0f0e_large.png?v=1562222675" alt="">
-                      </div>
-                      <div class="product__detail">
-                        <div class="product__detail-title">
-                          <a href="">Analog Numeral</a>
-                        </div>
-                        <div class="product__detail-price">
-                          <span class="price">$750.00</span>
-                        </div>
-                        <div class="product__detail-cart">
-                          <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Select options</a>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

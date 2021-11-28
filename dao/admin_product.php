@@ -291,3 +291,17 @@ function product_getNameIDTYPE($id_type){
     $nametype = pdo_query_one($sql, $id_type);
     return $nametype['name_type'];
 }
+
+// Tăng view product
+function product_upView($idProduct = 0){
+    $sql = "UPDATE product SET view = view + 1 WHERE id_product = ?";
+    
+    pdo_execute($sql, $idProduct);
+}
+
+//Lấy 4 sản phẩm tương tự
+function product_likeBrand($idBrand = 0){
+    $sql = "SELECT * FROM product WHERE id_brand = ? LIMIT 0,4";
+    
+    return pdo_query($sql, $idBrand);
+}
