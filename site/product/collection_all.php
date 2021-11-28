@@ -13,7 +13,7 @@
       <!-- Xuất item -->
       <div class="all-collection__show-item">
       <div class="all-collection__item-img">
-            <a href="./collection.html"><img src="<?= product_imageIdBrand($item['id_brand']) ?>" alt="No Image"></a>
+            <a href="index.php?page=product&act=cb&id=<?= $item['id_brand'] ?>"><img src="<?= product_imageIdBrand($item['id_brand']) ?>" alt="No Image"></a>
       </div>
 
       <div class="all-collection__item-detail">

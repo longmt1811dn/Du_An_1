@@ -18,7 +18,7 @@ extract($edit);
             <label for="id_type">Chọn kiểu:</label>
             <?php $listType = type_selectall(); ?>
             <select name="id_type" id="id_type" onchange="my_fun(this.value);">
-                <option value="0">Chọn kiểu</option>
+                <option value disabled selected >Chọn kiểu</option>
                 <?php foreach ($listType as $item) { ?>
                 <?php if($id_type == $item['id_type']) { ?>
                 <option value="<?= $item['id_type'] ?>" selected><?= $item['name_type'] ?></option>
@@ -33,7 +33,7 @@ extract($edit);
             <label for="id_brand">Chọn thương hiệu:</label>
             <?php $listBrand = brand_selectall(); ?>
             <select name="id_brand" id="id_brand">
-                <option value="0">Chọn thương hiệu</option>
+                <option value disabled selected >Chọn thương hiệu</option>
                 <?php foreach ($listBrand as $item) { ?>
 
                 <?php if($id_brand == $item['id_brand']) { ?>

@@ -7,8 +7,8 @@
     $idType = $_GET['idtype'];
     $list = brand_selectall();
     
-    echo '<select name="id_brand">';
-    echo '<option value= 0 > Chọn thương hiệu </option>';
+    echo '<select name="id_brand" required>';
+    echo '<option value disabled selected > Chọn thương hiệu </option>';
     
     foreach ($list as $item){
         
