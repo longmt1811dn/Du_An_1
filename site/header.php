@@ -22,13 +22,14 @@ if (isset($_GET['logout'])) {
       <i class="fas fa-search"></i>
     </div>
     <div class="header__user-account">
-      <i class="fas fa-user"></i>
+      <i class="fas fa-user" id="header__user-account"></i>
       <?php if (isset($_SESSION['users'])) {
         extract($_SESSION['users']); ?>
-        <div class="header__user-box account__box">
+        <div class="header__user-box account__box" id="account__box">
+          <i class="fas fa-times close__account-box"></i>
           <ul class="account__box-menu">
             <li>
-              <i class="far fa-user-circle"></i>Xin chào <span style="color: red;"><?= $last_name ." ". $first_name ?></span>
+              <i class="far fa-user-circle"></i>Xin chào <span style="color: red;"><?= $last_name . " " . $first_name ?></span>
             </li>
             <li>
               <i class="fas fa-user"></i><a href="./index.php?page=account&act=profile">Hồ sơ</a>
@@ -45,7 +46,8 @@ if (isset($_GET['logout'])) {
           </ul>
         </div>
       <?php } else { ?>
-        <div class="header__user-box account__box">
+        <div class="header__user-box account__box" id="account__box">
+          <i class="fas fa-times close__account-box"></i>
           <ul class="account__box-menu">
             <li>
               <a href="./index.php?page=account&act=login"><i class="fas fa-sign-in-alt"></i>Đăng nhập</a>
@@ -66,8 +68,37 @@ if (isset($_GET['logout'])) {
         <p>Giỏ hàng đang trống!</p>
       </div>
     </div>
-    <div class="header__user-menu mobile-menu">
-      <i class="fas fa-bars"></i>
+    <div class="header__user-menu mobile__menu">
+      <i class="fas fa-bars" id="open__menudropdown"></i>
+      <div class="mobile__menu-dropdown" id="mobile__menu-dropdown">
+        <i class="fas fa-times close__account-box"></i>
+        <nav class="mobile__nav">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="index.php">Trang chủ</a>
+            </li>
+
+            <li class="menu-item has-child">
+              <a href="#" class="menu-link">
+                <span>Dropdown</span>
+
+              </a>
+              <ul class="menu-child">
+                <li class="menu-child-item">
+                  <a href="#" class="menu-child-link">Child</a>
+                </li>
+                <li class="menu-child-item">
+                  <a href="#" class="menu-child-link">Child</a>
+                </li>
+                <li class="menu-child-item">
+                  <a href="#" class="menu-child-link">Child</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
     </div>
   </div>
 </header>
