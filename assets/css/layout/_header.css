@@ -280,14 +280,14 @@
   line-height: var(--line-height31);
 }
 
-.mobile-menu {
+.mobile__menu {
   opacity: 0;
   visibility: hidden;
 }
 
 /* ___________________________________________________________________________ */
 @media screen and (max-width: 414px) {
-  header {
+  .header {
     width: auto;
     height: auto;
     padding-bottom: 3rem;
@@ -304,6 +304,7 @@
 
   .header__nav {
     display: none;
+    position: relative;
   }
 
   .header__user {
@@ -313,8 +314,96 @@
     padding-top: 3rem;
   }
 
-  .mobile-menu {
+  .mobile__menu {
     opacity: 1;
     visibility: visible;
+  }
+
+  .header__user > div:hover .header__user-box {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header__user > #header__user-account:hover #account__box {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .open {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .close__account-box {
+    position: absolute;
+    left: 90%;
+    top: 5%;
+  }
+
+  .mobile__menu-dropdown {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: red;
+    width: 50%;
+    left: 0;
+  }
+
+  /* Base setting, you can remove */
+  .menu {
+    display: block;
+  }
+
+  .menu-link {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .menu-item.has-child {
+    position: relative;
+  }
+
+  /* .menu-item.has-child:hover .menu-child {
+    opacity: 1;
+    visibility: visible;
+  } */
+
+  .menu-child {
+    --top-space: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.2s ease;
+    list-style: none;
+    transform: translateY(var(--top-space));
+    /* opacity: 0;
+    visibility: hidden; */
+    transition: all 0.2s ease;
+  }
+
+  .menu-child:before {
+    content: "";
+    height: var(--top-space);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  .menu-child {
+    border: 1px solid #eee;
+    min-width: 250px;
+  }
+
+  .menu-child-link {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    color: #333;
   }
 }
