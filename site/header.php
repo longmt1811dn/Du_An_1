@@ -1,11 +1,10 @@
 <?php
 if (isset($_GET['logout'])) {
-    
+
   unset($_SESSION['users']);
   unset($_SESSION['login_id']);
-  
+
   echo '<script>alert("Bạn đã đăng xuất"); window.location="./index.php";</script>';
-  
 }
 ?>
 <header class="header grid-container">
@@ -75,15 +74,34 @@ if (isset($_GET['logout'])) {
         <nav class="mobile__nav">
           <ul class="menu">
             <li class="menu-item">
-              <a href="index.php">Trang chủ</a>
+              <a class="menu-link" href="index.php">Trang chủ</a>
             </li>
 
             <li class="menu-item has-child">
               <a href="#" class="menu-link">
-                <span>Dropdown</span>
+                Đồng hồ V
+              </a>
+              <ul class="menu-child">
+                <li class="menu-child-item">
+                  <a href="#" class="menu-child-link">Child</a>
+                </li>
+                <li class="menu-child-item">
+                  <a href="#" class="menu-child-link">Child</a>
+                </li>
+                <li class="menu-child-item">
+                  <a href="#" class="menu-child-link">Child</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item has-child">
+              <a href="#" class="menu-link">
+                Đồng hồ V
 
               </a>
               <ul class="menu-child">
+                <button class="btn">
+                  <a href="">Sương sương</a>
+                </button>
                 <li class="menu-child-item">
                   <a href="#" class="menu-child-link">Child</a>
                 </li>
