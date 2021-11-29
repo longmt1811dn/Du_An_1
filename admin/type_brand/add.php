@@ -13,8 +13,8 @@
         <div class="form-group">
             <label for="id_type">Chọn kiểu:</label>
             <?php $listType = type_selectall(); ?>
-            <select name="id_type" id="id_type" onchange="my_fun(this.value);">
-                <option value="0">Chọn kiểu</option>
+            <select name="id_type" id="id_type" onchange="my_fun(this.value);" required>
+                <option value disabled selected>Chọn kiểu</option>
                 <?php foreach ($listType as $item) { ?>
                 <option value="<?= $item['id_type'] ?>" ><?= $item['name_type'] ?></option>
                 <?php } ?>
@@ -23,8 +23,8 @@
         
         <div class="form-group">
             <label for="id_brand">Chọn thương hiệu:</label>
-            <select name="id_brand" id="id_brand" disabled="true">
-                <option value="0">Chọn thương hiệu</option>
+            <select name="id_brand" id="id_brand" disabled="true" required>
+                <option value disabled selected>Chọn thương hiệu</option>
             </select>
         </div>
         

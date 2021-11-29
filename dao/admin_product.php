@@ -152,7 +152,7 @@ function product_top()
 function product_selectFourHighlight()
 {
     $sql = "SELECT * FROM product WHERE highlights=0 limit 0,4";
-    
+
     return pdo_query($sql);
 }
 
@@ -160,7 +160,7 @@ function product_selectFourHighlight()
 function product_selectFourDate()
 {
     $sql = "SELECT * FROM product WHERE hide = 1 ORDER BY date DESC LIMIT 0,4";
-    
+
     return pdo_query($sql);
 }
 
@@ -168,35 +168,39 @@ function product_selectFourDate()
 function product_selectFourView()
 {
     $sql = "SELECT * FROM product WHERE hide = 1 ORDER BY view DESC LIMIT 0,4";
-    
+
     return pdo_query($sql);
 }
 
 //Đếm sản phẩm theo thương hiệu
-function product_countIdBrand($idBrand){
+function product_countIdBrand($idBrand)
+{
     $sql = "SELECT COUNT(*) as so_luong FROM product WHERE id_brand = ?";
     $row = pdo_query_one($sql, $idBrand);
-    
+
     return $row['so_luong'];
 }
 
 //Lấy hình ảnh của sản phẩm mới nhất từ thương hiệu
-function product_imageIdBrand($idBrand){
+function product_imageIdBrand($idBrand)
+{
     $sql = "SELECT * FROM product WHERE id_brand = ? ORDER BY date DESC LIMIT 0,1";
     $row = pdo_query_one($sql, $idBrand);
-    
+
     return $row['image'];
 }
 
 // Lấy tất cả sản phẩm thuộc thương hiệu
-function product_selelctIdBrand($idBrand){
+function product_selelctIdBrand($idBrand)
+{
     $sql = " SELECT * FROM product WHERE id_brand = ?";
-    
+
     return pdo_query($sql, $idBrand);
 }
 
 // Lấy tất cả sản phẩm thuộc loại
-function product_selelctIdType($idType){
+function product_selelctIdType($idType)
+{
     $pageSize = 12;
     $startRow = 0;
     $pageNum = 1;
@@ -206,7 +210,7 @@ function product_selelctIdType($idType){
     $startRow = ($pageNum - 1) * $pageSize;
 
     $sql = " SELECT * FROM product WHERE id_type = ?  LIMIT $startRow,$pageSize";
-    
+
     return pdo_query($sql, $idType);
 }
 
@@ -238,8 +242,8 @@ function type_colectionAllPagination($idType)
 
     if ($pageNum > 1) {
 
-        echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=ct&id='.$idType.'&pagenum=1"><<</a></li>';
-        echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=ct&id='.$idType.'&pagenum=' . $pagePrev . '"><</a></li>';
+        echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=ct&id=' . $idType . '&pagenum=1"><<</a></li>';
+        echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=ct&id=' . $idType . '&pagenum=' . $pagePrev . '"><</a></li>';
     }
 
     for ($i = $from; $i <= $to; $i++) {
@@ -248,20 +252,56 @@ function type_colectionAllPagination($idType)
 
             if ($i == $pageNum) {
 
-                echo '<li class=""><a class="btn btn--m activex" href="index.php?page=product&act=ct&id='.$idType.'&pagenum=' . $i . '">' . $i . '</a></li>';
+                echo '<li class=""><a class="btn btn--m activex" href="index.php?page=product&act=ct&id=' . $idType . '&pagenum=' . $i . '">' . $i . '</a></li>';
             } else {
 
-                echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=ct&id='.$idType.'&pagenum=' . $i . '">' . $i . '</a></li>';
+                echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=ct&id=' . $idType . '&pagenum=' . $i . '">' . $i . '</a></li>';
             }
         }
     }
 
     if ($pageNum < $tongSoTrang) {
 
-        echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=ct&id='.$idType.'&pagenum=' . $pageNext . '">></a></li>';
-        echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=ct&id='.$idType.'&pagenum=' . $tongSoTrang . '">>></a></li>';
+        echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=ct&id=' . $idType . '&pagenum=' . $pageNext . '">></a></li>';
+        echo '<li class=""><a class="btn btn--m" href="index.php?page=product&act=ct&id=' . $idType . '&pagenum=' . $tongSoTrang . '">>></a></li>';
     }
     '</ul>
             </nav>
             </div> ';
+}
+
+// lấy chi tiết sản phẩm
+function product_selectallOne($id_product)
+{
+    $sql = "SELECT * FROM product WHERE id_product=?";
+    return pdo_query_one($sql, $id_product);
+}
+
+// lấy tên từ id thương hiệu
+function product_getNameIDBRAND($id_brand)
+{
+    $sql = "SELECT * FROM brand WHERE id_brand=?";
+    $namebrand =  pdo_query_one($sql, $id_brand);
+    return $namebrand['name_brand'];
+}
+
+// lấy tên từ ID kiểu
+function product_getNameIDTYPE($id_type){
+    $sql = "SELECT * FROM type WHERE id_type=?";
+    $nametype = pdo_query_one($sql, $id_type);
+    return $nametype['name_type'];
+}
+
+// Tăng view product
+function product_upView($idProduct = 0){
+    $sql = "UPDATE product SET view = view + 1 WHERE id_product = ?";
+    
+    pdo_execute($sql, $idProduct);
+}
+
+//Lấy 4 sản phẩm tương tự
+function product_likeBrand($idBrand = 0){
+    $sql = "SELECT * FROM product WHERE id_brand = ? LIMIT 0,4";
+    
+    return pdo_query($sql, $idBrand);
 }
