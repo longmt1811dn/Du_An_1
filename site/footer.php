@@ -5,10 +5,7 @@
                     <h4>Trợ giúp</h4>
                     <ul class="contact-help__links">
                       <li><a href="#">Tìm kiếm</a></li>
-                      <li><a href="#">Trợ giúp</a></li>
                       <li><a href="#">Thông tin</a></li>
-                      <li><a href="#">Chính sách bảo mật</a></li>
-                      <li><a href="#">Chi tiết vận chuyển</a></li>
                     </ul>
                   </div>
                   <div class="contact-support">
@@ -16,19 +13,13 @@
                     <ul class="contact-support__link">
                       <li><a href="#">Liên hệ</a></li>
                       <li><a href="#">Giới thiệu</a></li>
-                      <li><a href="#">Nghề nghiệp</a></li>
-                      <li><a href="#">Hoàn lại tiền & trả hàng</a></li>
-                      <li><a href="#">Giao hàng</a></li>
                     </ul>
                   </div>
                   <div class="contact-information">
                     <h4>Thông tin</h4>
                     <ul class="contact-information__link">
-                      <li><a href="#">Cụm từ tìm kiếm</a></li>
-                      <li><a href="#">Tìm kiếm nâng cao</a></li> 
-                      <li><a href="#">Trợ giúp & Câu hỏi thường gặp</a></li>
                       <li><a href="#">Vị trí cửa hàng</a></li>
-                      <li><a href="#">Đặt hàng & Trả hàng</a></li>
+                      <li><a href="#">Đặt hàng</a></li>
                     </ul>
                   </div>
                   <div class="contact-us">

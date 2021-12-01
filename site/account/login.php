@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
     if (is_array($kiemtra1)) {
       echo '<script>alert("Tài khoản này chưa được kích hoạt, vui lòng kiểm tra email để kích hoạt tài khoản")</script>';
     } else {
-      echo "<script>alert('Tài khoản hoặc mật khẩu sai')</script>";
+      echo "<script>alert('Bạn đã nhập không chính xác email hoặc mật khẩu')</script>";
     }
   }
 }
@@ -39,7 +39,7 @@ if (isset($_POST['submit'])) {
   <div class="login__form">
     <form action="" class="login__form-control" method="post">
       <div class="login__control-input">
-        <input type="email" class="input__control" placeholder="Email" name="email" />
+        <input type="email" class="input__control" placeholder="Email của bạn" name="email" />
       </div>
 
       <div class="login__control-input">
