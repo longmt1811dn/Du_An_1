@@ -18,8 +18,10 @@ if (isset($_POST['submit'])) {
         $stmt->execute([$token, $_SESSION['date'], $email]);
         send_mail($email, $token);
         echo "<script>alert('Kiểm tra đường dẫn trong email')</script>";
+    } else if(strlen($email) < 1){
+        echo "<script>alert('Email không được để trống')</script>";
     } else {
-        echo "<script>alert('Email không có đăng ký')</script>";
+        echo "<script>alert('Email này chưa được đăng ký')</script>";
     }
 } ?>
 <div class="forgotpass">
