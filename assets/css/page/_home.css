@@ -1,14 +1,12 @@
 /* ================================ */
 
-.flex-3col {
-  display: flex;
-  flex-wrap: wrap;
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(414px, 1fr));
 }
 
 .main__introduct-img {
   position: relative;
-  max-width: calc(100% / 3);
-  max-height: calc(100% / 3);
   overflow: hidden;
   background: var(--bg-darkblue);
   cursor: pointer;

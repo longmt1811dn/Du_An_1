@@ -122,13 +122,13 @@
                     <img src="./<?= $itemsProduct["image"] ?>" alt="">
                   </div>
                   <div class="product__img-button">
-                    <a href="index.php?page=product&act=pd&id_product=<?=$itemsProduct['id_product']?>" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
+                    <a href="index.php?page=product&act=pd&id_product=<?= $itemsProduct['id_product'] ?>" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
                     <?php like_product_btn($itemsProduct['id_product']) ?>
                   </div>
                 </div>
                 <div class="product__detail">
                   <div class="product__detail-title">
-                    <a href="index.php?page=product&act=pd&id_product=<?=$itemsProduct['id_product']?>"><?= $itemsProduct["name_product"] ?></a>
+                    <a href="index.php?page=product&act=pd&id_product=<?= $itemsProduct['id_product'] ?>"><?= $itemsProduct["name_product"] ?></a>
                   </div>
                   <div class="product__detail-price">
                     <?php if ($itemsProduct["promotion"] > 0) { ?>
@@ -198,7 +198,7 @@
     </div>
   </div>
 
-  <div class="main__introduct flex-3col">
+  <div class="main__introduct grid-3col">
     <div class="main__introduct-img">
       <img src="./assets/image/img_title (1).jpg" alt="" />
       <div class="main__introduct-info">
@@ -280,7 +280,7 @@
     </div>
   </div>
 
-    <div class="main__store">
+  <div class="main__store">
     <div class="container">
       <div class="main__store-title text-ct">
         <h2>Sản phẩm mới</h2>
@@ -295,7 +295,7 @@
 
                 <?php if ($itemsProduct["promotion"] > 0) { ?>
                   <div class="product__sale">
-                    <span class="product__sale-p">Sale  | <?= $itemsProduct["promotion"] . "%" ?></span>
+                    <span class="product__sale-p">Sale | <?= $itemsProduct["promotion"] . "%" ?></span>
                   </div>
                 <?php } ?>
 
@@ -304,13 +304,13 @@
                     <img src="./<?= $itemsProduct["image"] ?>" alt="">
                   </div>
                   <div class="product__img-button">
-                    <a href="index.php?page=product&act=pd&id_product=<?=$itemsProduct['id_product']?>" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
+                    <a href="index.php?page=product&act=pd&id_product=<?= $itemsProduct['id_product'] ?>" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
                     <?php like_product_btn($itemsProduct['id_product']) ?>
                   </div>
                 </div>
                 <div class="product__detail">
                   <div class="product__detail-title">
-                    <a href="index.php?page=product&act=pd&id_product=<?=$itemsProduct['id_product']?>"><?= $itemsProduct["name_product"] ?></a>
+                    <a href="index.php?page=product&act=pd&id_product=<?= $itemsProduct['id_product'] ?>"><?= $itemsProduct["name_product"] ?></a>
                   </div>
                   <div class="product__detail-price">
                     <?php if ($itemsProduct["promotion"] > 0) { ?>
@@ -328,7 +328,7 @@
                       <?php } ?>
                     </span> -->
                   </div>
-                    <div class="product__detail-sale"><span>Ngày: <?= date("d/m/Y", strtotime($itemsProduct['date'])) ?></span></div>
+                  <div class="product__detail-sale"><span>Ngày: <?= date("d/m/Y", strtotime($itemsProduct['date'])) ?></span></div>
                   <div class="product__detail-cart">
                     <a href="#" class="btn-cart"><i class="fas fa-shopping-cart"></i>Mua sản phẩm</a>
                   </div>
@@ -341,8 +341,8 @@
       </div>
     </div>
   </div>
-    
-    <div class="main__store">
+
+  <div class="main__store">
     <div class="container">
       <div class="main__store-title text-ct">
         <h2>Sản phẩm xem nhiều</h2>
@@ -366,13 +366,13 @@
                     <img src="./<?= $itemsProduct["image"] ?>" alt="">
                   </div>
                   <div class="product__img-button">
-                    <a href="index.php?page=product&act=pd&id_product=<?=$itemsProduct['id_product']?>" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
+                    <a href="index.php?page=product&act=pd&id_product=<?= $itemsProduct['id_product'] ?>" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
                     <?php like_product_btn($itemsProduct['id_product']) ?>
                   </div>
                 </div>
                 <div class="product__detail">
                   <div class="product__detail-title">
-                    <a href="index.php?page=product&act=pd&id_product=<?=$itemsProduct['id_product']?>"><?= $itemsProduct["name_product"] ?></a>
+                    <a href="index.php?page=product&act=pd&id_product=<?= $itemsProduct['id_product'] ?>"><?= $itemsProduct["name_product"] ?></a>
                   </div>
                   <div class="product__detail-price">
                     <?php if ($itemsProduct["promotion"] > 0) { ?>
@@ -403,7 +403,7 @@
       </div>
     </div>
   </div>
-    
+
   <div class="main__blog">
     <div class="main__blog-title">
       <h2 class="title__borderbottom">Tin Tức</h2>
