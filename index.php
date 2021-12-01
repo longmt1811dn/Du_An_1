@@ -53,5 +53,6 @@ require_once './global.php';
 <script src="./assets/js/owl.carousel.min.js"></script>
 <script src="./assets/js/slider.js"></script>
 <script src="./assets/js/responsive_menu.js"></script>
+<script src="./assets/js/hide__header.js"></script>
 
 </html>
