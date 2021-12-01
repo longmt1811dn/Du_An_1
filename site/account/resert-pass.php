@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once "./dao/pdo.php";
 require_once "./dao/admin_users.php";
 if (isset($_GET['email']) && isset($_GET['token'])) {

@@ -155,3 +155,8 @@ function send_mail_verifile($email, $key_actived)
         return false;
     }
 }
+// cập nhật tài khoản cho người dùng
+function users_updateinfo($first_name, $last_name, $account, $email, $id_user){
+    $sql = "UPDATE users SET first_name = ?, last_name= ?,  account = ?, email = ? WHERE id_user = ?";
+    pdo_execute($sql, $first_name, $last_name, $account, $email, $id_user);
+}
