@@ -17,7 +17,7 @@
 
   z-index: 2;
 
-  transition: top 0.5s;
+  transition: top 0.4s ease-in-out;
 }
 
 .header__logo {
@@ -433,5 +433,8 @@
   }
   .collection__nav {
     margin-top: 19rem !important;
+  }
+  html {
+    background: var(--bg-darkblue);
   }
 }

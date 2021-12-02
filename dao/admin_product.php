@@ -286,22 +286,32 @@ function product_getNameIDBRAND($id_brand)
 }
 
 // lấy tên từ ID kiểu
-function product_getNameIDTYPE($id_type){
+function product_getNameIDTYPE($id_type)
+{
     $sql = "SELECT * FROM type WHERE id_type=?";
     $nametype = pdo_query_one($sql, $id_type);
     return $nametype['name_type'];
 }
 
 // Tăng view product
-function product_upView($idProduct = 0){
+function product_upView($idProduct = 0)
+{
     $sql = "UPDATE product SET view = view + 1 WHERE id_product = ?";
-    
+
     pdo_execute($sql, $idProduct);
 }
 
 //Lấy 4 sản phẩm tương tự
-function product_likeBrand($idBrand = 0){
+function product_likeBrand($idBrand = 0)
+{
     $sql = "SELECT * FROM product WHERE id_brand = ? LIMIT 0,4";
-    
+
     return pdo_query($sql, $idBrand);
+}
+
+// lấy sản phẩm dựa trên từ khóa 
+function product_select_by_name($tuKhoaTimKiem = "aabbccdd")
+{
+    $sql = "SELECT * FROM product WHERE name_product like '%$tuKhoaTimKiem%' ";
+    return pdo_query($sql, $tuKhoaTimKiem);
 }
