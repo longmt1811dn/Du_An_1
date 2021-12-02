@@ -34,3 +34,12 @@ if ($act == "login") {
     require_once './site/account/wishlist.php';
     
 }
+ else if($act == "cart"){
+    if(!isset($_SESSION['users'])) {
+        echo "<script>alert('đăng nhập để xem giỏ hàng'); window.location='?page=account&act=login'; </script>";
+    }
+    $_SESSION['link'] = getCurrentPageURL();
+    
+    require_once './site/account/cart.php';    
+}
+

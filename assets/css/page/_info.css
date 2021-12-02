@@ -34,3 +34,8 @@
   display: flex;
   flex-direction: column;
 }
+
+.account__box-detail {
+  display: flex;
+  justify-content: center;
+}
