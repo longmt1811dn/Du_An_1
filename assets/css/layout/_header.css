@@ -9,14 +9,14 @@
   top: 0;
   left: 0;
   right: 0;
-  
+
   width: 100%;
-  
+
   font-size: var(--font-size16);
   background: var(--bg-blue);
-  
+
   z-index: 2;
-  
+
   transition: top 0.4s;
 }
 
@@ -305,9 +305,10 @@
 /* ___________________________________________________________________________ */
 @media screen and (max-width: 415px) {
   .header {
-    width: auto;
     height: auto;
     padding-bottom: 3rem;
+    max-width: 41.4rem;
+    width: 100%;
   }
 
   .grid-container {
@@ -344,6 +345,11 @@
   .header__user > #header__user-account:hover #account__box {
     opacity: 0;
     visibility: hidden;
+  }
+
+  #account__box {
+    left: 0;
+    width: 100%;
   }
 
   .open {
@@ -424,5 +430,8 @@
     margin: 1rem 0;
     font-size: var(--font-size14);
     line-height: var(--line-height24);
+  }
+  .collection__nav {
+    margin-top: 19rem !important;
   }
 }

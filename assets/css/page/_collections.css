@@ -4,6 +4,7 @@
   background-position: 50% 50%;
   position: relative;
   padding: 6rem 1rem;
+  margin-top: 8rem;
 }
 
 /* .collection__nav-img {
@@ -21,6 +22,7 @@
 }
 
 .collection__nav-text h1 {
+  text-transform: uppercase;
   font-family: var(--font-playfair);
   font-size: var(--font-size30);
   letter-spacing: var(--letter-spacing6);

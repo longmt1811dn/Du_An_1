@@ -26,13 +26,13 @@ if (isset($_POST['submit'])) {
   } else if ($kiemtra) {
     $thongbao =  "Username hoặc email đã có người sử dụng !";
   } else {
-      $key_actived = bin2hex(random_bytes(16));
-      $conn = pdo_get_connection();
-      $sql = "INSERT INTO users(account, last_name, first_name,  email, pass, key_actived) VALUES(?,?,?,?,?,?)";
-      $stmt = $conn->prepare($sql);
-      $stmt->execute([$username, $last_name, $first_name, $email, $pass, $key_actived]);
-      send_mail_verifile($email, $key_actived);
-      echo "<script>alert('Đăng ký thành công, vui lòng kiểm tra email để kích hoạt tài khoản')</script>";
+    $key_actived = bin2hex(random_bytes(16));
+    $conn = pdo_get_connection();
+    $sql = "INSERT INTO users(account, last_name, first_name,  email, pass, key_actived) VALUES(?,?,?,?,?,?)";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$username, $last_name, $first_name, $email, $pass, $key_actived]);
+    send_mail_verifile($email, $key_actived);
+    echo "<script>alert('Đăng ký thành công, vui lòng kiểm tra email để kích hoạt tài khoản')</script>";
   }
 }
 ?>
@@ -47,24 +47,24 @@ if (isset($_POST['submit'])) {
 
     <form action="" class="login__form-control" method="post">
       <div class="thongbao">
-        <?php if(strlen($thongbao) > 1) echo "<p class='form__error'>" . $thongbao . "</p>" ?>
+        <?php if (strlen($thongbao) > 1) echo "<p class='form__error'>" . $thongbao . "</p>" ?>
       </div>
       <div class="login__control-input">
-          <input type="text" value="<?= isset( $last_name)? $last_name: "" ?>" class="input__control" placeholder="Họ" name="last_name" />
-      </div>
-
-      <div class="login__control-input">
-        <input type="text" value="<?= isset( $first_name)? $first_name: "" ?>" class="input__control" placeholder="Tên" name="first_name" />
-      </div>
-      <div class="login__control-input">
-        <input type="text" value="<?= isset( $username)? $username: "" ?>" class="input__control" placeholder="Tài khoản" name="username" />
-      </div>
-      <div class="login__control-input">
-        <input type="email" value="<?= isset( $email)? $email: "" ?>" class="input__control" placeholder="Email" name="email" />
+        <input type="text" value="<?= isset($last_name) ? $last_name : "" ?>" class="input__control" placeholder="Họ" name="last_name" />
       </div>
 
       <div class="login__control-input">
-        <input type="password" value="<?= isset( $password)? $password: "" ?>" class="input__control" placeholder="Mật khẩu" name="pass" />
+        <input type="text" value="<?= isset($first_name) ? $first_name : "" ?>" class="input__control" placeholder="Tên" name="first_name" />
+      </div>
+      <div class="login__control-input">
+        <input type="text" value="<?= isset($username) ? $username : "" ?>" class="input__control" placeholder="Tài khoản" name="username" />
+      </div>
+      <div class="login__control-input">
+        <input type="email" value="<?= isset($email) ? $email : "" ?>" class="input__control" placeholder="Email" name="email" />
+      </div>
+
+      <div class="login__control-input">
+        <input type="password" value="<?= isset($password) ? $password : "" ?>" class="input__control" placeholder="Mật khẩu" name="pass" />
       </div>
       <div class="login__control-button">
         <button type="submit" name="submit" class="btn">Đăng ký</button>

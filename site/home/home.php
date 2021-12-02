@@ -98,7 +98,7 @@
     </div>
   </div>
 
-  <div class="main__store">
+  <div class="main__store  mt19">
     <div class="container">
       <div class="main__store-title text-ct">
         <h2>Sản phẩm nổi bật</h2>
