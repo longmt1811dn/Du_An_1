@@ -7,7 +7,7 @@ if (isset($_GET['logout'])) {
   echo '<script>alert("Bạn đã đăng xuất"); window.location="./index.php";</script>';
 }
 ?>
-<header class="header grid-container">
+<header class="header grid-container" id="header">
   <div class="header__logo">
     <a href="index.php">
       <img src="./assets/image/logo.png" alt="" /></a>
