@@ -173,7 +173,7 @@
 
 .main__store .main__store-list .list-item {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 30px;
 }
 
@@ -452,4 +452,14 @@
 
 .main__products2 .item__block .item__block-btn {
   padding: 3rem 4rem;
+}
+
+@media screen and (max-width: 415px) {
+  .slider,
+  .flash-sale,
+  .main__products2 {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
 }
