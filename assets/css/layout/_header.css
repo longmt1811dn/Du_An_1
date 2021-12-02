@@ -17,11 +17,7 @@
 
   z-index: 2;
 
-<<<<<<< HEAD
-  transition: top 0.4s;
-=======
   transition: top 0.5s;
->>>>>>> faf94a13bbdc7bcf5df1e3d8ecf82e10af5f1f0c
 }
 
 .header__logo {
