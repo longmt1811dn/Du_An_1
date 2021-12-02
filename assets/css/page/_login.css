@@ -11,6 +11,7 @@
 
 .login__form-control {
   margin-bottom: 2rem;
+  width: 30%;
 }
 
 .login__form-control .login__control-text {
@@ -125,4 +126,11 @@
 
 .form-submit-forgotpass button {
   margin-left: 1rem;
+}
+
+@media screen and (max-width: 415px) {
+  .login__form-control {
+    padding: 0 2rem;
+    width: 100%;
+  }
 }

@@ -50,8 +50,25 @@
   flex-direction: column;
   width: fit-content;
   margin: 0 auto;
+  width: 30%;
 }
 
 .contact__container-form form .contact__form-btn {
   width: 100%;
+}
+
+.w100 {
+  width: 100% !important;
+}
+
+@media screen and (max-width: 415px) {
+  .contact__container-info {
+    display: block;
+    width: 90%;
+    padding: 0;
+  }
+
+  .contact__container-form {
+    width: 100%;
+  }
 }
