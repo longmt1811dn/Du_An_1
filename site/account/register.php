@@ -18,9 +18,9 @@ if (isset($_POST['submit'])) {
   } else if (strlen($first_name) == "" && strlen($first_name) <= 1) {
     $thongbao =  "Tên không được để trống và dưới 1 kí tự !";
   } else if (strlen($username) <= 6) {
-    $thongbao =  "Username không được dưới 6 kí tự !";
+    $thongbao =  "Tên đăng nhập không được dưới 6 kí tự !";
   } else if (strlen($pass) <= 6) {
-    $thongbao =  "Password không được dưới 6 kí tự !";
+    $thongbao =  "Mật khẩu không được dưới 6 kí tự !";
   } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $thongbao =  "Email định dạng sai !";
   } else if ($kiemtra) {
