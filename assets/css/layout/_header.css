@@ -9,15 +9,15 @@
   top: 0;
   left: 0;
   right: 0;
-  
+
   width: 100%;
-  
+
   font-size: var(--font-size16);
   background: var(--bg-blue);
-  
+
   z-index: 2;
-  
-  transition: top 0.4s;
+
+  transition: top 0.5s;
 }
 
 .header__logo {
