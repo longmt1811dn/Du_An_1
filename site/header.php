@@ -63,10 +63,20 @@ if (isset($_GET['logout'])) {
       <?php } ?>
     </div>
     <div class="header__user-bag">
-      <i class="fas fa-shopping-bag"> </i>
-      <div class="header__user-box shopping__bag">
-        <p>Giỏ hàng đang trống!</p>
-      </div>
+      
+      <a href="?page=account&act=cart">
+        <i class="fas fa-shopping-bag"> </i>
+        <div class="header__user-box shopping__bag">
+          <?php if (isset($_SESSION['users'])) { ?>
+          <p>Giỏ hàng đang trống!</p>
+         
+          <?php }else {
+            echo "<p>Đăng nhập để xem giỏ hàng</p>";
+
+          } ?>  
+          
+        </div>
+      </a>
     </div>
     <div class="header__user-menu mobile__menu">
       <i class="fas fa-bars" id="open__menudropdown"></i>

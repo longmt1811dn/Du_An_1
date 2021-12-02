@@ -74,7 +74,7 @@ function  send_mail($email, $token)
         $noidungthu = 'Xin chào bạn, <br><br> 
         Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi, để hoàn tất việc khôi phục tài khoản<br>
         Bạn vui lòng nhấp vào liên kết này để đặt lại mật khẩu của bạn:<br><br>
-        <a href="http://localhost/Du_An_1_MaiTieuLong/Du_An_1/index.php?page=account&act=resert-pass&email=' . $email . '&token=' . $token . '">Cập nhật lại mật khẩu cho tài khoản</a> <br><br>
+        <a href="http://localhost/ThanhLy_DuAn1/Du_An_1/index.php?page=account&act=resert-pass&email=' . $email . '&token=' . $token . '">Cập nhật lại mật khẩu cho tài khoản</a> <br><br>
         Lưu ý: Liên kết này sẽ chỉ hoạt động trong 3 ngày từ hôm nay đến hết ngày ' . date("d-m-Y", strtotime($_SESSION["date"])) . ' và chỉ có thể dùng được một lần.<br><br>
         Cảm ơn bạn!';
         $mail->Body = $noidungthu;
@@ -138,7 +138,7 @@ function send_mail_verifile($email, $key_actived)
         $noidungthu = 'Xin chào bạn, <br><br> 
         Cảm ơn bạn đã đăng ký thành viên với chúng tôi, vui lòng nhấp vào link bên dưới kích hoạt tài khoản để trải nghiệm tốt hơn:<br>
         Bạn vui lòng nhấp vào liên kết này để đặt lại mật khẩu của bạn:<br><br>
-        <a href="http://localhost/Du_An_1_MaiTieuLong/Du_An_1/index.php?page=account&act=checkverifile&email=' . $email . '&key_actived=' . $key_actived . '">Kích hoạt tài khoản cá nhân</a> <br><br>
+        <a href="http://localhost//ThanhLy_DuAn1/Du_An_1/index.php?page=account&act=checkverifile&email=' . $email . '&key_actived=' . $key_actived . '">Kích hoạt tài khoản cá nhân</a> <br><br>
         Lưu ý: Liên kết chỉ có thể dùng được một lần.<br><br>
         Cảm ơn bạn!';
         $mail->Body = $noidungthu;

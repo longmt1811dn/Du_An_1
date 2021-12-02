@@ -147,7 +147,15 @@
                     </span> -->
                   </div>
                   <div class="product__detail-cart">
-                    <a href="#" class="btn-cart"><i class="fas fa-shopping-cart"></i>Mua sản phẩm</a>
+                     <form action="?page=account&act=cart" method="post">
+                        <input type="hidden" name="name_product" value="<?= $itemsProduct["name_product"] ?>">
+                        <input type="hidden" name="id_product" value="<?= $itemsProduct["id_product"] ?>">
+                        <input type="hidden" name="price" value="<?= $itemsProduct["price"] ?>">
+                        <input type="hidden" name="image" value="<?= $itemsProduct["image"] ?>">
+                        
+                        
+                        <button type="submit" name="add_cart" class="btn-cart"><i class="fas fa-shopping-cart"></i>Mua sản phẩm</button>
+                     </form>   
                   </div>
                 </div>
               </div>
