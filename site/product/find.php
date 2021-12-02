@@ -15,13 +15,6 @@ else $listProductByKeyWord  = NULL;
                 <div class="form__search">
                         <h3 class="title__borderbottom form__search-title">Từ khóa tìm kiếm : <?= $tuKhoaTimKiem ?>
                         </h3>
-                        <form action="" method="get" class="search__control">
-                                <input type="hidden" name="page" value="product">
-                                <input type="hidden" name="act" value="find">
-                                <input type="text" class="input__control" placeholder="Từ khóa cần tìm" name="tuKhoaTimKiem">
-
-                                <button type="submit" class="btn">TÌm</button>
-                        </form>
                 </div>
 
                 <div class="main__store collection__show-product">

@@ -150,7 +150,7 @@ if (isset($_POST['submit-comment'])) {
 
                   </div>
                   <div class="text-comment">
-                    <p class="p-3">Write a review</p>
+                    <p class="p-3">Viết nhận xét</p>
                     <form action="" class="form-submit-comment" method="post">
                       <div class="star">
                         <div class="star1">
@@ -172,16 +172,16 @@ if (isset($_POST['submit-comment'])) {
 
                       </div>
                       <div class="form-comment">
-                        <label for="">Review</label>
-                        <input type="text" name="title" placeholder="Enter your name">
+                        <label for="">Họ và tên</label>
+                        <input type="text" name="title" placeholder="Tên của bạn">
                       </div>
                       <div class="form-comment">
-                        <label for="">Body of Review</label>
-                        <textarea name="content" placeholder="Write comment" id="" cols="30" rows="10"></textarea>
+                        <label for="">Nội dung đánh giá</label>
+                        <textarea name="content" placeholder="Nội dung đánh giá của bạn" id="" cols="30" rows="10"></textarea>
                       </div>
 
                       <div class="btn-review">
-                        <input type="submit" name="submit-comment" class="btn-cart" value="Submit review">
+                        <input type="submit" name="submit-comment" class="btn-cart" value="Gửi đánh giá sản phẩm">
                       </div>
                     </form>
 

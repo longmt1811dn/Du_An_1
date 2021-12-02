@@ -61,5 +61,7 @@ if ($act == "cb") {
     $detail = product_selectallOne($id_product);
     require_once './site/product/product_details.php';
 } elseif ($act == "find") {
+    $_SESSION['link'] = getCurrentPageURL();
+    
     require_once './site/product/find.php';
 }

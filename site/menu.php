@@ -56,6 +56,24 @@ $conn = pdo_get_connection();
         <li><a href="index.php?page=home&act=contact">Liên hệ</a></li>
         <li><a href="index.php?page=blogs&act=blogs">Tin tức</a></li>
       </ul>
+      
+    <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+    <form action="" method="get" class="search__control">
+        <input type="hidden" name="page" value="product">
+        <input type="hidden" name="act" value="find">
+        <input type="text" style="width: 80%" class="input__control" placeholder="Từ khóa cần tìm" name="tuKhoaTimKiem" required>
+        <br>
+        <br>
+        <button type="submit" class="btn">TÌm kiếm</button>
+    </form>
+    
+    </div>
+    </div>
+      
     </li>
   </ul>
 </nav>
+
+<script src="./assets/js/open__nav.js"></script>
