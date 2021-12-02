@@ -4,7 +4,7 @@
       <div class="contact-help">
         <h4>Trợ giúp</h4>
         <ul class="contact-help__links">
-          <li><a href="#">Tìm kiếm</a></li>
+          <li><a href="index.php?page=product&act=find">Tìm kiếm</a></li>
           <li><a href="#">Thông tin</a></li>
         </ul>
       </div>

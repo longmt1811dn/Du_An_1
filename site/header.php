@@ -18,7 +18,8 @@ if (isset($_GET['logout'])) {
 
   <div class="header__user">
     <div class="header__user-find">
-      <i class="fas fa-search"></i>
+      <a href="index.php?page=product&act=find">
+        <i class="fas fa-search"></i></a>
     </div>
     <div class="header__user-account">
       <i class="fas fa-user" id="header__user-account"></i>

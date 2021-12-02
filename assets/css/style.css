@@ -32,6 +32,7 @@
 @import url(./page/_news.css);
 @import url(./page/_blog.css);
 @import url(./page/product_details.css);
+@import url(./page/_search.css);
 
 /* Css Trang chi tiết tin có 2 theme */
 @import url(./page/_news--white.css);
@@ -44,7 +45,3 @@
 @import url(./component/_layout.css);
 @import url(./component/_pagination.css);
 @import url(./component/_error.css);
-
-
-
-

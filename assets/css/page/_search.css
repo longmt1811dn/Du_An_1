@@ -1,0 +1,34 @@
+.search__box {
+  background: var(--bg-darkblue);
+  padding: 9rem 13rem;
+}
+
+.form__search .search__control {
+  width: 30%;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-gap: 2rem;
+}
+
+.form__search .form__search-title {
+  margin-bottom: 5rem;
+}
+
+.search__box .collection__product-container {
+  max-width: 100% !important;
+}
+
+@media screen and (max-width: 415px) {
+  .search__box {
+    padding: 0 2rem;
+  }
+
+  .form__search .form__search-title {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .form__search .search__control {
+    width: 100%;
+  }
+}
