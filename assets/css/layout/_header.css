@@ -227,7 +227,7 @@
   z-index: 1;
 }
 
-.header__user-bag::before {
+/* .header__user-bag::before {
   content: "1";
   height: 1.4rem;
   width: 1.4rem;
@@ -239,7 +239,7 @@
   text-align: center;
   font-size: 1rem;
   color: var(--color-white);
-}
+} */
 
 .header__user-bag:hover::before {
   background: var(--bg-yellow);

@@ -134,3 +134,44 @@
 #cart__btn-textarea:focus {
   outline: 0;
 }
+/* Css Form cart profile */
+.profile__fieldset {
+  margin-top: 2rem;
+  border: 1px solid var(--color-yellow);
+  margin-bottom: 1.5rem;
+}
+.profile__fieldset > legend {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0 0 0 2rem;
+}
+.form-group {
+  padding: 0 2rem;
+}
+.form-group > .profile__label {
+  color: var(--color-white);
+  display: block;
+  font-size: 1.6rem;
+}
+.form-group > .profile__input {
+  margin: 0 0 1rem 0;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid var(--color-yellow);
+  font-size: 1.8rem;
+}
+.form-group > .profile__textarea {
+  border: 1px solid var(--color-yellow);
+  background-color: rgb(0, 0, 0);
+  border-radius: 0.5rem;
+  min-width: 100%;
+
+  padding: 1rem 0 0 1rem;
+  font-size: 1.8rem;
+}
+.form-group > .profile__label > input[type="radio"] {
+  height: 15px;
+  width: 15px;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}

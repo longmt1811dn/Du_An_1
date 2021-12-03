@@ -18,7 +18,7 @@ if (isset($_GET['logout'])) {
 
   <div class="header__user">
     <div class="header__user-find">
-        <!--href="index.php?page=product&act=find"-->
+      <!--href="index.php?page=product&act=find"-->
       <a style="cursor:pointer" onclick="openNav()">
         <i class="fas fa-search"></i></a>
     </div>
@@ -64,18 +64,17 @@ if (isset($_GET['logout'])) {
       <?php } ?>
     </div>
     <div class="header__user-bag">
-      
+
       <a href="?page=account&act=cart">
-        <i class="fas fa-shopping-bag"> </i>
+        <i style="position: relative;" class="fas fa-shopping-bag"> </i>
+        <span style="color: red;background-color: #fff; padding: 0.25rem 0.75rem; border-radius: 50%; position: absolute; top:-1.5rem; left: 1rem"><?php echo count($_SESSION['cart']) ?></span>
         <div class="header__user-box shopping__bag">
           <?php if (isset($_SESSION['users'])) { ?>
-          <p>Giỏ hàng đang trống!</p>
-         
-          <?php }else {
-            echo "<p>Đăng nhập để xem giỏ hàng</p>";
 
-          } ?>  
-          
+          <?php } else {
+            echo "<p>Đăng nhập để xem giỏ hàng</p>";
+          } ?>
+
         </div>
       </a>
     </div>
