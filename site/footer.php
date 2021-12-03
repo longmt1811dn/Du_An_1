@@ -4,8 +4,8 @@
       <div class="contact-help">
         <h4>Trợ giúp</h4>
         <ul class="contact-help__links">
-          <li><a href="index.php?page=product&act=find">Tìm kiếm</a></li>
-          <li><a href="#">Thông tin</a></li>
+          <li><a style="cursor:pointer" onclick="openNav()">Tìm kiếm</a></li>
+          <li><a href="index.php?page=home&act=about">Thông tin</a></li>
         </ul>
       </div>
       <div class="contact-support">
@@ -18,8 +18,7 @@
       <div class="contact-information">
         <h4>Thông tin</h4>
         <ul class="contact-information__link">
-          <li><a href="#">Vị trí cửa hàng</a></li>
-          <li><a href="#">Đặt hàng</a></li>
+          <li><a href="?page=product&act=collectionall">Tất cả sản phẩm</a></li>
         </ul>
       </div>
       <div class="contact-us">
