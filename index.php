@@ -7,6 +7,7 @@ require_once("./dao/admin_brand.php");
 require_once("./dao/admin_product.php");
 require_once("./dao/admin_news.php");
 require_once './dao/admin_users.php';
+require_once './dao/admin_cart.php';
 require_once './dao/admin_like_product.php';
 require_once './global.php';
 ?>

@@ -37,7 +37,12 @@ if ($act == "login") {
     if (!isset($_SESSION['users'])) {
         echo "<script>alert('đăng nhập để xem giỏ hàng'); window.location='?page=account&act=login'; </script>";
     }
+    $item = users_one($_SESSION['login_id']);
     $_SESSION['link'] = getCurrentPageURL();
 
     require_once './site/account/cart.php';
+}else if($act == "thanhtoan"){
+    require_once './site/account/thanhtoan.php';
+} else if($act == "mycart"){
+    require_once './site/account/mycart.php';
 }

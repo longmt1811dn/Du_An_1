@@ -39,6 +39,9 @@ if (isset($_GET['logout'])) {
               <a href="./index.php?page=account&act=love"></i><i class="far fa-heart"></i>Yêu thích</a>
             </li>
             <li>
+              <a href="./index.php?page=account&act=mycart"><i class="fas fa-chart-pie"></i>Đơn hàng của tôi</a>
+            </li>
+            <li>
               <a href="./admin/login"><i class="fas fa-house-user"></i>Quản trị</a>
             </li>
             <li>
@@ -69,9 +72,9 @@ if (isset($_GET['logout'])) {
         <i style="position: relative;" class="fas fa-shopping-bag"> </i>
         <span style="color: red;background-color: #fff; padding: 0.25rem 0.75rem; border-radius: 50%; position: absolute; top:-1.5rem; left: 1rem"><?php echo count($_SESSION['cart']) ?></span>
         <div class="header__user-box shopping__bag">
-          <?php if (isset($_SESSION['users'])) { ?>
-
-          <?php } else {
+          <?php if (isset($_SESSION['users'])) {
+            echo "Giỏ hàng của bạn";
+          } else {
             echo "<p>Đăng nhập để xem giỏ hàng</p>";
           } ?>
 

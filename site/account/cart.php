@@ -24,20 +24,19 @@ if (isset($_POST['add_cart'])) {
     $_SESSION['cart'][] = $cart;
   }
 }
+
 ?>
 
 
 <main class="main">
   <nav class="collection__nav">
     <div class="collection__nav-text center-center">
-      <h1>Your Shopping Cart</h1>
-      <a href="index.html" class="text__gray">Home </a><span class="text__gray">/</span>
-      <span class="text__gray">Your Shopping Cart</span>
+      <h1>giỏ hàng của tôi</h1>
     </div>
   </nav>
 
   <div class="cart__container">
-    <form action="" class="cart__container-form">
+    <form action="?page=account&act=thanhtoan" class="cart__container-form" method="post">
       <div class="cart__form-grid cart__form-head">
         <div class="cart__form-title">
           <p>Sản phẩm</p>
@@ -59,7 +58,8 @@ if (isset($_POST['add_cart'])) {
       <?php $i = 0;
       foreach ($_SESSION['cart'] as $giohang) { ?>
         <?php $thanh_tien = $giohang[2] * $giohang[3] ?>
-        <?php $tong_tien += $thanh_tien  ?>
+        <?php $tong_tien += $thanh_tien;
+        $_SESSION['thanhtien'] = $thanh_tien;  ?>
 
         <div class="cart__form-info cart__form-grid border-cart">
           <div class="cart__info-product">
@@ -67,7 +67,6 @@ if (isset($_POST['add_cart'])) {
             </a>
             <div class="cart__product-text">
               <p class="product__text"><?= $giohang[1] ?></p>
-              <span class="text__gray">740mm/ pink / canvas</span>
             </div>
           </div>
           <div class="cart__info-price">
@@ -81,7 +80,7 @@ if (isset($_POST['add_cart'])) {
             <span id="cart__plus" class="cart__quantity-btn">+</span>
           </div>
           <div class="cart__info-total">
-            <p id="cart__total"><?= number_format($giohang[5]) ?></p>
+            <p id="cart__total"><?= number_format($thanh_tien) ?></p>
           </div>
           <div class="cart__info-remove">
             <a href="?page=account&act=cart&delete&id_cart=<?= $i ?>">
@@ -96,60 +95,61 @@ if (isset($_POST['add_cart'])) {
           <!-- <span class="text__gray" id="cart__btn-note">Thêm ghi chú</span>
            <form action="">
              <textarea name="" id="cart__btn-textarea" placeholder="Lời nhắn đến chúng tôi"></textarea> -->
+
+        </div>
+        <div class="cart__btn-main">
+          <div class="cart__main-bill">
+            <p class="text__gray">
+              Tổng hóa đơn :
+              <span class="text__gray" id="cart__bill"><?= number_format($tong_tien) ?></span>
+            </p>
+          </div>
+          <div class="cart__main-button">
+            <button class="btn cart__button-primary">
+              <a href="?page=account&act=cart&deleteall">Xoá tất cả</a>
+            </button>
+            <button class="btn cart__button-primary">
+              <a onclick="history.back()">Tiếp tục mua hàng</a>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+      <fieldset class="profile__fieldset">
+        <legend>Thông tin nhận hàng</legend>
+        <div class="form-group">
+          <label class="profile__label" for="">Họ</label>
+          <input class="profile__input" type="text" name="last_name" value="<?= $item['last_name'] ?>" placeholder="Nguyễn" required>
+        </div>
+        <div class="form-group">
+          <label class="profile__label" for="">Tên</label>
+          <input class="profile__input" type="text" name="first_name" value="<?= $item['first_name'] ?>" placeholder="An" required>
+        </div>
+        <div class="form-group">
+          <label class="profile__label" for="">Email</label>
+          <input class="profile__input" type="text" name="email" value="<?= $item['email'] ?>" placeholder="email@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label class="profile__label" for="">Số điện thoại</label>
+          <input class="profile__input" type="text" name="phone" value="" placeholder="+84" required>
+        </div>
+        <div class="form-group">
+          <label class="profile__label" for="">Địa chỉ</label>
+          <input class="profile__input" type="text" name="address" value="" placeholder="Địa chỉ" required>
+        </div>
+        <div class="form-group">
+          <label class="profile__label" for="">Ghi chú khách hàng</label>
+          <textarea class="profile__textarea" name="note" id="" cols="30" rows="10" placeholder="Ghi chú khách hàng"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="profile__label" for=""><input type="radio" name="checkout" value="Thanh Toán khi nhận hàng" checked>Thanh toán khi nhận hàng</label>
+        </div>
+      </fieldset>
+
+      <button name="submit-thanhtoan" style="float: right;" class="btn cart__button-primary">
+        Thanh toán
+      </button>
     </form>
-  </div>
-  <div class="cart__btn-main">
-    <div class="cart__main-bill">
-      <p class="text__gray">
-        Tổng hóa đơn :
-        <span class="text__gray" id="cart__bill"><?= number_format($tong_tien) ?></span>
-      </p>
-    </div>
-    <div class="cart__main-button">
-      <button class="btn cart__button-primary">
-        <a href="?page=account&act=cart&deleteall">Xoá tất cả</a>
-      </button>
-      <button class="btn cart__button-primary">
-        <a onclick="history.back()">Tiếp tục mua hàng</a>
-      </button>
-
-    </div>
-  </div>
-
-  </div>
-  <fieldset class="profile__fieldset">
-    <legend>Thông tin nhận hàng</legend>
-    <div class="form-group">
-      <label class="profile__label" for="">Họ</label>
-      <input class="profile__input" type="text" name="" value="" placeholder="Nguyễn" required>
-    </div>
-    <div class="form-group">
-      <label class="profile__label" for="">Tên</label>
-      <input class="profile__input" type="text" name="" value="" placeholder="An" required>
-    </div>
-    <div class="form-group">
-      <label class="profile__label" for="">Email</label>
-      <input class="profile__input" type="text" name="" value="" placeholder="email@gmail.com" required>
-    </div>
-    <div class="form-group">
-      <label class="profile__label" for="">Số điện thoại</label>
-      <input class="profile__input" type="text" name="" value="" placeholder="+84" required>
-    </div>
-    <div class="form-group">
-      <label class="profile__label" for="">Địa chỉ</label>
-      <input class="profile__input" type="text" name="" value="" placeholder="Địa chỉ" required>
-    </div>
-    <div class="form-group">
-      <label class="profile__label" for="">Ghi chú khách hàng</label>
-      <textarea class="profile__textarea" name="" id="" cols="30" rows="10" placeholder="Ghi chú khách hàng"></textarea>
-    </div>
-    <div class="form-group">
-      <label class="profile__label" for=""><input type="radio" checked>Thanh toán khi nhận hàng</label>
-    </div>
-  </fieldset>
-  <button style="float: right;" class="btn cart__button-primary">
-    <a href="#">Thanh toán</a>
-  </button>
-  </form>
   </div>
 </main>

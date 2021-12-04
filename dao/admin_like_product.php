@@ -40,4 +40,21 @@ function like_product_btn($idProduct){
     }
     
 }
-?>
+
+function like_product_detail($idProduct){
+    $conn = pdo_get_connection();
+    
+    if(isset($_SESSION['login_id'])){   
+        $sql = "SELECT * FROM like_product WHERE id_product = {$idProduct} AND id_user = {$_SESSION['login_id']}";
+        $kq = $conn->query($sql);
+
+        if ($kq->rowCount() != 0) {
+            echo "<a href='index.php?page=product&act=al&id=". $idProduct ."' class='compare'  title='Add to wishlist'><i style='color: #f34d4d; font-size: 3rem;' class='fas fa-heart'></i></a>";
+        } else {
+            echo "<a href='index.php?page=product&act=al&id=". $idProduct ."' class='compare' title='Add to wishlist'><i style='font-size: 3rem;' class='fas fa-heart'></i></a>";
+        }
+    } else {
+        echo "<a href='index.php?page=product&act=al&id=". $idProduct ."' class='compare' title='Add to wishlist'><i style='font-size: 3rem;' class='fas fa-heart'></i></a>";
+    }
+    
+}

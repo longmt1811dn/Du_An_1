@@ -64,4 +64,4 @@ if ($act == "cb") {
     $_SESSION['link'] = getCurrentPageURL();
     
     require_once './site/product/find.php';
-}
+} 

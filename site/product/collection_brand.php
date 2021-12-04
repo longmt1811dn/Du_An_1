@@ -51,13 +51,13 @@
                           </div>
                           <div class="product__detail-price">
                             <span class="price"><?= number_format($item['price']) ?> vnđ</span>
-                            <span class="starrating">
+                            <!-- <span class="starrating">
                               <i class="fas fa-star"></i>
                               <i class="fas fa-star"></i>
                               <i class="fas fa-star"></i>
                               <i class="fas fa-star"></i>
                               <i class="fas fa-star"></i>
-                            </span>
+                            </span> -->
                           </div>
                           <div class="product__detail-sale">
                             <span><?= date("d/m/Y", strtotime($item['date'])) ?></span>
@@ -66,7 +66,15 @@
                             <span>Lượt xem: <?= $item['view'] ?></span>
                           </div>
                           <div class="product__detail-cart">
-                            <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Mua sản phẩm</a>
+                            <form action="?page=account&act=cart" method="post">
+                          <input type="hidden" name="name_product" value="<?= $item["name_product"] ?>">
+                          <input type="hidden" name="id_product" value="<?= $item["id_product"] ?>">
+                          <input type="hidden" name="price" value="<?= $item["price"] ?>">
+                          <input type="hidden" name="image" value="<?= $item["image"] ?>">
+                          
+                        
+                        <button style="cursor: pointer;" type="submit" name="add_cart" class="btn-cart"><i class="fas fa-shopping-cart"></i>Mua sản phẩm</button>
+                     </form> 
                           </div>
                         </div>
 

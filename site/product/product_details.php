@@ -45,9 +45,7 @@ if (isset($_POST['submit-comment'])) {
               </div>
               <div class="item__right">
                 <h2 class="item__right--title"><?= $name_product ?></h2>
-                <div class="item__right--price">
-                  <span>Giá: <?= number_format($price) ?> vnđ</span>
-                </div>
+
                 <div class="item__right--view">
                   <p>
                     <label>Lượt xem :</label>
@@ -76,35 +74,32 @@ if (isset($_POST['submit-comment'])) {
 
                 </div>
                 <div class="item__right--quality">
-                  <div class="quality-box">
-                    <label class="title text-y">Số lượng :</label>
-                    <div class="quality-width">
-                      <div class="wrapper">
-                        <div class="dec_button">-</div>
-                        <input type="number" id="quality" value="1" min="1" name="quality">
-                        <div class="dec_button">+</div>
-                      </div>
-                    </div>
-                  </div>
+
                   <div class="total-price">
-                    <label for="" class="text-y">Tổng tiền :</label>
-                    <span><?= number_format($price) ?> vnđ</span>
+                    <label for="" class="text-y">Giá :</label>
+                    <span><?= number_format($price) ?> VND</span>
                   </div>
                 </div>
 
                 <div class="item__right--button">
-                  <div class="add-to-cart">
-                    <i class="fa fa-cart-plus">
-                    </i>
-                      <span id="AddToCartText">Thêm giỏ hàng</span>
-                  </div>
                   <div class="add-to-wishlist">
-                    <a href="">
-                      <i class="far fa-heart">
-                      </i>
-                        <span id="AddToWissh">Yêu thích</span>
-                    </a>
+                    <?php like_product_detail($id_product) ?>
                   </div>
+                  <div style="margin-left: 3rem;" class="add-to-cart">
+                    <form action="?page=account&act=cart" method="post">
+                      <input type="hidden" name="name_product" value="<?= $name_product ?>">
+                      <input type="hidden" name="id_product" value="<?= $id_product ?>">
+                      <input type="hidden" name="price" value="<?= $price ?>">
+                      <input type="hidden" name="image" value="<?= $image?>">
+
+
+                      <button style="cursor: pointer;" type="submit" name="add_cart"><i style="font-size: 3rem" class="fa fa-cart-plus">
+                        </i></button>
+                    </form>
+
+                    <!-- <span id="AddToCartText">Thêm giỏ hàng</span> -->
+                  </div>
+
                 </div>
 
 
@@ -142,8 +137,8 @@ if (isset($_POST['submit-comment'])) {
                         <h4>Tên: <?= comment_getNameUser($list['id_user']) ?></h4>
                         <h6>Ngày: <?= date("m-d-Y", strtotime($list['date'])) ?></h6>
                         <p>Nội dung: <?= $list['title'] ?></p>
-                      <?php if($_SESSION['users']['id_user'] == $list['id_user']){ ?>
-                        <a onclick="return confirm('Bạn có muốn xoá đánh giá của mình?')" href="?page=product&act=deletecomment&id_review=<?= $list['id_review'] ?>&id_product=<?= $list['id_product'] ?>">Xoá</a>
+                        <?php if ($_SESSION['users']['id_user'] == $list['id_user']) { ?>
+                          <a onclick="return confirm('Bạn có muốn xoá đánh giá của mình?')" href="?page=product&act=deletecomment&id_review=<?= $list['id_review'] ?>&id_product=<?= $list['id_product'] ?>">Xoá</a>
                         <?php } ?>
                       </div> <?php } ?>
 
@@ -200,46 +195,46 @@ if (isset($_POST['submit-comment'])) {
               <div class="product__related--container">
                 <div class="container-rl">
                   <div class="list-item">
-                      
+
                     <?php $list = product_likeBrand($id_brand); ?>
-                    <?php foreach($list as $item) { ?>
-                      
-                    <div class="product">
-                      <div class="product__img">
-                        <div class="imgOverlay">
-                          <img src="<?= $item['image'] ?>" alt="">
+                    <?php foreach ($list as $item) { ?>
+
+                      <div class="product">
+                        <div class="product__img">
+                          <div class="imgOverlay">
+                            <img src="<?= $item['image'] ?>" alt="">
+                          </div>
+                          <div class="product__img-button">
+                            <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
+                            <a href="#" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
+                            <a href="#" class="compare" title="Product Link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                          </div>
                         </div>
-                        <div class="product__img-button">
-                          <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
-                          <a href="#" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
-                          <a href="#" class="compare" title="Product Link"><i class="fas fa-link"></i></a>
-                          <a href="#" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
-                        </div>
-                      </div>
-                      <div class="product__detail">
-                        <div class="product__detail-title">
-                          <a href=""><?= $item['name_product'] ?></a>
-                        </div>
-                        <div class="product__detail-price">
+                        <div class="product__detail">
+                          <div class="product__detail-title">
+                            <a href=""><?= $item['name_product'] ?></a>
+                          </div>
+                          <div class="product__detail-price">
                             <span class="price"><?= number_format($item['price']) ?></span>
-                          <span class="starrating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                          </span>
-                        </div>
-                        <div class="product__detail-sale"><span>Ex to Sale Tax</span></div>
-                        <div class="product__detail-cart">
-                          <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Mua sản phẩm</a>
+                            <span class="starrating">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                            </span>
+                          </div>
+                          <div class="product__detail-sale"><span>Ex to Sale Tax</span></div>
+                          <div class="product__detail-cart">
+                            <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Mua sản phẩm</a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                      
+
                     <?php } ?>
 
-<!--                    <div class="product">
+                    <!--                    <div class="product">
                       <div class="product__sale">
                         <span class="product__sale-p">Sale</span>
                       </div>
