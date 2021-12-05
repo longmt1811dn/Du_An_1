@@ -85,7 +85,7 @@
             <i class="fas fa-chart-bar"></i> </span>Thống kê đơn hàng
     </button>
     <div class="admin-nav__menu-item">
-        <a href="#" class="admin-nav__menu-link">Danh sách</a>
+        <a href="../cart/?list" class="admin-nav__menu-link">Danh sách</a>
     </div>
 
 </div>
