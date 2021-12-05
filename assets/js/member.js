@@ -29,7 +29,8 @@ const DATA_MEMBER = [
     srcImg: "./assets/image/avata_phat.jpg",
     role: "Back End Developer",
     name: "Lê Xuân Phát",
-    description: "Lorem",
+    description:
+      "Tôi là người yêu của Ly </br> Tôi là ai </br> Thích gì làm đó",
     link: "https://www.facebook.com/contact.0783635341",
   },
 ];

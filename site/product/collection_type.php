@@ -39,8 +39,7 @@
                             <img src="<?= $item['image'] ?>" alt="No_Image" />
                           </div>
                           <div class="product__img-button">
-                            <a href="#" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
-
+                            <a href="index.php?page=product&act=pd&id_product=<?= $item['id_product'] ?>" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
                             <?php like_product_btn($item['id_product']) ?>
 
                           </div>

@@ -90,7 +90,7 @@ if (isset($_POST['submit-comment'])) {
                       <input type="hidden" name="name_product" value="<?= $name_product ?>">
                       <input type="hidden" name="id_product" value="<?= $id_product ?>">
                       <input type="hidden" name="price" value="<?= $price ?>">
-                      <input type="hidden" name="image" value="<?= $image?>">
+                      <input type="hidden" name="image" value="<?= $image ?>">
 
 
                       <button style="cursor: pointer;" type="submit" name="add_cart"><i style="font-size: 3rem" class="fa fa-cart-plus">
@@ -190,7 +190,7 @@ if (isset($_POST['submit-comment'])) {
             <div class="product__related">
               <div class="product__related--title">
                 <h4>SẢN PHẨM TƯƠNG TỰ</h4>
-                <h2>TỪ BỘ SƯU TẬP NÀY</h2>
+                <h2>BỘ SƯU TẬP NÀY</h2>
               </div>
               <div class="product__related--container">
                 <div class="container-rl">
@@ -205,10 +205,8 @@ if (isset($_POST['submit-comment'])) {
                             <img src="<?= $item['image'] ?>" alt="">
                           </div>
                           <div class="product__img-button">
-                            <a href="#" class="compare" title="Compare Product"><i class="far fa-chart-bar"></i></a>
-                            <a href="#" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="#" class="compare" title="Product Link"><i class="fas fa-link"></i></a>
-                            <a href="#" class="compare" title="Add to wishlist"><i class="fas fa-heart"></i></a>
+                            <a href="index.php?page=product&act=pd&id_product=<?= $item['id_product'] ?>" class="compare" title="Quick View"><i class="far fa-eye"></i></a>
+                            <?php like_product_btn($item['id_product']) ?>
                           </div>
                         </div>
                         <div class="product__detail">
@@ -217,17 +215,25 @@ if (isset($_POST['submit-comment'])) {
                           </div>
                           <div class="product__detail-price">
                             <span class="price"><?= number_format($item['price']) ?></span>
-                            <span class="starrating">
+                            <!-- <span class="starrating">
                               <i class="fas fa-star"></i>
                               <i class="fas fa-star"></i>
                               <i class="fas fa-star"></i>
                               <i class="fas fa-star"></i>
                               <i class="fas fa-star"></i>
-                            </span>
+                            </span> -->
                           </div>
-                          <div class="product__detail-sale"><span>Ex to Sale Tax</span></div>
+                          <!-- <div class="product__detail-sale"><span><?= number_format($item['price']) ?></span></div> -->
                           <div class="product__detail-cart">
-                            <a href="" class="btn-cart"><i class="fas fa-shopping-cart"></i>Mua sản phẩm</a>
+                            <form action="?page=account&act=cart" method="post">
+                              <input type="hidden" name="name_product" value="<?= $item["name_product"] ?>">
+                              <input type="hidden" name="id_product" value="<?= $item["id_product"] ?>">
+                              <input type="hidden" name="price" value="<?= $item["price"] ?>">
+                              <input type="hidden" name="image" value="<?= $item["image"] ?>">
+
+
+                              <button style="cursor: pointer;" type="submit" name="add_cart" class="btn-cart"><i class="fas fa-shopping-cart"></i>Mua sản phẩm</button>
+                            </form>
                           </div>
                         </div>
                       </div>
