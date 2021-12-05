@@ -196,7 +196,7 @@ if (isset($_POST['submit-comment'])) {
                 <div class="container-rl">
                   <div class="list-item">
 
-                    <?php $list = product_likeBrand($id_brand); ?>
+                    <?php $list = product_likeBrand($id_brand, $id_product); ?>
                     <?php foreach ($list as $item) { ?>
 
                       <div class="product">
@@ -211,7 +211,7 @@ if (isset($_POST['submit-comment'])) {
                         </div>
                         <div class="product__detail">
                           <div class="product__detail-title">
-                            <a href=""><?= $item['name_product'] ?></a>
+                            <a href="?page=product&act=pd&id_product=<?= $item['id_product'] ?>"><?= $item['name_product'] ?></a>
                           </div>
                           <div class="product__detail-price">
                             <span class="price"><?= number_format($item['price']) ?></span>

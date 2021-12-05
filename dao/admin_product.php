@@ -302,11 +302,11 @@ function product_upView($idProduct = 0)
 }
 
 //Lấy 4 sản phẩm tương tự
-function product_likeBrand($idBrand = 0)
+function product_likeBrand($idBrand = 0, $id_product)
 {
-    $sql = "SELECT * FROM product WHERE id_brand = ? LIMIT 0,4";
+    $sql = "SELECT * FROM product WHERE id_brand = ? AND id_product <> ? LIMIT 0,4";
 
-    return pdo_query($sql, $idBrand);
+    return pdo_query($sql, $idBrand, $id_product);
 }
 
 // lấy sản phẩm dựa trên từ khóa 
