@@ -5,5 +5,78 @@
 */
 
 :root {
-  --color-red: red;
+  --color-white: #ffffff;
+  --color-lightblue: #444e73;
+  --color-yellow: #cca471;
+  --color-black: #000;
+  --color-red: #d02e29;
+  --color-gray: #aaaaaa;
+
+  --bg-black-fs: #010209;
+  --bg-blue: #0e1d55;
+  --bg-black: #000000;
+  --bg-oblack: #010209;
+  --bg-gray: #34353a;
+  --bg-darkblue: #030d1d;
+  --bg-yellow: #cca471;
+  --bg-gray: #aaaaaa;
+  --bg-lightblue: #444e73;
+  --bg-white: #fff;
+  --bg-lightgray02: rgba(255, 255, 255, 0.2);
+  --bg-lightgray03: rgba(255, 255, 255, 0.3);
+
+  --font-size12: 1.2rem;
+  --font-size13: 1.3rem;
+  --font-size14: 1.4rem;
+  --font-size16: 1.6rem;
+  --font-size18: 1.8rem;
+  --font-size20: 2rem;
+  --font-size24: 2.4rem;
+  --font-size30: 3rem;
+  --font-size32: 3.2rem;
+  --font-size40: 4rem;
+  --font-size42: 4.2rem;
+
+  --line-height18: 1.8rem;
+  --line-height24: 2.4rem;
+  --line-height26: 2.6rem;
+  --line-height27: 2.7rem;
+  --line-height31: 3.1rem;
+  --line-height40: 4rem;
+  --line-height42: 4.2rem;
+  --line-height-normal: normal;
+
+  --letter-spacing84: 0.084rem;
+  --letter-spacing6: 0.06rem;
+  --letter-spacing36: 0.036rem;
+
+  --font-weight400: 400;
+  --font-weight600: 600;
+  --font-weight500: 500;
+  --font-weight700: 700;
+  --font-weight900: 900;
+
+  --font-fira: "Fira Sans Condensed", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-main: "Source Sans Pro";
+
+  /* ADMIN */
+  --admin-bg-logo: #182444;
+  --admin-bg-nav: #0f1a34;
+  --admin-bg-nav-hover: #091023;
+
+  --admin-color-border: #dddddd;
+  --admin-color-border-scroll: #f8dbdd;
+  --admin-color-nav-text: #ffffff;
+  --admin-color-nav-text-hover: #acb6c4;
+  --admin-color-nav-icon: #8a98b8;
+  --admin-color-bg-pink: #004e92;
+  --admin_color-bg-blue: #000428;
+  --admin_color_from_login: #fefefe;
+
+  --admin-font-family: "Roboto", sans-serif;
+  --font-main: "Source Sans Pro";
+
+  --all-03-ease: all 0.3s ease;
+  --all-06-ease: all 0.6s ease;
 }

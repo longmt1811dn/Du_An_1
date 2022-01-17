@@ -1,0 +1,25 @@
+.pagination__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  height: 15rem;
+  padding-bottom: 20rem;
+
+  background-color: var(--bg-darkblue);
+
+  font-size: 1.8rem;
+}
+
+.pagination__list--m10 {
+  padding-top: 10rem;
+}
+
+/* .pagination__item {
+  margin: 2rem;
+
+  padding: 2rem;
+  background-color: red;
+
+  color: aliceblue;
+} */

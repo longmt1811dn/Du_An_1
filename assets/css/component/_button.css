@@ -1,1 +1,198 @@
 /* Những gì dùng chung của các button trong web code ở đây */
+.title__borderbottom::after {
+  position: absolute;
+  content: "";
+  height: 0.5rem;
+  background: var(--bg-yellow);
+  width: 100%;
+  bottom: 0.6rem;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.title__borderbottom {
+  position: relative;
+  color: var(--color-white);
+  font-size: var(--font-size42);
+  font-family: var(--font-playfair);
+  line-height: var(--line-height-normal);
+  padding: 0 4rem;
+  width: fit-content;
+  margin: 0 auto;
+  letter-spacing: var(--letter-spacing84);
+}
+
+.product__text {
+  font-family: var(--font-playfair);
+  color: var(--color-white);
+  font-size: var(--font-size24);
+  line-height: var(--line-height-normal);
+  text-align: center;
+  transition: var(--all-06-ease);
+}
+
+.product__text:hover {
+  color: var(--color-yellow);
+}
+
+.btn {
+  font-family: var(--font-main);
+  background: var(--bg-lightgray02);
+  padding: 1.4rem 3.8rem 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: var(--font-size18);
+  color: var(--color-white);
+  border-bottom: 0.2rem solid var(--color-yellow);
+  transition: var(--all-06-ease);
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--bg-lightgray03);
+}
+
+.btn.activex {
+  background: var(--bg-lightgray03);
+}
+
+.btn--m {
+}
+
+/* Button admin */
+.admin__btn-del {
+  padding: 5px 15px;
+  margin: 0 5px;
+
+  border: 1px solid #ff788e;
+  border-radius: 50px;
+  background-color: #ff788e;
+
+  color: white;
+
+  transition: 0.2s all;
+}
+
+.admin__btn-del:hover {
+  border: 1px solid #ff788e;
+  background-color: white;
+
+  color: #ff788e;
+}
+
+.admin__btn-update {
+  padding: 5px 15px;
+  margin: 0 5px;
+
+  border: 1px solid #77c454;
+  border-radius: 50px;
+  background-color: #77c454;
+
+  color: white;
+
+  transition: 0.3s all;
+}
+
+.admin__btn-update:hover {
+  border: 1px solid #77c454;
+  background-color: white;
+
+  color: #77c454;
+}
+
+.btn-sl {
+  background: rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid var(--bg-yellow);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  color: var(--color-white);
+  text-transform: uppercase;
+
+  font-weight: 40rem;
+  font-size: var(--font-size18);
+  color: var(--color-white);
+}
+
+.btn-sl2 {
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-size: var(--font-size18);
+  font-weight: 40rem;
+  padding: 1.7rem 4.2rem;
+
+  border-bottom: 1px solid var(--bg-yellow);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.btn-sl2:hover {
+  background: rgba(204, 164, 113, 0.3);
+  color: var(--color-white);
+}
+
+.btn-sl:hover {
+  background: rgba(204, 164, 113, 0.3);
+  color: var(--color-white);
+}
+
+.btn-cart {
+  font-family: var(--font-main);
+  background: rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+  font-size: var(--font-size18);
+  color: var(--color-white);
+  border-bottom: 0.2rem solid var(--color-yellow);
+  padding: 1rem var(--font-size24);
+}
+
+.btn-cart:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-sn {
+  background: rgba(204, 164, 113, 0.3);
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-size: var(--font-size18);
+  font-weight: 40rem;
+  padding: 1rem var(--font-size24);
+
+  border-bottom: 1px solid var(--bg-yellow);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.btn-sn:hover {
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--color-white);
+}
+
+.text__gray {
+  font-family: var(--font-main);
+  color: var(--color-gray);
+  font-size: var(--font-size18);
+  line-height: var(--line-height31);
+  font-weight: var(--font-weight400);
+}
+
+.input__control {
+  font-family: var(--font-main);
+  border: 0.1rem solid var(--color-yellow);
+  display: inline-block;
+  color: var(--color-gray);
+  font-size: var(--font-size18);
+  line-height: var(--line-height26);
+  font-weight: var(--font-weight400);
+  background: transparent;
+  padding: 1.4rem 1rem;
+  width: 100%;
+}
+
+.

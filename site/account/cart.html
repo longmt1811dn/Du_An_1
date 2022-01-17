@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeZee</title>
+
+    <!-- Logo Website A-->
+    <link
+      rel="shortcut icon"
+      href="//cdn.shopify.com/s/files/1/0075/1832/2770/t/7/assets/favicon.png?v=3722167649135258256"
+      type="image/png"
+    />
+    <!-- Font Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Playfair+Display&family=Source+Sans+Pro:ital,wght@0,400;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <nav class="collection__nav">
+        <div class="collection__nav-text center-center">
+          <h1>Your Shopping Cart</h1>
+          <a href="index.html" class="text__gray">Home </a
+          ><span class="text__gray">/</span>
+          <span class="text__gray">Your Shopping Cart</span>
+        </div>
+      </nav>
+
+      <div class="cart__container">
+        <form action="" class="cart__container-form">
+          <div class="cart__form-grid cart__form-head">
+            <div class="cart__form-title">
+              <p>Sản phẩm</p>
+            </div>
+            <div class="cart__form-title">
+              <p>Giá</p>
+            </div>
+            <div class="cart__form-title">
+              <p>Số lượng</p>
+            </div>
+            <div class="cart__form-title">
+              <p>Tổng</p>
+            </div>
+            <div class="cart__form-title">
+              <p>Xóa</p>
+            </div>
+          </div>
+
+          <div class="cart__form-info cart__form-grid border-cart">
+            <div class="cart__info-product">
+              <a href="#"
+                ><img src="./assets/image/dongho_orient (10).png" alt="" />
+              </a>
+              <div class="cart__product-text">
+                <p class="product__text">Black Numeral</p>
+                <span class="text__gray">740mm/ pink / canvas</span>
+              </div>
+            </div>
+            <div class="cart__info-price">
+              <p id="cart__price">200</p>
+            </div>
+            <div class="cart__info-quanlity" id="demo">
+              <span id="cart__minus" class="cart__quantity-btn">-</span>
+
+              <span id="cart__count" class="cart__quantity-btn">1</span>
+
+              <span id="cart__plus" class="cart__quantity-btn">+</span>
+            </div>
+            <div class="cart__info-total">
+              <p id="cart__total"></p>
+            </div>
+            <div class="cart__info-remove">
+              <p><i class="fas fa-times"></i></p>
+            </div>
+          </div>
+
+          <div class="cart__form-btn border-cart">
+            <div class="cart__btn-note">
+              <span class="text__gray" id="cart__btn-note">Thêm ghi chú</span>
+              <form action="">
+                <textarea
+                  name=""
+                  id="cart__btn-textarea"
+                  placeholder="Lời nhắn đến chúng tôi"
+                ></textarea>
+              </form>
+            </div>
+            <div class="cart__btn-main">
+              <div class="cart__main-bill">
+                <p class="text__gray">
+                  Tổng hóa đơn :
+                  <span class="text__gray" id="cart__bill">200.000vnd</span>
+                </p>
+              </div>
+              <div class="cart__main-button">
+                <button class="btn cart__button-primary">
+                  <a href="#">Tiếp tục mua hàng</a>
+                </button>
+                <button class="btn cart__button-primary">
+                  <a href="#">Thanh toán</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script src="./assets/js/btn_count.js"></script>
+  <script src="./assets/js/total_price.js"></script>
+  <script src="./assets/js/open_note.js"></script>
+</html>

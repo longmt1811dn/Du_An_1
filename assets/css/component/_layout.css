@@ -1,1 +1,42 @@
 /* Chia layout như flex hay grid code ở đây đối với những layout dùng lại */
+
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.center-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* flex */
+
+.flex {
+  display: flex;
+}
+
+.flex-jc {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-ac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-w {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-y{
+    color: var(--color-yellow);
+    font-size: 1.8rem;
+    display:inline-block;
+    font-weight: 600;
+}

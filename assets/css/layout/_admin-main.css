@@ -1,0 +1,855 @@
+.admin {
+  font-family: var(--admin-font-family);
+}
+.admin-main {
+  min-height: 75vh;
+  margin-left: 26.5rem;
+
+  background-color: #f9f9f9;
+
+  font-size: 2rem;
+}
+.admin-main .admin-main_page {
+  display: flex;
+  flex-direction: column;
+}
+.admin-main_page .page-title_box {
+  padding: 1.2rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+}
+.admin-main_page .page-title_box .page-title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.admin-main_page .page-list-total_box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin-bottom: 15px;
+}
+.admin-main_page .page-list-total_box .page-item-total {
+  display: flex;
+  align-items: center;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  width: 24.5%;
+  justify-content: space-around;
+}
+.admin-main_page .page-list-total_box .page-item-total:first-child {
+  background: linear-gradient(
+    0deg,
+    rgb(217, 175, 217) 0%,
+    rgb(151, 217, 225) 100%
+  );
+}
+.admin-main_page .page-list-total_box .page-item-total:nth-child(2) {
+  background: linear-gradient(
+    62deg,
+    rgb(251, 171, 126) 0%,
+    rgb(247, 206, 104) 100%
+  );
+}
+.admin-main_page .page-list-total_box .page-item-total:nth-child(3) {
+  background: linear-gradient(
+    45deg,
+    rgb(133, 255, 189) 0%,
+    rgb(255, 251, 125) 100%
+  );
+}
+.admin-main_page .page-list-total_box .page-item-total:nth-child(4) {
+  background: linear-gradient(
+    135deg,
+    rgb(139, 198, 236) 0%,
+    rgb(149, 153, 226) 100%
+  );
+}
+
+.admin-main_page .page-list-total_box .page-item-total .img_page-item {
+  width: 40%;
+  display: flex;
+  padding: 1.3rem 0;
+}
+.admin-main_page .page-list-total_box .page-item-total .img_page-item img {
+  height: 85px;
+  border: 2px dashed #909497;
+  border-radius: 50%;
+}
+
+.admin-main_page .page-list-total_box .name_page-item > p {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 550;
+}
+.admin-main_page .page-list-total_box .name_page-item > .number-total {
+  font-size: 3.5rem;
+}
+.admin-main_page .page-top_product {
+  display: flex;
+  flex-direction: column;
+}
+.admin-main_page .page-top_product .rows-name-top {
+  padding: 0 1.5rem;
+  margin: 1rem 0;
+}
+.admin-main_page .page-top_product .rows-name-top > h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.page-top_product .table-top-product {
+  padding: 0 1.5rem;
+}
+.table-top-product .top-title {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #0f1a34;
+  font-weight: 600;
+  padding: 1rem 0;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.top-title .idz-top-title,
+.item-top-title > .idz-item {
+  width: 5%;
+}
+.top-title .name-top-title,
+.item-top-title .name-item {
+  width: 30%;
+}
+.top-title .img-top-title,
+.item-top-title .img-item {
+  width: 15%;
+}
+.top-title .pricez-top-title,
+.item-top-title .pricez-item {
+  width: 15%;
+}
+.top-title .view-top-title,
+.item-top-title .view-item {
+  width: 5%;
+}
+.top-title .status-top-title,
+.item-top-title .Status-item {
+  width: 15%;
+}
+.top-title .action-top-title,
+.item-top-title .action-item {
+  width: 15%;
+}
+.table-top-product .item-top-title {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  font-weight: 600;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+  margin-bottom: 0.5rem;
+}
+.item-top-title .img-item img {
+  width: 60%;
+}
+.item-top-title .action-item > a {
+  margin: 0 0.5rem;
+}
+/* CSS phân trnag */
+.admin-main_page .page_phantrang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.admin-main_page .page_phantrang .page_num {
+  margin: 0.4rem 0.7rem;
+  padding: 0.5rem 1.3rem;
+
+  background-color: var(--admin-bg-logo);
+
+  color: #fff;
+
+  transition: 0.2s all;
+}
+
+.admin-main_page .page_phantrang .page_num:hover {
+  background-color: #ffa055;
+}
+
+.page_phantrang .page_num.activex {
+  background-color: steelblue;
+}
+/* CSS form_add */
+.admin-main_page .form_add {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 0 1.3rem;
+  align-items: center;
+}
+.form_add .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 95%;
+}
+.form-group label {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.form-group input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #98a6ad;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding: 0.5rem 1.2rem;
+}
+.form-group input:focus {
+  border: 2px solid lightseagreen;
+}
+.form_add .check-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.check-box > label {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.check-box .check {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+.check input[type="radio"] {
+  margin-right: 0.3rem;
+}
+.form_add .button-submit {
+  display: flex;
+}
+.button-submit > input {
+  padding: 1.8rem 3.2rem;
+  font-size: 1.7rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  opacity: 0.8;
+  transition: all 0.3s linear;
+  background: var(--admin-bg-nav);
+  margin: 0 1rem;
+  color: #fff;
+}
+.button-submit > input:hover {
+  opacity: 1;
+}
+/* CSS danh sách cho object */
+.page-top_object {
+  padding: 0 1.5rem;
+}
+.page-top_product .table-top-object {
+  padding: 0 1.5rem;
+}
+.table-top-object > .object-top-title {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #0f1a34;
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem 0;
+
+  font-size: 1.6rem;
+}
+.object-top-title .id-title,
+.object-item-title .id-item {
+  width: 10%;
+}
+.object-top-title > .name-title,
+.object-item-title .name-item {
+  width: 50%;
+}
+.object-top-title .location-title,
+.object-item-title .location-item {
+  width: 10%;
+}
+.object-top-title > .status-title,
+.object-item-title .Status-item {
+  width: 10%;
+}
+.object-top-title > .action-title,
+.object-item-title .action-item {
+  width: 20%;
+}
+.table-top-object > .object-item-title {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  font-weight: 600;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+  margin-bottom: 0.5rem;
+}
+.item-top-title .img-item img {
+  width: 60%;
+}
+.item-top-title .action-item > a {
+  margin: 0 0.5rem;
+}
+/* CSS danh sách cho Type */
+.page-top_product .table-top-type {
+  padding: 0 1.5rem;
+}
+.table-top-type > .top-title {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #0f1a34;
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem 0;
+
+  font-size: 1.6rem;
+}
+.top-title .id-title,
+.item-title .id-item {
+  width: 10%;
+}
+.top-title .name-title,
+.item-title .name-item {
+  width: 40%;
+}
+.top-title .location-title,
+.item-title .location-item {
+  width: 5%;
+}
+.top-title .status-title,
+.item-title .Status-item {
+  width: 10%;
+}
+.top-title .object-title,
+.item-title .object-item {
+  width: 20%;
+}
+.top-title .action-title,
+.item-title .action-item {
+  width: 15%;
+}
+.table-top-type > .item-title {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  font-weight: 600;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+  margin-bottom: 0.5rem;
+}
+.item-top-title .img-item img {
+  width: 60%;
+}
+.item-top-title .action-item > a {
+  margin: 0 0.5rem;
+}
+/* CSS select - option cho Type */
+.form-group select {
+  width: 100%;
+  height: 45px;
+  padding: 0 0.5rem;
+  outline: none;
+}
+/* CSS form sản phẩm */
+.admin-main_page .form_add_product {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 0 1.3rem;
+}
+.form_add_product .form-group-product {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  margin-bottom: 1.5rem;
+}
+.form-group-product > label {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+}
+.form-group-product > label > span {
+  color: rgb(255, 0, 0);
+}
+.form-group-product > input {
+  width: 320px;
+  height: 43px;
+  border: 1px solid rgb(185, 184, 184);
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  outline: none;
+}
+.form-group-product > input[type="file"] {
+  padding-top: 1rem;
+}
+.form-group-product select {
+  height: 42px;
+  border-radius: 0.5rem;
+  outline: none;
+  width: 320px;
+  border: 1px solid rgb(185, 184, 184);
+  padding: 0 1rem;
+}
+.form-group-product:nth-last-child(2) {
+  width: 100%;
+}
+.form_add_product .check-box {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.check-box > .check > span {
+  font-size: 1.6rem;
+}
+/* CSS hover input form */
+.form-group-product > input:focus {
+  border: 2px solid rgb(107, 190, 241);
+}
+/* CSS web editor */
+.ck-editor__editable_inline {
+  min-height: 250px;
+  max-height: 450px;
+}
+/* CSS danh sách user */
+.page-top_product .table-top-user {
+  padding: 0 1.5rem;
+}
+.table-top-user .user-top-title {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #0f1a34;
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem 0;
+
+  font-size: 1.6rem;
+}
+.table-top-user .user-item-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+  margin-bottom: 0.5rem;
+}
+
+.user-top-title > .id-title,
+.user-item-title > .id-item {
+  width: 5%;
+}
+.user-top-title > .account-title,
+.user-item-title > .account-item {
+  width: 10%;
+  text-transform: capitalize;
+}
+.user-item-title > .account-item {
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+.user-top-title > .pass-title,
+.user-item-title > .pass-item {
+  width: 10%;
+  text-transform: capitalize;
+}
+.user-item-title > .pass-item {
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.user-top-title > .first-title,
+.user-item-title > .first-item {
+  width: 10%;
+  text-transform: capitalize;
+}
+.user-top-title > .last-title,
+.user-item-title > .last-item {
+  width: 10%;
+  text-transform: capitalize;
+}
+.user-top-title > .email-title,
+.user-item-title > .email-item {
+  width: 15%;
+}
+.user-top-title > .email-title {
+  text-transform: capitalize;
+}
+.user-item-title > .email-item {
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.user-top-title > .role-title,
+.user-item-title > .role-item {
+  width: 15%;
+  text-transform: capitalize;
+}
+.user-top-title > .activated-title,
+.user-item-title > .activated-item {
+  width: 10%;
+  text-transform: capitalize;
+}
+.user-item-title > .activated-item-spam {
+  width: 10%;
+  text-transform: capitalize;
+}
+.user-top-title > .action-title,
+.user-item-title > .action-item {
+  width: 15%;
+  text-transform: capitalize;
+}
+/* CSS active cho danh sách tài khoản */
+.user-item-title > .activated-item {
+  background-color: lightgreen;
+  border-radius: 10px;
+  padding: 0.5rem;
+  color: rgb(255, 255, 255);
+}
+.user-item-title > .activated-item-spam {
+  background-color: rgb(255, 83, 83);
+  border-radius: 10px;
+  padding: 0.5rem;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+}
+/* CSS nút check ẩn hiện quyền role cho users */
+.form_add .form-group-check {
+  display: flex;
+  width: 95%;
+  justify-content: flex-start;
+  margin-bottom: 0.5rem;
+  height: 40px;
+  align-items: center;
+}
+.form-group-check > label {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-right: 0.5rem;
+  width: 120px;
+}
+.form-group-check > .form-checkbox {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  width: 160px;
+}
+.form-group-check > label > span {
+  color: red;
+}
+.form-group-check > .form-checkbox > label {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+.form-checkbox > input[type="radio"] {
+  width: 50px;
+  height: 25px;
+  background-color: #c6c6c6;
+  outline: none;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  transition: all 0.5s linear;
+  position: relative;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.form-checkbox > input:checked[type="radio"] {
+  background-color: var(--admin-bg-nav);
+}
+
+.form-checkbox > input[type="radio"]:before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: all 0.5s linear;
+  transform: scale(1.1);
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.form-checkbox > input:checked[type="radio"]:before {
+  left: 30px;
+}
+/* CSS form thêm mới, sửa bài viết */
+.form_add_news {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 1.5rem;
+}
+.form_add_news .form-group-new {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  margin-bottom: 0.5rem;
+}
+.form-group-new > label {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: 0.3rem;
+}
+.form-group-new > label > span {
+  color: red;
+}
+.form-group-new > input {
+  height: 43px;
+  width: 90%;
+  border: 1px solid rgb(207, 204, 204);
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  outline: none;
+}
+.form-group-new input[type="file"] {
+  padding-top: 1rem;
+}
+.form_add_news .form-group-check {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  height: 40px;
+  align-items: center;
+}
+.form-group-new-content {
+  width: 95%;
+  margin-bottom: 1rem;
+}
+.form-group-new-content > label {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+/* CSS hover input form thêm mới bài viết */
+.form-group-new > input:focus {
+  border: 2px solid lightseagreen;
+}
+/* CSS danh sách bài viết */
+.page-top_news {
+  padding: 0 1.5rem;
+}
+.page-top_news .table-top-news {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.table-top-news .news-top-title {
+  display: flex;
+  width: 100%;
+  background-color: #0f1a34;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+.news-top-title > .id-top-title,
+.news-item-top-title > .id-item {
+  width: 5%;
+}
+.news-top-title > .name-top-title,
+.news-item-top-title > .name-item {
+  width: 15%;
+}
+.news-top-title > .date-top-title,
+.news-item-top-title > .date-item {
+  width: 10%;
+}
+.news-top-title > .status-top-title,
+.news-item-top-title > .status-item {
+  width: 10%;
+}
+.news-top-title > .user-top-title,
+.news-item-top-title > .user-item {
+  width: 15%;
+}
+.news-top-title > .highlights-top-title,
+.news-item-top-title > .highlights-item {
+  width: 15%;
+}
+.news-top-title > .image_new-top-title,
+.news-item-top-title > .image_new-item {
+  width: 15%;
+}
+.news-top-title > .action-top-title,
+.news-item-top-title > .action-item {
+  width: 15%;
+}
+.table-top-news > .news-item-top-title {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+.news-item-top-title > .image_new-item > img {
+  height: 75px;
+}
+/* CSS danh sách mặt hàng */
+.page-top_items {
+}
+.page-top_items .table-top-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+.table-top-items > .items-top-title {
+  display: flex;
+  width: 100%;
+  background-color: #0f1a34;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+.items-top-title > .id-top-title,
+.item-top-title > .id-item {
+  width: 10%;
+}
+
+.id-type-brand-title {
+  width: 10%;
+}
+
+.items-top-title > .name-top-title,
+.item-top-title > .name-item {
+  width: 30%;
+}
+.items-top-title > .total-top-title,
+.item-top-title > .total-item {
+  width: 10%;
+}
+.items-top-title > .price-top-title,
+.item-top-title > .price-item {
+  width: 20%;
+}
+.table-top-items > .item-top-title {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+}
+/* CSS danh sách top 5 sản phẩm được xem nhiều nhất */
+.table-top-product {
+}
+.table-top-product .product-top-title {
+  display: flex;
+  background-color: #0f1a34;
+  color: #fff;
+  padding: 1rem 0;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.product-top-title > .id-top-title,
+.product-item-top-title > .id-item {
+  width: 10%;
+}
+.product-top-title > .name-top-title,
+.product-item-top-title > .name-item {
+  width: 30%;
+}
+.product-top-title > .img-top-title,
+.product-item-top-title > .img-item {
+  width: 15%;
+}
+.product-item-top-title > .img-item > img {
+  height: 100px;
+}
+.product-top-title > .price-top-title,
+.product-item-top-title > .price-item {
+  width: 15%;
+}
+.product-top-title > .view-top-title,
+.product-item-top-title > .view-item {
+  width: 15%;
+}
+.product-top-title > .status-top-title,
+.product-item-top-title > .Status-item {
+  width: 15%;
+}
+.product-item-top-title > .Status-item-hide {
+  width: 15%;
+}
+.product-item-top-title > .Status-item-hide > span {
+  color: #000;
+  font-size: 1.4rem;
+  background: rgb(243, 43, 43);
+  padding: 1rem;
+  border-radius: 20px;
+}
+.product-item-top-title > .Status-item > span {
+  color: #000;
+  font-size: 1.4rem;
+  background: lightgreen;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.table-top-product > .product-item-top-title {
+  display: flex;
+  background: #fff;
+  padding: 1rem 0;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+}

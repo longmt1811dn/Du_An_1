@@ -1,0 +1,105 @@
+.p_admin_login {
+  height: 100vh;
+  padding-top: 150px;
+
+  background-image: linear-gradient(
+    to top right,
+    var(--admin_color-bg-blue),
+    var(--admin-color-bg-pink)
+  );
+
+  font-size: 2rem;
+}
+
+.p_admin_login__container {
+  display: flex;
+  justify-content: space-around;
+
+  width: 70rem;
+  height: 36rem;
+  margin: auto;
+
+  border-radius: 15px;
+  background-color: var(--admin_color_from_login);
+}
+
+.p_admin_login__left {
+  margin-top: 80px;
+  margin-bottom: auto;
+  width: 25%;
+  height: 46%;
+
+  border-radius: 50%;
+  box-shadow: 5px 25px 10px #cecece;
+}
+
+.p_admin_login__left img {
+  width: 100%;
+}
+
+.p_admin_login__right {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 50%;
+  height: 90%;
+
+  text-align: center;
+}
+
+.p_admin_login__right h2 {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+
+  font-size: 2.2rem;
+}
+
+.p_admin_login__right .p_admin__input-text,
+.p_admin__input-pass {
+  margin-bottom: 1rem;
+  padding: 0 20px;
+  width: 80%;
+  height: 4.4rem;
+
+  border: none;
+  background-color: #eeeeee;
+  border-radius: 50px;
+
+  font-size: 1.5rem;
+}
+
+.p_admin_login__right .p_admin__input-btn {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 80%;
+  height: 4.4rem;
+
+  border: none;
+  border-radius: 50px;
+  background-color: #59b747;
+
+  color: white;
+  font-size: 1.6rem;
+
+  cursor: pointer;
+
+  transition: 0.5s all;
+}
+
+.p_admin_login__right .p_admin__input-btn:hover {
+  background-color: var(--admin_color-bg-blue);
+
+  color: white;
+}
+
+.p_admin_login__right a {
+  padding-top: 15px;
+
+  font-size: 1.3rem;
+  color: blue;
+
+  transition: 0.5s;
+}
+
+.p_admin_login__right a:hover {
+  color: red;
+}

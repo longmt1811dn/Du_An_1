@@ -11,11 +11,38 @@
 @import url(./layout/_main.css);
 @import url(./layout/_section.css);
 @import url(./layout/_footer.css);
+@import url(./layout/_admin.css);
+@import url(./layout/_admin-header.css);
+@import url(./layout/_admin-nav.css);
+@import url(./layout/_admin-main.css);
+@import url(./layout/_admin-footer.css);
+@import url(./layout/owl.carousel.min.css);
+@import url(./layout/owl.theme.default.min.css);
+@import url(./layout/slider.css);
 
 /* page */
 @import url(./page/_home.css);
 @import url(./page/_about.css);
+@import url(./page/_admin_login.css);
+@import url(./page/_collections.css);
+@import url(./page/_login.css);
+@import url(./page/_all__collection.css);
+@import url(./page/_cart.css);
+@import url(./page/_wishlist.css);
+@import url(./page/_news.css);
+@import url(./page/_blog.css);
+@import url(./page/product_details.css);
+@import url(./page/_search.css);
+
+/* Css Trang chi tiết tin có 2 theme */
+@import url(./page/_news--white.css);
+
+@import url(./page/_contact.css);
+@import url(./page/_info.css);
 
 /* component */
 @import url(./component/_button.css);
 @import url(./component/_layout.css);
+@import url(./component/_pagination.css);
+@import url(./component/_error.css);
+@import url(./component/_search.css);

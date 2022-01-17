@@ -1,0 +1,9 @@
+.admin::-webkit-scrollbar {
+  width: 6px;
+
+  background-color: var(--admin-color-border);
+}
+
+.admin::-webkit-scrollbar-thumb {
+  background-color: var(--admin-color-border-scroll);
+}

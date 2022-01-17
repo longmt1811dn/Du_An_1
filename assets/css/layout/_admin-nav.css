@@ -1,0 +1,115 @@
+.admin-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 26.5rem;
+  height: 100vh;
+
+  background-color: var(--admin-bg-nav);
+
+  font-size: 1.6rem;
+  font-family: var(--admin-font-family);
+
+  overflow: auto;
+
+  z-index: 1;
+}
+
+.admin-nav::-webkit-scrollbar {
+  width: 6px;
+
+  background-color: var(--admin-color-border);
+}
+
+.admin-nav::-webkit-scrollbar-thumb {
+  background-color: var(--admin-color-border-scroll);
+}
+
+.admin-nav__logo {
+  padding: 17px 24px;
+
+  background-color: var(--admin-bg-logo);
+}
+
+.admin-nav__logo img {
+  width: 80%;
+}
+
+.admin-nav__menu-list {
+  display: flex;
+  padding: 1.3rem 2.4rem;
+  width: 100%;
+
+  border: none;
+  background-color: var(--admin-bg-nav);
+
+  text-align: left;
+  font-size: 1.7rem;
+  color: var(--admin-color-nav-text);
+  cursor: pointer;
+  line-height: 25px;
+
+  outline: none;
+
+  transition: 0.4s;
+}
+
+.active,
+.admin-nav__menu-list:hover {
+  background-color: var(--admin-bg-nav-hover);
+
+  color: var(--admin-color-nav-text-hover);
+}
+
+.admin-nav__menu-icon {
+  display: inline-block;
+  width: 40px;
+
+  font-size: 2rem;
+  color: var(--admin-color-nav-icon);
+}
+
+.admin-nav__menu-list:hover .admin-nav__menu-icon {
+  color: var(--admin-color-nav-icon);
+}
+
+.admin-nav__menu-item {
+  max-height: 0;
+
+  background-color: var(--admin-bg-nav-hover);
+
+  overflow: hidden;
+
+  transition: max-height 0.3s ease-out;
+}
+
+.admin-nav__menu-link {
+  display: block;
+
+  padding: 1.3rem 4.4rem;
+
+  color: var(--admin-color-nav-text-hover);
+}
+
+.admin-nav__menu-link:hover {
+  font-weight: bold;
+  color: var(--admin-color-nav-text);
+}
+
+.admin-nav__menu-list:after {
+  float: right;
+  margin-left: auto;
+
+  content: "\002B";
+  color: var(--admin-color-nav-text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  transition: 0.4s;
+}
+
+.active:after {
+  content: "\2212";
+}
